@@ -1,0 +1,19 @@
+CRITICAL - 2020-09-21 02:33:11 --> Undefined index: pagina
+#0 C:\xampp\htdocs\sisbomberos\app\Views\main\nav\galeria.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/galeri...', Array, true)
+#3 C:\xampp\htdocs\sisbomberos\app\Controllers\Galeria.php(10): view('main/nav/galeri...', Array)
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Galeria->index()
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Galeria))
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-21 02:39:08 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\sisbomberos\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\sisbomberos\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Galeria.php(12): CodeIgniter\Model->__call('total_g', Array)
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Galeria->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Galeria))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}

@@ -1,0 +1,550 @@
+CRITICAL - 2020-10-24 16:44:04 --> Undefined property: stdClass::$Nombre
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 16:44:04 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 16:44:23 --> Undefined property: stdClass::$Nombre
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 16:44:23 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:33:44 --> syntax error, unexpected '$fila' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:33:44 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:33:51 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:33:51 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:34:49 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:34:49 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:34:50 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:34:50 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:34:59 --> syntax error, unexpected '$fila' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:34:59 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:34:59 --> syntax error, unexpected '$fila' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:34:59 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:35:06 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:35:06 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:35:16 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:35:16 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:35:17 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:35:17 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:35:17 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:35:17 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:35:17 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:35:17 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:36:27 --> syntax error, unexpected '$fila' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:36:27 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:36:50 --> The behavior of unparenthesized expressions containing both '.' and '+'/'-' will change in PHP 8: '+'/'-' will take a higher precedence
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'The behavior of...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 17:36:50 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:36:50 --> The behavior of unparenthesized expressions containing both '.' and '+'/'-' will change in PHP 8: '+'/'-' will take a higher precedence
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'The behavior of...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 17:36:50 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:36:58 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 17:36:58 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:36:59 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 17:36:59 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:37:09 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 17:37:09 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:37:09 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 17:37:09 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:37:17 --> The behavior of unparenthesized expressions containing both '.' and '+'/'-' will change in PHP 8: '+'/'-' will take a higher precedence
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'The behavior of...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 17:37:17 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:37:17 --> The behavior of unparenthesized expressions containing both '.' and '+'/'-' will change in PHP 8: '+'/'-' will take a higher precedence
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'The behavior of...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 17:37:17 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:37:26 --> The behavior of unparenthesized expressions containing both '.' and '+'/'-' will change in PHP 8: '+'/'-' will take a higher precedence
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'The behavior of...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 17:37:26 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:37:31 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 17:37:31 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:37:49 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 17:37:49 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:37:50 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-24 17:37:50 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:38:09 --> syntax error, unexpected '1' (T_LNUMBER), expecting ';' or ','
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:38:09 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:38:09 --> syntax error, unexpected '1' (T_LNUMBER), expecting ';' or ','
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:38:09 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-24 17:38:32 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-24 17:38:32 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

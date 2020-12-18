@@ -1,0 +1,121 @@
+CRITICAL - 2020-09-13 01:15:08 --> syntax error, unexpected ')'
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Intranet')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Intranet')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-13 01:15:51 --> Too few arguments to function CodeIgniter\HTTP\RedirectResponse::to(), 0 passed in D:\xampp\htdocs\sisbomberos\app\Controllers\Intranet.php on line 10 and at least 1 expected
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Intranet.php(10): CodeIgniter\HTTP\RedirectResponse->to()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Intranet->index()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intranet))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-13 02:42:22 --> Undefined index: perfil
+#0 D:\xampp\htdocs\sisbomberos\app\Views\admin\menu.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 38, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('admin/menu.php', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Admin.php(9): view('admin/menu.php')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Admin->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-13 02:42:36 --> Undefined index: perfil
+#0 D:\xampp\htdocs\sisbomberos\app\Views\admin\menu.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 38, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('admin/menu.php', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Admin.php(9): view('admin/menu.php')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Admin->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-13 02:42:42 --> Undefined index: perfil
+#0 D:\xampp\htdocs\sisbomberos\app\Views\admin\menu.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 38, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('admin/menu.php', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Admin.php(9): view('admin/menu.php')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Admin->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-13 02:44:09 --> syntax error, unexpected '',u.apellido) as nombrecomplet' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\xampp\htdocs\sisbomberos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\sisbomberos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Arch...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Arch...')
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Archivo.php(11): spl_autoload_call('App\\Models\\Arch...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Archivo->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Archivo))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-13 02:51:05 --> unlink(./public/archivos/Trabajador): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./public...', 'D:\\xampp\\htdocs...', 27, Array)
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\Archivo.php(27): unlink('./public/archiv...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Archivo->delete()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Archivo))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-13 02:51:18 --> unlink(./public/archivos/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./public...', 'D:\\xampp\\htdocs...', 27, Array)
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\Archivo.php(27): unlink('./public/archiv...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Archivo->delete()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Archivo))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-13 03:04:41 --> unlink(./public/archivos/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./public...', 'D:\\xampp\\htdocs...', 27, Array)
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\Archivo.php(27): unlink('./public/archiv...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Archivo->delete()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Archivo))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-13 04:08:19 --> unlink(./public/archivos/1599988091407_1024_PROM37.pdf): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./public...', 'D:\\xampp\\htdocs...', 70, Array)
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\IntranetA.php(70): unlink('./public/archiv...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\IntranetA->add()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntranetA))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-13 21:41:12 --> Undefined variable: telefono
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Usuario.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 39, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Usuario->viwagregar()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-13 22:10:19 --> Trying to get property 'cantidad' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Usuario.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 54, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Usuario->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-13 23:05:46 --> Undefined variable: session
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Usuario.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 13, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Usuario->viwagregar()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-13 23:06:30 --> Undefined variable: session
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Usuario.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 13, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Usuario->viwagregar()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-13 23:07:30 --> Undefined variable: idusuaT
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Usuario.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 61, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Usuario->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

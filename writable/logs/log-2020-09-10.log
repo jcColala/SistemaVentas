@@ -1,0 +1,285 @@
+<<<<<<< HEAD
+CRITICAL - 2020-09-10 14:57:22 --> Undefined index: Titulo
+#0 C:\xampp\htdocs\sisbomberos\app\Views\main\nav\noticias.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#3 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-10 14:59:11 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-10 14:59:12 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-10 14:59:46 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-10 14:59:54 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-10 14:59:55 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-10 15:46:09 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:11:50 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:12:50 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:13:48 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:13:50 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:13:50 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:14:50 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:16:59 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:17:56 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:19:28 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:20:56 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:20:57 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:20:57 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:22:27 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:22:28 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 16:22:53 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(22): view('main/nav/notici...', Array)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+=======
+CRITICAL - 2020-09-10 00:53:12 --> Call to undefined method App\Models\ArchivoModel::getGroup
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\IntranetA.php(88): CodeIgniter\Model->__call('getGroup', Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\IntranetA->verGroup()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntranetA))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-10 00:53:13 --> Call to undefined method App\Models\ArchivoModel::getGroup
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\IntranetA.php(88): CodeIgniter\Model->__call('getGroup', Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\IntranetA->verGroup()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntranetA))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-10 00:53:20 --> Call to undefined method App\Models\ArchivoModel::getGroup
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\IntranetA.php(88): CodeIgniter\Model->__call('getGroup', Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\IntranetA->verGroup()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntranetA))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-10 01:06:01 --> Array to string conversion
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\IntranetA.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp\\htdocs...', 89, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\IntranetA->verGroup()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntranetA))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-10 01:07:11 --> Array to string conversion
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\IntranetA.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp\\htdocs...', 89, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\IntranetA->verGroup()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntranetA))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-10 01:07:35 --> Array to string conversion
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\IntranetA.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp\\htdocs...', 89, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\IntranetA->verGroup()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntranetA))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-10 04:09:56 --> syntax error, unexpected ')'
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('IntranetA/viwag...')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('IntranetA/viwag...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-10 04:09:57 --> syntax error, unexpected ')'
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('IntranetA')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('IntranetA')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-10 04:10:08 --> syntax error, unexpected ')'
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('IntranetA')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('IntranetA')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-10 04:14:41 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('IntranetA/viwag...')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('IntranetA/viwag...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-10 04:41:08 --> Undefined variable: total
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\IntranetA.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 83, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\IntranetA->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntranetA))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-10 04:51:03 --> Array to string conversion
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\IntranetA.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp\\htdocs...', 49, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\IntranetA->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntranetA))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-10 05:10:55 --> unlink(./public/archivos/1599466830): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./public...', 'D:\\xampp\\htdocs...', 121, Array)
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\IntranetA.php(121): unlink('./public/archiv...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\IntranetA->deleteGroup()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntranetA))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 05:11:39 --> unlink(./public/archivos/1599467720203_señora sandalias (2).jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./public...', 'D:\\xampp\\htdocs...', 121, Array)
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\IntranetA.php(121): unlink('./public/archiv...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\IntranetA->deleteGroup()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntranetA))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+>>>>>>> e23c8d0f3c585854acf40689db87fb190fa2c5e0
+#6 {main}

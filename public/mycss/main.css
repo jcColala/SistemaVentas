@@ -1,0 +1,12 @@
+.brand-image {
+    float: left;
+    font-size: 25px;
+    margin-left: 3.3rem;
+    margin-top: 0em;
+    max-height: 5em;
+    width: auto;
+}
+#a_heder_usuiario{
+    cursor: pointer;
+    color: #fff;
+}

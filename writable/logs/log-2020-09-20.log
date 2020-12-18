@@ -1,0 +1,25 @@
+CRITICAL - 2020-09-20 02:03:23 --> Table 'sisbomb.galeria' doesn't exist
+#0 D:\xampp\htdocs\sisbomberos\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 D:\xampp\htdocs\sisbomberos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\xampp\htdocs\sisbomberos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\xampp\htdocs\sisbomberos\app\Models\GaleriaModel.php(9): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\xampp\htdocs\sisbomberos\app\Controllers\Galeria.php(7): App\Models\GaleriaModel->galeria()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Galeria->index()
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Galeria))
+#7 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-20 02:05:27 --> syntax error, unexpected '{', expecting '('
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Contacto')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Contacto')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-20 02:18:10 --> Undefined variable: base
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Contacto.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 19, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Contacto->enviar_correo()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contacto))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,12 @@
+CRITICAL - 2020-09-18 11:54:47 --> toolbar filter must have a matching alias defined.
+#0 C:\xampp\htdocs\sisbomberos\system\Filters\Filters.php(150): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('toolbar')
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(422): CodeIgniter\Filters\Filters->run('Inicio', 'after')
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-18 11:55:11 --> toolbar filter must have a matching alias defined.
+#0 C:\xampp\htdocs\sisbomberos\system\Filters\Filters.php(150): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('toolbar')
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(422): CodeIgniter\Filters\Filters->run('Inicio', 'after')
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}

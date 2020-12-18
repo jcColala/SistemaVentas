@@ -1,0 +1,160 @@
+CRITICAL - 2020-10-23 12:23:05 --> Undefined property: stdClass::$Icono
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(10): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-23 12:23:05 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-23 12:23:54 --> Undefined property: stdClass::$Icono
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-23 12:23:54 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-23 12:23:55 --> Undefined property: stdClass::$Icono
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-23 12:23:55 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-23 12:23:55 --> Undefined property: stdClass::$Icono
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-23 12:23:55 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-23 12:23:55 --> Undefined property: stdClass::$Icono
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-23 12:23:55 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-23 12:23:55 --> Undefined property: stdClass::$Icono
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-23 12:23:55 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-23 12:23:56 --> Undefined property: stdClass::$Icono
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-23 12:23:56 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-23 12:23:56 --> Undefined property: stdClass::$Icono
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\app\Views\main\layout\inicio.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/ini...', Array, true)
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(9): view('main/layout/ini...', Array)
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-23 12:23:56 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

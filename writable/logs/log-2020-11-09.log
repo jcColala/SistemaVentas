@@ -1,0 +1,169 @@
+CRITICAL - 2020-11-09 10:48:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM  producto as p
+                              inner join imagen_p as i_p...' at line 7
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Models\InicioModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(7): App\Models\InicioModel->producto()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-09 10:48:04 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-09 11:11:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY i_p.Id_Producto' at line 11
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Models\InicioModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(7): App\Models\InicioModel->producto()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-09 11:11:55 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-09 11:12:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY i_p.Id_Producto' at line 11
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Models\InicioModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(7): App\Models\InicioModel->producto()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-09 11:12:17 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-09 11:12:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY i_p.Id_Producto' at line 11
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Models\InicioModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(7): App\Models\InicioModel->producto()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-09 11:12:18 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-09 11:12:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY i_p.Id_Producto' at line 11
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Models\InicioModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(7): App\Models\InicioModel->producto()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-09 11:12:18 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-09 11:12:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY i_p.Id_Producto' at line 11
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Models\InicioModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(7): App\Models\InicioModel->producto()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-09 11:12:18 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-09 11:12:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY i_p.Id_Producto' at line 11
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Models\InicioModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(7): App\Models\InicioModel->producto()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-09 11:12:19 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-09 11:15:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY i_p.Id_Producto' at line 12
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\ProyectoPaginaVentas\app\Models\InicioModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\ProyectoPaginaVentas\app\Controllers\Inicio.php(7): App\Models\InicioModel->producto()
+#5 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#6 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#7 C:\xampp\htdocs\ProyectoPaginaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoPaginaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-09 11:15:37 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 308, Array)
+#1 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(308): include()
+#2 C:\xampp\htdocs\ProyectoPaginaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

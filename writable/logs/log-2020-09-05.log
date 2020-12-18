@@ -1,0 +1,491 @@
+CRITICAL - 2020-09-05 21:11:58 --> syntax error, unexpected '(', expecting variable (T_VARIABLE)
+#0 C:\xampp\htdocs\sisbomberos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\sisbomberos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Noti...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Noti...')
+#3 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): spl_autoload_call('App\\Models\\Noti...')
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-05 21:12:18 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\sisbomberos\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\sisbomberos\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): CodeIgniter\Model->__call('total_animes', Array)
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:13:04 --> Undefined index: pagina
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 21:13:05 --> Undefined index: pagina
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 21:13:06 --> Undefined index: pagina
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 21:13:06 --> Undefined index: pagina
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 21:15:17 --> Undefined variable: total_animes
+#0 C:\xampp\htdocs\sisbomberos\app\Views\main\nav\noticias.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#3 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(9): view('main/nav/notici...')
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-05 21:15:35 --> Undefined index: pagina
+#0 C:\xampp\htdocs\sisbomberos\app\Views\main\nav\noticias.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 103, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#3 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(9): view('main/nav/notici...')
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-05 21:15:37 --> Undefined index: pagina
+#0 C:\xampp\htdocs\sisbomberos\app\Views\main\nav\noticias.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 103, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#3 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(9): view('main/nav/notici...')
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-05 21:24:40 --> Undefined index: pagina
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 21:27:56 --> Invalid file: location:Noticias?pagina=1.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('location:Notici...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('location:Notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('location:Notici...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:28:11 --> Invalid file: Noticias?pagina=1.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Noticias?pagina...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Noticias?pagina...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Noticias?pagina...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:28:12 --> Invalid file: Noticias?pagina=1.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Noticias?pagina...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Noticias?pagina...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Noticias?pagina...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:28:33 --> Invalid file: Noticias.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Noticias.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Noticias', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Noticias')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:28:33 --> Invalid file: Noticias.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Noticias.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Noticias', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Noticias')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:28:34 --> Invalid file: Noticias.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Noticias.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Noticias', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Noticias')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:28:35 --> Invalid file: Noticias.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Noticias.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Noticias', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Noticias')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:28:36 --> Invalid file: Noticias.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Noticias.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Noticias', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Noticias')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:28:46 --> Invalid file: Noticias.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Noticias.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Noticias.php', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Noticias.php')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:28:46 --> Invalid file: Noticias.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Noticias.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Noticias.php', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Noticias.php')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:28:47 --> Invalid file: Noticias.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Noticias.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Noticias.php', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Noticias.php')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:28:48 --> Invalid file: Noticias.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Noticias.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Noticias.php', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Noticias.php')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:28:48 --> Invalid file: Noticias.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Noticias.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Noticias.php', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Noticias.php')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:28:49 --> Invalid file: Noticias.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Noticias.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Noticias.php', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Noticias.php')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:29:01 --> Invalid file: Inicio.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Inicio.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Inicio', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Inicio')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:29:03 --> Invalid file: Inicio.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Inicio.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Inicio', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('Inicio')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:32:44 --> Invalid file: main/nav/noticias.php/pagina=1.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/nav/notici...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('main/nav/notici...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:32:46 --> Invalid file: main/nav/noticias.php/pagina=1.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/nav/notici...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('main/nav/notici...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:33:32 --> Call to undefined function App\Controllers\Controllers()
+#0 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-05 21:33:33 --> Call to undefined function App\Controllers\Controllers()
+#0 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-05 21:33:33 --> Call to undefined function App\Controllers\Controllers()
+#0 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-05 21:35:11 --> syntax error, unexpected '.1' (T_DNUMBER), expecting ')'
+#0 C:\xampp\htdocs\sisbomberos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\sisbomberos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-05 21:37:15 --> Undefined variable: data
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 21:37:16 --> Undefined variable: data
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 21:37:22 --> Invalid file: pages/home.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/home.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('pages/home', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('pages/home')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:37:23 --> Invalid file: pages/home.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/home.php')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('pages/home', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('pages/home')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:37:36 --> Invalid file: main/nav/noticias.php/home.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/nav/notici...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('main/nav/notici...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:37:37 --> Invalid file: main/nav/noticias.php/home.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/nav/notici...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('main/nav/notici...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:37:44 --> Invalid file: main/nav/noticias/home.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/nav/notici...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('main/nav/notici...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:37:45 --> Invalid file: main/nav/noticias/home.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/nav/notici...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('main/nav/notici...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:37:46 --> Invalid file: main/nav/noticias/home.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/nav/notici...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('main/nav/notici...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:39:35 --> Undefined variable: data
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 21:39:49 --> Invalid file: main/nav/noticias.php/hola.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/nav/notici...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('main/nav/notici...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:40:03 --> Invalid file: main/nav/noticias/hola.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/nav/notici...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('main/nav/notici...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:40:04 --> Invalid file: main/nav/noticias/hola.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/nav/notici...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('main/nav/notici...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:40:04 --> Invalid file: main/nav/noticias/hola.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/nav/notici...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('main/nav/notici...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:40:04 --> Invalid file: main/nav/noticias/hola.php
+#0 C:\xampp\htdocs\sisbomberos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/nav/notici...')
+#1 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#2 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): view('main/nav/notici...')
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-05 21:56:30 --> Undefined variable: total_n
+#0 C:\xampp\htdocs\sisbomberos\app\Views\main\nav\noticias.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#3 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(7): view('main/nav/notici...')
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-05 22:12:10 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\sisbomberos\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(8): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-05 22:25:04 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(14): App\Models\NoticiasModel->total_n()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 22:25:35 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(14): App\Models\NoticiasModel->total_n()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 22:26:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(14): App\Models\NoticiasModel->total_n()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 22:27:17 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(14): App\Models\NoticiasModel->total_n()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 22:27:18 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(14): App\Models\NoticiasModel->total_n()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 22:35:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countResultAll()
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(14): App\Models\NoticiasModel->total_n()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 22:35:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countResultAll()
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(14): App\Models\NoticiasModel->total_n()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 22:38:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countResultAll()
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(14): App\Models\NoticiasModel->total_n()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 22:38:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countResultAll()
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(14): App\Models\NoticiasModel->total_n()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-05 22:38:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countResultAll()
+#0 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(14): App\Models\NoticiasModel->total_n()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
