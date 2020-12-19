@@ -30,6 +30,7 @@
   <script src="<?php echo base_url();?>/public/js/jquery.js"></script>
   <script src="<?php echo base_url();?>/public/js/scri.js"></script>
   <script src="<?php echo base_url();?>/public/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="<?php echo base_url()?>/public/icomoon/style.css">
 
   <link rel="stylesheet" href="<?php echo base_url();?>/public/mycss/main.css">
 
@@ -42,7 +43,7 @@
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-dark navbar-teal" style="padding: .8rem .1rem;border-bottom: 1px solid #d9dce3;box-shadow: 0 3px 14px -7px #343a4061; background:#212F3D;">
+  <nav class="main-header navbar navbar-expand navbar-dark navbar-teal" style="padding: .8rem .1rem;border-bottom: 1px solid #d9dce3;box-shadow: 0 3px 14px -7px #343a4061; background:#009688;">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">

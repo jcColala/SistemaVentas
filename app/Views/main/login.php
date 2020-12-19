@@ -3,7 +3,7 @@
 <head>
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>/public/mycss/login.css">
-  <link rel="stylesheet" href="<?php echo base_url()?>/public/icomon/icomoon_2/style.css">
+  <link rel="stylesheet" href="<?php echo base_url()?>/public/icomoon/style.css">
 </head>
 <body>
   <div class="Padre_img_login">

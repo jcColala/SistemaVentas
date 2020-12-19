@@ -13,8 +13,5 @@ class Inicio extends BaseController
 	        echo view('main/menu.php');
 	        echo view('main/footer.php');
     	}
-	}  
-
-	//--------------------------------------------------------------------
-
+	}
 }
