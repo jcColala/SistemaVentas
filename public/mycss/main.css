@@ -49,8 +49,8 @@ input[type=number]::-webkit-outer-spin-button {
     border-collapse: separate !important;
 }
 #example1 th{
-    color: #009688;
-    background: #fff;
+    color: #fff;
+    background: #009688;
     border: none;
     border-bottom: 1px solid #009688;
     border-top: 1px solid #009688;
