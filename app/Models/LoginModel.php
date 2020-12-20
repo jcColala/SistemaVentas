@@ -9,7 +9,7 @@ class LoginModel extends Model{
       $mostrar=$db->query("
                             SELECT * 
                             FROM usuario 
-                            WHERE Login='".$usuario."' and Clave='".$pasword."'
+                            WHERE Login='".$usuario."' and Clave='".$pasword."' and deleted_at is null
                               ");
       $row = $mostrar->getRow();
       if (isset($row)){ return $row;}

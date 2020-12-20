@@ -3,13 +3,28 @@
 use CodeIgniter\Model;
 
 class UsuarioModel extends Model{ 
+    protected $table      = 'usuario';
+    protected $primaryKey = 'Id';
+
+    protected $returnType     = 'objet';
+    protected $useSoftDeletes = true;
+
+    protected $allowedFields = ['Id','Id_Tipo','Nombre','Apellidos','DNI','Celular','Correo','Direccion','Sexo','Estado_Civil','Fecha_Nacimiento','Fecha_Ingreso','Login','Clave','Nombre_Foto','deleted_at'];
+
+    protected $useTimestamps = true;
+    protected $createdField  = 'created_at';
+    protected $updatedField  = 'updated_at';
+    protected $deletedField  = 'deleted_at';
+
+    protected $validationRules    = [];
+    protected $validationMessages = [];
+    protected $skipValidation     = false;
 
     function mostrar(){
       $db=db_connect();
       $mostrar=$db->query("
                             SELECT * 
-                            FROM usuario 
-                            WHERE Estado=1
+                            FROM usuario
                               ");
       return $mostrar->getResult();
   	}
@@ -17,9 +32,14 @@ class UsuarioModel extends Model{
       $db=db_connect();
       $mostrar=$db->query("
                             SELECT * 
-                            FROM usuario 
-                            WHERE Estado=1
+                            FROM tipo_usuario 
+                            WHERE deleted_at is Null
                               ");
       return $mostrar->getResult();
+    }
+    public function taer($id){
+      $db=db_connect();
+      $query= $db->query('SELECT * FROM usuario where Id='.$id.'');
+      return $query->getRow();
     }
 }

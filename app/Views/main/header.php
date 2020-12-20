@@ -32,7 +32,14 @@
   <script src="<?php echo base_url();?>/public/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="<?php echo base_url()?>/public/icomoon/style.css">
 
+  <script src="<?php echo base_url();?>/public/myjs/main.js"></script>
   <link rel="stylesheet" href="<?php echo base_url();?>/public/mycss/main.css">
+
+  <script src="<?php echo base_url();?>/public/myjs/usuario.js"></script>
+
+  <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/themes/semantic.min.css">
+  <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/alertify.min.css">
+  <script  src="<?php echo base_url()?>/public/alertifyJS/alertify.min.js"></script>
 
   <link rel="stylesheet" href="<?php echo base_url();?>/public/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
 

@@ -6,7 +6,7 @@
           <div class="card" id="card" > 
 
               <div class="card-header" id="card-header">
-               <button type="button" class="btn_tablas" onclick="nueva_usuario();"><span class="icon-person_add"> </span>Nuevo Usuario</button>
+               <button type="button" class="btn_tablas"><a href="<?php echo base_url();?>/Usuario/agregarViews"><span class="icon-person_add"> </span>Nuevo Usuario</a></button>
               </div>
             
               <div class="card-body">
@@ -33,17 +33,17 @@
                           <td class="centrar"><?php echo $linea->DNI;?></td>
                           <td class="centrar"><?php echo $linea->Login;?></td>
                           <?php  
-                              if ($linea->Estado==1){ $estado="Activo";}
+                              if ($linea->deleted_at==Null){ $estado="Activo";}
                               else{$estado="Inactivo";}
                           ?>                  
                           <td class="centrar"><?php echo $estado;?></td>
                           <td>
                             <div class="e2_comision">
-                                <button  onclick="e2_usuario('ed',<?php echo $linea->Id; ?>);" class="icon-mode_edit editar" title="Editar" ></button>
-                                <?php if ($linea->Estado==1){?>    
-                                <button  onclick="e2_usuario('el',<?php echo $linea->Id; ?>);" class="icon-delete_forever eliminar" title="Eliminar"></button>
+                                <button onclick="window.location='<?php echo base_url();?>/Usuario/agregarViews?id=<?php echo $linea->Id?>'" class="icon-mode_edit editar" title="Editar" ></button>
+                                <?php if ($linea->deleted_at==Null){?>    
+                                <button  onclick="e2_usuario('eliminar',<?php echo $linea->Id; ?>);" class="icon-delete_forever eliminar" title="Eliminar"></button>
                                 <?php }else{?>
-                                <button  onclick="e2_usuario('ac',<?php echo $linea->Id; ?>);" class="icon-radio_button_checked activar" title="Activar"></button>
+                                <button  onclick="e2_usuario('activar',<?php echo $linea->Id; ?>);" class="icon-radio_button_checked activar" title="Activar"></button>
                                 <?php }?>
                             </div>
                           </td>

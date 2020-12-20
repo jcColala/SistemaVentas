@@ -49,8 +49,8 @@ input[type=number]::-webkit-outer-spin-button {
     border-collapse: separate !important;
 }
 #example1 th{
-    color: #fff;
-    background: #009688;
+    color: #009688;
+    background: #fff;
     border: none;
     border-bottom: 1px solid #009688;
     border-top: 1px solid #009688;
@@ -62,10 +62,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .centrar{
 	text-align: center;
-}
-.btn_tablas:hover{
-    border: 1px solid #00BCD4;
-    color: #00BCD4;
 }
 #card-header{
 	padding: 1.2rem 1.25rem;
@@ -87,11 +83,22 @@ input[type=number]::-webkit-outer-spin-button {
 	position: relative;
     top: -0.6em;
     padding: 5px 13px;
-    border: 1px solid #929191;
+    border: 1px solid #009688;
     background: #fff;
-    color: #929191;
+    color: #009688;
     border-radius: 3px;
     margin:1px 0px;
+}
+.btn_tablas a{
+    color: #009688;
+}
+.btn_tablas:hover{
+    border: 1px solid #009688;
+    background: #009688;
+    transition: all 0.5s;
+}
+.btn_tablas:hover a{
+    color: #fff;
 }
 /*---------------------------------------------BOTONES TABLAS-------------------------------------------------*/
 .e2_comision {
@@ -129,4 +136,86 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
     background: #2980B9;
     transition: background 0.5s;
+}
+
+/*----------------------------------------------------USUARIO-----------------------------------------------------*/
+.card h4{
+  position: relative;
+    padding: 0;
+    margin: 0;
+    top: -7px;
+    color: #009688;
+}
+.padr_menu_datos{
+    padding-top: 12px;
+    position: relative;
+    display: flex;
+}
+.padr_menu_datos span{
+    padding: 5px 30px;
+    color: #929191;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+}
+.padr_menu_datos span:hover{
+    color: #009688;
+}
+.span_selec_1{
+    z-index: 1;
+    border-left: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #fff;
+}
+.padre_cont_datos {
+    position: relative;
+    top: -1px;
+    border: 1px solid #e0e0e0;
+    border-bottom: 1px solid #fff;
+}
+.padre_cont_datos section{
+    position: relative;
+    display: none;
+    left: 3%;
+    width: 94%;
+}
+#div_1_modal{
+    display: block;
+}
+/*--------------------------------------------------------BOTONES--------------------------------------------*/
+.botones_modal {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botones_modal button ,.botones_modal a {
+    margin-left: 5px;
+    padding: 5px 20px;
+    border-radius: 2px;
+    border: 1px solid #009688;
+    font-size: 14px;
+    color: #fff;
+    background: #009688;
+    cursor: pointer;
+}
+#bt_cancelar_modal {
+    border: 1px solid #c3c2c2;
+    color: #929191;
+    background: #fff;
+}
+.botones_modal button:hover {
+    background: #07675e;
+    border: 1px solid #07675e;
+    color: #fff;
+    transition: all 0.5s;
+}
+#bt_cancelar_modal:hover {
+    border: 1px solid #C0392B;
+    color: #fff;
+    background: #C0392B;
+    transition: all 0.5s;
 }
