@@ -38,6 +38,14 @@
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
+              <a href="<?php echo base_url();?>/Usuario" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Caja</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
               <a href="<?php echo base_url();?>Tipo_usuario" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Tipo Usuario</p>
@@ -107,6 +115,56 @@
               <a href="<?php echo base_url();?>Usuario" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Compra</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+          <i class="fab fa-cc-diners-club"></i>
+            <p>
+              Caja
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?php echo base_url();?>/Caja" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Abrir Caja</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?php echo base_url();?>Usuario" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Configuración</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+            <i class="fas fa-cart-arrow-down"></i>
+            <p>
+                Ventas
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?php echo base_url();?>Usuario" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Facturación</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?php echo base_url();?>Usuario" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Ventas Suspendidas</p>
               </a>
             </li>
           </ul>

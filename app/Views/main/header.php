@@ -39,6 +39,9 @@
 
   <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/themes/semantic.min.css">
   <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/alertify.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="<?php echo base_url();?>/public/plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>/public/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
   <script  src="<?php echo base_url()?>/public/alertifyJS/alertify.min.js"></script>
 
   <link rel="stylesheet" href="<?php echo base_url();?>/public/plugins/datatables-bs4/css/dataTables.bootstrap4.css">

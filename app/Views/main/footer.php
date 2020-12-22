@@ -50,6 +50,8 @@
 
 <script src="<?php echo base_url();?>/public/plugins/datatables/jquery.dataTables.js"></script>
 <script src="<?php echo base_url();?>/public/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<!-- Select2 -->
+<script src="<?php echo base_url();?>/public/plugins/select2/js/select2.full.min.js"></script>
 
 <script src="<?php echo base_url();?>/public/alerta/notify.js"></script>
 <script src="<?php echo base_url();?>/public/alerta/alerta.js"></script>
@@ -58,6 +60,26 @@
   $(function () {
     $("#example1").DataTable();
   });
+  
+   $(function () {
+     //Initialize Select2 Elements
+    $('.select2').select2()
+
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+    });
+  });
+ 
 </script>
 </body>
 </html>

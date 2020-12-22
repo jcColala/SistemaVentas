@@ -1,0 +1,55 @@
+CRITICAL - 2020-12-21 22:26:26 --> syntax error, unexpected '}', expecting ';' or ','
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Inicio')
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Inicio')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-21 22:26:26 --> Uncaught ErrorException: Undefined variable: viewFile in D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 308, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): include()
+#2 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-21 23:19:31 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+#0 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('caja/inicio_caj...', Array, true)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\Caja.php(15): view('caja/inicio_caj...', Array)
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Caja->index()
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-21 23:19:31 --> Uncaught ErrorException: Undefined variable: viewFile in D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 308, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): include()
+#2 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-21 23:47:34 --> Undefined property: stdClass::$idusuario
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\caja\inicio_caja.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 77, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('caja/inicio_caj...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\Caja.php(16): view('caja/inicio_caj...', Array)
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Caja->index()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-21 23:47:34 --> Uncaught ErrorException: Undefined variable: viewFile in D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 308, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): include()
+#2 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
