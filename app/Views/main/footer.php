@@ -58,9 +58,42 @@
 <!-- page script -->
 <script>
   $(function () {
+    var table= $('#exampleReport').DataTable({
+
+ 
+     
+        
+       
+        "language":{
+    "sProcessing":     "Procesando...",
+    "sLengthMenu":     "Mostrando &nbsp _MENU_ &nbsp registros por página",
+    "sZeroRecords":    "No se encontraron resultados",
+    "sEmptyTable":     "Ningún dato disponible en esta tabla",
+    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+    "sInfoPostFix":    "",
+    "sSearch":         "Buscar&nbsp",
+    "sUrl":            "",
+    "sInfoThousands":  ",",
+    "sLoadingRecords": "Cargando...",
+    "oPaginate": {
+        "sFirst":    "Primero",
+        "sLast":     "Último",
+        "sNext":     "Siguiente",
+        "sPrevious": "Anterior"
+    },
+    "oAria": {
+        "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+    }
+}
+
+  });
     $("#example1").DataTable();
   });
-  
+    $(document).on("click",".btn-remove-comprobante",function(){
+             $(this).closest("tr").remove();});
    $(function () {
      //Initialize Select2 Elements
     $('.select2').select2()
@@ -81,5 +114,8 @@
   });
  
 </script>
+<script src="<?php echo base_url(); ?>/public/myjs/caja.js"></script>
+<script src="<?php echo base_url(); ?>/public/myjs/validacion.js"></script>
+
 </body>
 </html>

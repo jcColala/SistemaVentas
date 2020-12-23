@@ -64,3 +64,146 @@ Stack trace:
   thrown
 #0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
 #1 {main}
+CRITICAL - 2020-12-22 11:01:55 --> Uncaught ErrorException: Undefined variable: viewFile in D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 308, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): include()
+#2 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-22 11:02:24 --> Uncaught ErrorException: Undefined variable: viewFile in D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 308, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): include()
+#2 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-22 11:03:07 --> Uncaught ErrorException: Undefined variable: viewFile in D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 308, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): include()
+#2 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-22 11:03:08 --> Uncaught ErrorException: Undefined variable: viewFile in D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 308, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): include()
+#2 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-22 11:03:33 --> Uncaught ErrorException: Undefined variable: viewFile in D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 308, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): include()
+#2 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-22 11:12:05 --> Uncaught ErrorException: Undefined variable: viewFile in D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 308, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): include()
+#2 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-22 11:15:23 --> Uncaught ErrorException: Undefined variable: viewFile in D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php:308
+Stack trace:
+#0 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 308, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(308): include()
+#2 D:\xampp\htdocs\SistemaVentas\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-22 11:21:13 --> Undefined variable: caja
+#0 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 12, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ConfiguracionCaja->index()
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConfiguracionCaja))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-22 12:37:16 --> Undefined variable: cajeros
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\caja\configuracion.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 73, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('caja/configurac...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(16): view('caja/configurac...')
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ConfiguracionCaja->index()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConfiguracionCaja))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-22 15:27:57 --> Cannot redeclare App\Models\CajaModel::getComprobante()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-22 18:13:17 --> Undefined property: stdClass::$datoscomp
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\caja\configuracion.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 81, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('caja/configurac...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(16): view('caja/configurac...', Array)
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ConfiguracionCaja->index()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConfiguracionCaja))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-22 18:44:08 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file
+#0 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('caja/configurac...', Array, true)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(16): view('caja/configurac...', Array)
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ConfiguracionCaja->index()
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConfiguracionCaja))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 18:44:41 --> Undefined variable: row
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\caja\configuracion.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 68, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('caja/configurac...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(16): view('caja/configurac...', Array)
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ConfiguracionCaja->index()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConfiguracionCaja))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-22 23:28:06 --> Array to string conversion
+#0 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp\\htdocs...', 48, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ConfiguracionCaja->updateConfig()
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConfiguracionCaja))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-22 23:43:56 --> Class 'App\Controllers\DetalleCajaModel' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ConfiguracionCaja->updateConfig()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConfiguracionCaja))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 23:44:41 --> Unknown column 'deleted_at' in 'field list'
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `detalle...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `detalle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `detalle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `detalle...', Array, false)
+#4 D:\xampp\htdocs\SistemaVentas\system\Model.php(973): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(53): CodeIgniter\Model->delete()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ConfiguracionCaja->updateConfig()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConfiguracionCaja))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
