@@ -38,17 +38,17 @@
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?php echo base_url();?>/Usuario" class="nav-link">
+              <a href="<?php echo base_url();?>/TipoUsuario" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Caja</p>
+                <p>Tipo Usuario</p>
               </a>
             </li>
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?php echo base_url();?>Tipo_usuario" class="nav-link">
+              <a href="<?php echo base_url();?>/Usuario" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Tipo Usuario</p>
+                <p>Caja</p>
               </a>
             </li>
           </ul>
@@ -71,7 +71,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?php echo base_url();?>Categoria" class="nav-link">
+              <a href="<?php echo base_url();?>/Categoria" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Categoría</p>
               </a>
@@ -79,7 +79,7 @@
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?php echo base_url();?>Marca" class="nav-link">
+              <a href="<?php echo base_url();?>/Marca" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Marca</p>
               </a>
@@ -87,7 +87,7 @@
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?php echo base_url();?>Producto" class="nav-link">
+              <a href="<?php echo base_url();?>/Producto" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Producto</p>
               </a>
@@ -104,7 +104,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?php echo base_url();?>Usuario" class="nav-link">
+              <a href="<?php echo base_url();?>/Proveedor" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Proveedor</p>
               </a>
@@ -121,7 +121,7 @@
         </li>
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link">
-          <i class="fab fa-cc-diners-club"></i>
+          <i class="nav-icon fab fa-cc-diners-club"></i>
             <p>
               Caja
               <i class="fas fa-angle-left right"></i>
@@ -146,7 +146,7 @@
         </li>
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link">
-            <i class="fas fa-cart-arrow-down"></i>
+            <i class="nav-icon fas fa-cart-arrow-down"></i>
             <p>
                 Ventas
               <i class="fas fa-angle-left right"></i>

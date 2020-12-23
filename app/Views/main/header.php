@@ -36,6 +36,8 @@
   <link rel="stylesheet" href="<?php echo base_url();?>/public/mycss/main.css">
 
   <script src="<?php echo base_url();?>/public/myjs/usuario.js"></script>
+  <script src="<?php echo base_url();?>/public/myjs/almacen.js"></script>
+  <script src="<?php echo base_url();?>/public/myjs/compras.js"></script>
 
   <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/themes/semantic.min.css">
   <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/alertify.min.css">

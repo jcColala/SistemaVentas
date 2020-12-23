@@ -37,9 +37,25 @@ class UsuarioModel extends Model{
                               ");
       return $mostrar->getResult();
     }
+    public function compro_dni($dni){
+      $db=db_connect();
+      $mostrar= $db->query('SELECT * FROM usuario where DNI="'.$dni.'"');
+
+      $row = $mostrar->getRow();
+      if (isset($row)){ return false;}
+      else{ return true;}
+    }
+    public function compro_u($login){
+      $db=db_connect();
+      $mostrar= $db->query('SELECT * FROM usuario where Login="'.$login.'"');
+
+      $row = $mostrar->getRow();
+      if (isset($row)){ return false;}
+      else{ return true;}
+    }
     public function taer($id){
       $db=db_connect();
-      $query= $db->query('SELECT * FROM usuario where Id='.$id.'');
-      return $query->getRow();
+      $mostrar= $db->query('SELECT * FROM usuario where Id='.$id.'');
+      return $mostrar->getRow();
     }
 }
