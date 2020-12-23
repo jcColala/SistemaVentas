@@ -9,7 +9,7 @@
           <span  onclick="seleccionar('div_1_modal','span_selec_1',2);" id="span_selec_1" class="span_selec_1">Datos B&aacute;sicos</span>
           <span  onclick="seleccionar('div_2_modal','span_selec_2',2);" id="span_selec_2" class="span_selec_2">Otros Datos</span>
         </section>
-
+ 
         <div class="padre_cont_datos" id="padre_cont_datos">
           <br>
           <form  action="<?php echo base_url();?>/Usuario/agregar" method="post" >
@@ -19,25 +19,25 @@
                <div class="form-row">
                   <div class="form-group col-md-4">
                     <label>Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $nombre?>" placeholder="Nombre" required/>
+                    <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $nombre?>" placeholder="Nombre" Required />
                   </div>
                   <div class="form-group col-md-5">
                     <label>Apellidos</label>
-                    <input type="text" class="form-control" id="apellidos" name="apellidos" value="<?php echo $apellidos?>" placeholder="Apellidos" required/>
+                    <input type="text" class="form-control" id="apellidos" name="apellidos" value="<?php echo $apellidos?>" placeholder="Apellidos" Required/>
                   </div>
                   <div class="form-group col-md-3">
                     <label>DNI</label>
-                    <input type="number" class="form-control" id="dni" name="dni" value="<?php echo $dni?>" placeholder="DNI"  maxlength="8" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required/>
+                    <input type="number" class="form-control" id="dni" name="dni" value="<?php echo $dni?>" placeholder="DNI"  maxlength="8" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" Required/>
                   </div>
                 </div> 
                 <div class="form-row">
                   <div class="form-group col-md-4">
                     <label>Usuario</label>
-                    <input type="text" class="form-control" id="usuario" name="usuario" value="<?php echo $usuario?>" placeholder="Usuario" required/>
+                    <input type="text" class="form-control" id="usuario" name="usuario" value="<?php echo $usuario?>" placeholder="Usuario" Required/>
                   </div>
                   <div class="form-group col-md-5">
                     <label>Clave</label>
-                    <input type="text" class="form-control" id="clave" name="clave" value="<?php echo $clave?>" placeholder="Password" required/>
+                    <input type="text" class="form-control" id="clave" name="clave" value="<?php echo $clave?>" placeholder="Password" Required/>
                   </div>
                   <div class="form-group col-md-3">
                     <label for="inputState">Tipo</label>
@@ -90,6 +90,15 @@
             </section>
             <section id="div_3_modal" class="div_3_modal">
               <a href="#">d</a>
+            </section>
+            <section style="display: block;" >
+              <?php if(!empty($_SESSION['alert'])){?>
+                <p class="mb-2">
+                  <font color="red">
+                      <?php echo($_SESSION['alert'])?>
+                    </font>
+                </p>
+               <?php ;}?>
             </section>
             <br>
             <div class="botones_modal">

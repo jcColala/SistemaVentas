@@ -3,10 +3,10 @@
   <!-- Content Header (Page header) -->
   <div class="content-header">
 
-          <div class="card" id="card" > 
+          <div class="card" id="card" >  
 
               <div class="card-header" id="card-header">
-               <button type="button" class="btn_tablas"><a href="<?php echo base_url();?>/Usuario/agregarViews"><span class="icon-person_add"> </span>Nuevo Usuario</a></button>
+               <button type="button" class="btn_tablas" onclick="window.location='<?php echo base_url();?>/Usuario/agregarViews'"><span class="icon-person_add"> </span>Nuevo Usuario</a></button>
               </div>
             
               <div class="card-body">
@@ -39,7 +39,7 @@
                           <td class="centrar"><?php echo $estado;?></td>
                           <td>
                             <div class="e2_comision">
-                                <button onclick="window.location='<?php echo base_url();?>/Usuario/agregarViews?id=<?php echo $linea->Id?>'" class="icon-mode_edit editar" title="Editar" ></button>
+                                <button onclick="window.location='<?php echo base_url();?>/Usuario/agregarViews?id=<?php echo base64_encode($linea->Id);?>'" class="icon-mode_edit editar" title="Editar" ></button>
                                 <?php if ($linea->deleted_at==Null){?>    
                                 <button  onclick="e2_usuario('eliminar',<?php echo $linea->Id; ?>);" class="icon-delete_forever eliminar" title="Eliminar"></button>
                                 <?php }else{?>

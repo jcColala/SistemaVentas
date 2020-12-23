@@ -2,14 +2,14 @@
 use App\Models\UsuarioModel;
 class Usuario extends BaseController
 { 
-	public function index(){
+	public function index(){ 
 		$session = \Config\Services::session();
 		if($session->get('login')==NULL){
 			return redirect()->to(site_url("Login"));
 		}
 		else{
 			$usuario=new UsuarioModel;
-			$data= array('usuario' =>$usuario->mostrar(),'tipo'=>$usuario->mostrar_tipo());
+			$data= array('usuario' =>$usuario->mostrar());
 
 			echo view('main/header.php');
 	        echo view('main/menu.php');
@@ -21,7 +21,7 @@ class Usuario extends BaseController
 		$usuario=new UsuarioModel;
 		$request=\Config\Services::request();
 
-		if (!$request->getPostGet("id")){
+		if (!base64_decode($request->getPostGet("id"))){
 			$data=array(
 				"id"=>'',
 				"nombre"=>'',
@@ -40,7 +40,7 @@ class Usuario extends BaseController
 			);
 		}
 		else{
-			$id=$request->getPostGet("id");
+			$id=base64_decode($request->getPostGet("id"));
 			$traer=$usuario->taer($id);
 			$data=array(
 				"id"=>$traer->Id,
@@ -68,6 +68,7 @@ class Usuario extends BaseController
 	public function agregar(){
 		$usuario=new UsuarioModel;
 		$request=\Config\Services::request();
+		$id=$request->getPostGet("id");
 		$data=[
 				'Id_Tipo'=> $request->getPostGet("mtipo"),
 				'Nombre'=> $request->getPostGet("nombre"),
@@ -84,7 +85,31 @@ class Usuario extends BaseController
 				'Clave'=> $request->getPostGet("clave"),
 				'Nombre_Foto'=>""
 		];
-		$usuario->insert($data);
+		if ($request->getPostGet("nombre")=='' or $request->getPostGet("apellidos")=='' or $request->getPostGet("dni")=='' or $request->getPostGet("usuario")=='' or $request->getPostGet("clave")=='' or $request->getPostGet("mtipo")=='') {
+				$alert="Es necesario ingresar nombre, apellidos, DNI, usuario, clave y tipo, son campos obligatorios";
+				$this->session->setFlashdata('alert', $alert);
+				return " <script type='text/javascript'>window.history.back();</script>";
+		}
+		if (strlen($request->getPostGet("dni"))!=8) {
+				$alert="Ingrese un DNI correcto";
+				$this->session->setFlashdata('alert', $alert);
+				return " <script type='text/javascript'>window.history.back();</script>";
+		}
+		if ($id=='') {
+			if($usuario->compro_dni($request->getPostGet("dni")) == false){
+				$alert="¡ El DNI ya existe !";
+				$this->session->setFlashdata('alert', $alert);
+				return " <script type='text/javascript'>window.history.back();</script>";
+			}
+			if($usuario->compro_u($request->getPostGet("usuario")) == false){
+				$alert="¡ Usuario ya existente, escoge otro nombre con el cual loguearte !";
+				$this->session->setFlashdata('alert', $alert);
+				return " <script type='text/javascript'>window.history.back();</script>";
+			}
+			$usuario->insert($data);
+		}
+		else{ $usuario->update($id, $data);}
+		return redirect()->to(site_url("Usuario"));
 
 	}
 	public function activar_eliminar(){
@@ -97,10 +122,11 @@ class Usuario extends BaseController
 			    'deleted_at' => NULL,
 			];
 			$usuario->update($id, $data);
+			echo json_encode('activado');
 		}
 		else{
 			$usuario->delete($id);
+			echo json_encode('eliminado');
 		}
-		echo json_encode($op);
 	}
 }

@@ -82,22 +82,17 @@ input[type=number]::-webkit-outer-spin-button {
 .btn_tablas{
 	position: relative;
     top: -0.6em;
-    padding: 5px 13px;
+    padding: 6px 13px;
     border: 1px solid #009688;
     background: #fff;
     color: #009688;
     border-radius: 3px;
-    margin:1px 0px;
-}
-.btn_tablas a{
-    color: #009688;
+    margin:0px 0px;
 }
 .btn_tablas:hover{
     border: 1px solid #009688;
     background: #009688;
     transition: all 0.5s;
-}
-.btn_tablas:hover a{
     color: #fff;
 }
 /*---------------------------------------------BOTONES TABLAS-------------------------------------------------*/
@@ -108,7 +103,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .e2_comision button {
     border: none;
-    margin-left: -4px;
+    margin-left: -2px;
     margin-top: 1px;
     color: #009688;
     background: #fff;
@@ -194,10 +189,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .botones_modal button ,.botones_modal a {
     margin-left: 5px;
-    padding: 5px 20px;
+    padding: 6px 20px;
     border-radius: 2px;
     border: 1px solid #009688;
-    font-size: 14px;
+    font-size: 15px;
     color: #fff;
     background: #009688;
     cursor: pointer;
@@ -218,4 +213,28 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
     background: #C0392B;
     transition: all 0.5s;
+}
+/*---------------------------------------ALERTAS-------------------------------------------------*/
+.swal-button{
+    background: #009688;
+}
+.swal-button:not([disabled]):hover {
+   background: #07675e;
+}
+.swal-button--confirm:focus {
+    outline: none;
+    box-shadow: none;
+}
+.swal-button--cancel {
+    color: #000;
+    background: #fff;
+}
+.swal-button--cancel:not([disabled]):hover {
+    background-color: #e8e8e8;
+}
+.swal-button--danger {
+    background-color: #e64942;
+}
+.swal-button--danger:not([disabled]):hover {
+    background-color: #df4740;
 }
