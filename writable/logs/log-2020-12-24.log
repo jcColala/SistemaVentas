@@ -8,3 +8,14 @@ CRITICAL - 2020-12-24 11:52:12 --> Undefined index: nombre
 #6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2020-12-24 20:25:21 --> Table 'ventas_database.combrobantes' doesn't exist
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CajaModel.php(39): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(14): App\Models\CajaModel->getComprobante()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ConfiguracionCaja->index()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConfiguracionCaja))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
