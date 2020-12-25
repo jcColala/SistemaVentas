@@ -1,3 +1,451 @@
+<<<<<<< HEAD
+CRITICAL - 2020-12-23 12:40:46 --> syntax error, unexpected '$stock' (T_VARIABLE), expecting ']'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Producto')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Producto')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 12:40:50 --> syntax error, unexpected '$stock' (T_VARIABLE), expecting ']'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Producto/agrega...')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Producto/agrega...')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 12:41:01 --> syntax error, unexpected '$stock' (T_VARIABLE), expecting ']'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Producto')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Producto')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 12:41:02 --> syntax error, unexpected '$stock' (T_VARIABLE), expecting ']'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Producto')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Producto')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 12:41:12 --> syntax error, unexpected '$stock' (T_VARIABLE), expecting ']'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Producto')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Producto')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 12:41:13 --> syntax error, unexpected '$stock' (T_VARIABLE), expecting ']'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Producto')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Producto')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 12:41:20 --> syntax error, unexpected '$stock' (T_VARIABLE), expecting ']'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Producto')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Producto')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 12:41:39 --> syntax error, unexpected '$stock' (T_VARIABLE), expecting ']'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Producto')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Producto')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 12:41:50 --> syntax error, unexpected '$stock' (T_VARIABLE), expecting ']'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Producto')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Producto')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 12:42:53 --> syntax error, unexpected '$stock' (T_VARIABLE), expecting ']'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Producto')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Producto')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 12:43:20 --> syntax error, unexpected '$stock' (T_VARIABLE), expecting ']'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Producto')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Producto')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 12:43:25 --> syntax error, unexpected '$stock' (T_VARIABLE), expecting ']'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Producto')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Producto')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 12:44:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 = '', `updated_at` = '2020-12-23 12:44:36'
+WHERE `producto`.`Id` IN ('1')' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `product...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp\htdocs\SistemaVentas\system\Model.php(889): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\SistemaVentas\app\Controllers\Producto.php(93): CodeIgniter\Model->update(Array, Array)
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Producto->agregar()
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#8 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-23 12:45:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 = '', `updated_at` = '2020-12-23 12:45:54'
+WHERE `producto`.`Id` IN ('1')' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `product...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp\htdocs\SistemaVentas\system\Model.php(889): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\SistemaVentas\app\Controllers\Producto.php(93): CodeIgniter\Model->update(Array, Array)
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Producto->agregar()
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#8 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-23 12:46:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 = '', `updated_at` = '2020-12-23 12:46:05'
+WHERE `producto`.`Id` IN ('1')' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `product...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp\htdocs\SistemaVentas\system\Model.php(889): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\SistemaVentas\app\Controllers\Producto.php(93): CodeIgniter\Model->update(Array, Array)
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Producto->agregar()
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#8 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-23 12:46:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 = ' ', `updated_at` = '2020-12-23 12:46:31'
+WHERE `producto`.`Id` IN ('1')' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `product...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp\htdocs\SistemaVentas\system\Model.php(889): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\SistemaVentas\app\Controllers\Producto.php(93): CodeIgniter\Model->update(Array, Array)
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Producto->agregar()
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#8 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-23 12:50:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 = ' ', `updated_at` = '2020-12-23 12:50:29'
+WHERE `producto`.`Id` IN ('2')' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `product...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp\htdocs\SistemaVentas\system\Model.php(889): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\SistemaVentas\app\Controllers\Producto.php(94): CodeIgniter\Model->update(Array, Array)
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Producto->agregar()
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#8 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-23 12:54:28 --> file_get_contents(): read of 8192 bytes failed with errno=13 Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'file_get_conten...', 'C:\\xampp\\htdocs...', 455, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\Debug\Toolbar.php(455): file_get_contents('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#3 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#4 C:\xampp\htdocs\SistemaVentas\system\Events\Events.php(188): call_user_func(Object(Closure))
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#6 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-23 12:56:43 --> Class 'App\Models\CompraModel' not found
+#0 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->index()
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-23 12:57:02 --> Class 'App\Models\CompraModel' not found
+#0 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->index()
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-23 13:00:10 --> Class 'App\Models\CompraModel' not found
+#0 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->index()
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-23 13:00:11 --> Class 'App\Models\CompraModel' not found
+#0 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->index()
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-23 13:00:46 --> Class 'App\Models\CompraModel' not found
+#0 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->index()
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-23 13:00:47 --> Class 'App\Models\CompraModel' not found
+#0 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->index()
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-23 17:18:18 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(39): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:27:47 --> syntax error, unexpected '$compra' (T_VARIABLE), expecting ')'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregarV...')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregarV...')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 17:27:59 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(42): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:28:00 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(42): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:28:01 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(42): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:30:05 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(45): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:30:06 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(45): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:30:07 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(45): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:31:57 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(45): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:33:34 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(45): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:33:35 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(45): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:33:44 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(45): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:33:44 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(45): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:33:45 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(45): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:33:45 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(45): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:38:38 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(41): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:38:38 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(41): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:51:50 --> Undefined variable: cajeros
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\compras\compra_add.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('compras/compra_...', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(47): view('compras/compra_...', Array)
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:53:01 --> Undefined property: stdClass::$Idusuario
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\compras\compra_add.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('compras/compra_...', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(47): view('compras/compra_...', Array)
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:53:03 --> Undefined property: stdClass::$Idusuario
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\compras\compra_add.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('compras/compra_...', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(47): view('compras/compra_...', Array)
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:56:48 --> Undefined property: stdClass::$Id_comprobante
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\compras\compra_add.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('compras/compra_...', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(47): view('compras/compra_...', Array)
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 17:56:49 --> Undefined property: stdClass::$Id_comprobante
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\compras\compra_add.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('compras/compra_...', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(47): view('compras/compra_...', Array)
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 18:11:08 --> syntax error, unexpected '"proveedor"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregarV...')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregarV...')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-23 18:34:57 --> syntax error, unexpected 'endif' (T_ENDIF)
+#0 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('compras/compra_...', Array, true)
+#1 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(50): view('compras/compra_...', Array)
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-23 18:43:04 --> Undefined variable: direccion
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\compras\compra_add.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 43, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('compras/compra_...', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(50): view('compras/compra_...', Array)
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-23 20:18:04 --> Undefined property: stdClass::$Categoria
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\compras\compra_add.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('compras/compra_...', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(50): view('compras/compra_...', Array)
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+=======
 CRITICAL - 2020-12-23 10:31:06 --> Trying to access array offset on value of type int
 #0 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 60, Array)
 #1 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(54): App\Controllers\ConfiguracionCaja->addDetalle_comprobante(Array, Array, Array, 1)
@@ -132,6 +580,7 @@ CRITICAL - 2020-12-23 12:54:36 --> count(): Parameter must be an array or an obj
 #5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
 #7 {main}
+<<<<<<< HEAD
 CRITICAL - 2020-12-23 16:35:46 --> Table 'ventas_database.proveedor' doesn't exist
 #0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
 #1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
@@ -182,3 +631,6 @@ CRITICAL - 2020-12-23 23:54:28 --> Cannot add or update a child row: a foreign k
 #8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
 #10 {main}
+=======
+>>>>>>> be00966d2c50287abecf0b901f56671d46dd3ce2
+>>>>>>> 65f16e4e4d910f5a319203e4441a9bf2926993ee

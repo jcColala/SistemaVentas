@@ -20,9 +20,6 @@
                     <input type="text" class="form-control" id="descripcion" name="descripcion" value="<?php echo $descripcion?>" placeholder="Descripci&oacute;n" Required />
                   </div>
             </section>
-            <section id="div_3_modal" class="div_3_modal">
-              <a href="#">d</a>
-            </section>
             <section style="display: block;" >
               <?php if(!empty($_SESSION['alert'])){?>
                 <p class="mb-2">
