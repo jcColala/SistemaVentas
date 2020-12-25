@@ -34,7 +34,14 @@ class CajaModel extends Model{
                               ");
       return $mostrar->getResult();
     }
-    public function taer($id){
+    public function getComprobante(){
+       $db=db_connect();
+      $mostrar=$db->query("
+                           SELECT * FROM combrobantes where deleted_at is null
+                              ");
+      return $mostrar->getResult();
+    }
+    public function rec($id){
       $db=db_connect();
       $query= $db->query('SELECT * FROM usuario where Id='.$id.'');
       return $query->getRow();

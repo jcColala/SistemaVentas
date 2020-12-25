@@ -64,7 +64,7 @@
         </button>
       </div>
       <div class="modal-body">
-       <form   action="<?php echo base_url();?>/Caja/add" method="post" >
+       <form   action="<?php echo base_url();?>/Caja/updateConfig" method="post" >
           <div class="form-group row">
             <label for="inputPassword" class="col-sm-4 col-form-label">Monto Inicial</label>
               <div class="col-sm-8">
