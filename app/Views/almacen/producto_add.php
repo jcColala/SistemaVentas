@@ -32,7 +32,7 @@
                   </div>
                   <div class="form-group col-md-4">
                     <label>Stock</label>
-                    <input type="number" class="form-control" id="stock" name="stock" value="<?php echo $stock?>" placeholder="0" Required/>
+                    <input type="number" readonly=»readonly» class="form-control" id="stock" name="stock" value="<?php echo $stock?>" placeholder="0"/>
                   </div>
                   <div class="form-group col-md-4">
                     <label for="inputState">Categor&iacute;a</label>
@@ -48,9 +48,6 @@
                     </select>
                   </div>
                 </div>  
-            </section>
-            <section id="div_3_modal" class="div_3_modal">
-              <a href="#">d</a>
             </section>
             <section style="display: block;" >
               <?php if(!empty($_SESSION['alert'])){?>

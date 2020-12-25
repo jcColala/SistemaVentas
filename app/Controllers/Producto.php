@@ -57,24 +57,25 @@ class Producto extends BaseController
 		$producto=new ProductoModel;
 		$request=\Config\Services::request();
 		$id=$request->getPostGet("id");
+
 		$data=[
 				'CodigoBarras'=> $request->getPostGet("codigobrr"),
 				'Descripcion'=> $request->getPostGet("descripcion"),
 				'IdCategoria'=> $request->getPostGet("idcategoria"),
 				'PrecioCompra'=> '',
-				'PrecioVenta'=> $request->getPostGet("precioventa"),
-				'Stock'=> $request->getPostGet("stock")
+				'PrecioVenta'=> $request->getPostGet("precioventa")
+				
 		];
-		if ($request->getPostGet("codigobrr")=='' or $request->getPostGet("descripcion")=='' or $request->getPostGet("precioventa")=='' or $request->getPostGet("stock")=='' or $request->getPostGet("idcategoria")=='' ) {
-				$alert="Es necesario ingresar el código de barras, descripción, precio venta, Stock y la categoría, son campos obligatorios";
+		if ($request->getPostGet("codigobrr")=='' or $request->getPostGet("descripcion")=='' or $request->getPostGet("precioventa")=='' /*or $request->getPostGet("stock")==''*/ or $request->getPostGet("idcategoria")=='' ) {
+				$alert="Es necesario ingresar el código de barras, descripción, precio venta y la categoría, son campos obligatorios";
 				$this->session->setFlashdata('alert', $alert);
 				return " <script type='text/javascript'>window.history.back();</script>";
 		}
-		if ($request->getPostGet("precioventa")<=0 or $request->getPostGet("stock")<=0) {
+		/*if ($request->getPostGet("precioventa")<=0 or $request->getPostGet("stock")<=0) {
 			$alert="Precio venta y Stock no pueden ser menor o igual a cero";
 			$this->session->setFlashdata('alert', $alert);
 			return " <script type='text/javascript'>window.history.back();</script>";
-		}
+		}*/
 		if ($id=='') {
 			if($producto->compro_pro($request->getPostGet("codigobrr"),$request->getPostGet("descripcion")) == false){
 				$alert="¡ El Producto ya existe!";
