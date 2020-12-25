@@ -96,6 +96,10 @@ function procesar_caja_cofig(){
 		alertify.error('Campo requerido');
 		return false;
 	}
+	if(nFilas<2){
+		alertify.error('Campo requerido');
+		return false;
+	}
                $.ajax({ 
 			      type:'POST',
 			      url: "ConfiguracionCaja/updateConfig",

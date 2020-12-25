@@ -132,3 +132,53 @@ CRITICAL - 2020-12-23 12:54:36 --> count(): Parameter must be an array or an obj
 #5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2020-12-23 16:35:46 --> Table 'ventas_database.proveedor' doesn't exist
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Models\ProveedorModel.php(25): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\Proveedor.php(12): App\Models\ProveedorModel->mostrar()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Proveedor->index()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-23 23:54:17 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\xampp\\htdocs...', 60, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(60): count(NULL)
+#2 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(55): App\Controllers\ConfiguracionCaja->addDetalle_comprobante(NULL, NULL, NULL, 1)
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ConfiguracionCaja->updateConfig()
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConfiguracionCaja))
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-23 23:54:19 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\xampp\\htdocs...', 60, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(60): count(NULL)
+#2 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(55): App\Controllers\ConfiguracionCaja->addDetalle_comprobante(NULL, NULL, NULL, 1)
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ConfiguracionCaja->updateConfig()
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConfiguracionCaja))
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-23 23:54:20 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\xampp\\htdocs...', 60, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(60): count(NULL)
+#2 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(55): App\Controllers\ConfiguracionCaja->addDetalle_comprobante(NULL, NULL, NULL, 1)
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ConfiguracionCaja->updateConfig()
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConfiguracionCaja))
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-23 23:54:28 --> Cannot add or update a child row: a foreign key constraint fails (`ventas_database`.`cajas`, CONSTRAINT `cajas_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`Id`))
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `cajas` ...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cajas` ...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cajas` ...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `cajas` ...', Array, false)
+#4 D:\xampp\htdocs\SistemaVentas\system\Model.php(889): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\ConfiguracionCaja.php(53): CodeIgniter\Model->update(NULL, Array)
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ConfiguracionCaja->updateConfig()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConfiguracionCaja))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}

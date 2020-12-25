@@ -37,7 +37,7 @@ class CajaModel extends Model{
     public function getComprobante(){
        $db=db_connect();
       $mostrar=$db->query("
-                           SELECT * FROM combrobantes where deleted_at is null
+                           SELECT * FROM comprobantes where deleted_at is null
                               ");
       return $mostrar->getResult();
     }

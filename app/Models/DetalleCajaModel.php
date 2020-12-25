@@ -27,7 +27,7 @@ class DetalleCajaModel extends Model{
   	}
     function getDetalleCaja(){
       $db=db_connect();
-      $mostrar=$db->query("SELECT * FROM detalle_caja_comprobante INNER JOIN combrobantes ON combrobantes.id_comprobante=detalle_caja_comprobante.idcomprobante where detalle_caja_comprobante.idcaja=1");
+      $mostrar=$db->query("SELECT * FROM detalle_caja_comprobante INNER JOIN comprobantes ON comprobantes.id_comprobante=detalle_caja_comprobante.idcomprobante where detalle_caja_comprobante.idcaja=1");
       return $mostrar->getResult();
     }
 }
