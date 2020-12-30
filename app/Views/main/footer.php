@@ -116,6 +116,7 @@
 </script>
 <script src="<?php echo base_url(); ?>/public/myjs/caja.js"></script>
 <script src="<?php echo base_url(); ?>/public/myjs/validacion.js"></script>
-
+<script src="<?php echo base_url(); ?>/public/myjs/ventas.js"></script>
+<script src="<?php echo base_url(); ?>/public/myjs/clientes.js"></script>
 </body>
 </html>

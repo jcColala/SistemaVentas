@@ -162,6 +162,14 @@
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
+              <a href="<?php echo base_url();?>/ClientesController" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>CLIENTES</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
               <a href="<?php echo base_url();?>Usuario" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Ventas Suspendidas</p>

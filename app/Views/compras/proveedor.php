@@ -37,7 +37,7 @@
                           <td class="centrar"><?php echo $estado;?></td>
                           <td>
                             <div class="e2_comision">
-                                <button onclick="window.location='<?php echo base_url();?>/Proveedor/agregarViews?id=<?php echo base64_encode($linea->Id);?>'" class="icon-mode_edit editar" title="Editar" ></button>
+                                <button onclick="window.location='<?php echo base_url();?>/ClientesController/agregarViews?id=<?php echo base64_encode($linea->Id);?>'" class="icon-mode_edit editar" title="Editar" ></button>
                                 <?php if ($linea->deleted_at==Null){?>    
                                 <button  onclick="e2_proveedor('eliminar',<?php echo $linea->Id; ?>);" class="icon-delete_forever eliminar" title="Eliminar"></button>
                                 <?php }else{?>

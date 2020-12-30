@@ -1,0 +1,126 @@
+CRITICAL - 2020-12-26 02:38:40 --> syntax error, unexpected 'use' (T_USE)
+#0 D:\xampp\htdocs\SistemaVentas\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(6): spl_autoload_call('App\\Controllers...')
+#4 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-26 02:39:01 --> Trait 'App\Controllers\App\Models\ClienteModel' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-26 02:39:14 --> Class 'App\Controllers\ClienteModel' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->index()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-26 02:42:03 --> Table 'ventas_database.cliente' doesn't exist
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Models\ClienteModel.php(25): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(17): App\Models\ClienteModel->getCliente()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->index()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-26 02:49:00 --> Undefined property: stdClass::$apellidos
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\ventas\facturacion.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 40, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('ventas/facturac...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(21): view('ventas/facturac...', Array)
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->index()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-26 03:59:16 --> Undefined variable: data
+#0 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 15, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->index()
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-26 04:12:30 --> Call to undefined method App\Models\ClienteModel::ClienteModel
+#0 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(12): CodeIgniter\Model->__call('ClienteModel', Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->index()
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-26 05:09:46 --> Undefined property: stdClass::$idusuario
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\cliente\listado_cliente.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 37, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('cliente/listado...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(15): view('cliente/listado...', Array)
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->index()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-26 11:24:28 --> Undefined variable: usuario
+#0 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 32, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->agregarViews()
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-26 11:25:30 --> Invalid file: usuario/cliente_dd.php
+#0 D:\xampp\htdocs\SistemaVentas\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/cliente...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('usuario/cliente...', Array, true)
+#2 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(58): view('usuario/cliente...', Array)
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->agregarViews()
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-26 11:27:53 --> Invalid file: usuario/cliente_dd.php
+#0 D:\xampp\htdocs\SistemaVentas\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/cliente...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('usuario/cliente...', Array, true)
+#2 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(58): view('usuario/cliente...', Array)
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->agregarViews()
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-26 11:28:28 --> Invalid file: usuario/cliente_add.php
+#0 D:\xampp\htdocs\SistemaVentas\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/cliente...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('usuario/cliente...', Array, true)
+#2 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(58): view('usuario/cliente...', Array)
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->agregarViews()
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-26 11:28:36 --> Invalid file: usuario/cliente_add.php
+#0 D:\xampp\htdocs\SistemaVentas\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/cliente...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('usuario/cliente...', Array, true)
+#2 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(58): view('usuario/cliente...', Array)
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->agregarViews()
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-26 11:34:52 --> Undefined variable: usuario
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\cliente\cliente_add.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 34, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('cliente/cliente...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(58): view('cliente/cliente...', Array)
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->agregarViews()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-26 12:33:39 --> syntax error, unexpected ';', expecting ')'
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('ClientesControl...')
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('ClientesControl...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
