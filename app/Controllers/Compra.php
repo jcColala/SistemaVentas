@@ -28,7 +28,7 @@ class Compra extends BaseController
 				"serie"=>'',
 				"idcompro"=>'',
 				"idproveedor"=>'',
-				"comprobante"=>$compra->comprobante(),
+				"comprobante"=>'',
 				"producto"=>$compra->producto(),
 				"proveedor"=>$compra->proveedor()
 			);
@@ -41,7 +41,7 @@ class Compra extends BaseController
 				"numero"=>'',
 				"serie"=>'',
 				"idcompro"=>'',
-				"comprobante"=>$compra->comprobante()
+				"comprobante"=>''
 			); 
 		}
 
@@ -51,38 +51,35 @@ class Compra extends BaseController
 	    echo view('main/footer.php'); 
 	}
 	public function agregar(){
-		$marca=new MarcaModel;
+		$compra=new CompraModel;
 		$request=\Config\Services::request();
-		$id=$request->getPostGet("id");
-		$data=[
-				'Descripcion'=> $request->getPostGet("descripcion")
+		$session = \Config\Services::session();
+
+		$lista = $_REQUEST['data_detalle'];
+		$lista = json_decode($lista);
+		$data= [
+			'IdProveedor' => $_POST['idprovedor'],
+			'IdUsuario' => $session->get('id'),
+			'Comprobante' => $_POST['compro'],
+			'SerieComprobante' => $_POST['serie'],
+			'NumComprobante' => $_POST['numero'],
+			'Fecha' => date("Y-m-d"),
+			'Importe' => $_POST['totalC']
 		];
-		if ($request->getPostGet("descripcion")=='') {
-				$alert="Es necesario ingresar la descripción";
-				$this->session->setFlashdata('alert', $alert);
-				return " <script type='text/javascript'>window.history.back();</script>";
+		$compra->insert($data);
+		$idcompra=$compra->idcompra();
+		$idcompra=$idcompra->Id;
+
+		foreach($lista  as $val){
+			$subtotal = $val->cant*$val->precioc;
+			$compra->insertar_detalle($idcompra,$val->id,$val->cant,$val->precioc,$subtotal);
+			$compra->cambio_stock($val->id,$val->cant);
 		}
-		if ($id=='') {
-			if($marca->compro_d($request->getPostGet("descripcion")) == false){
-				$alert="¡ La marca ya existe !";
-				$this->session->setFlashdata('alert', $alert);
-				return " <script type='text/javascript'>window.history.back();</script>";
-			}
-			$marca->insert($data);
-		}
-		else{
-			/*if($categoria->compro_d2($request->getPostGet("descripcion"),$request->getPostGet("id")) == false){
-				$alert="¡ La descripción ya existe !";
-				$this->session->setFlashdata('alert', $alert);
-				return " <script type='text/javascript'>window.history.back();</script>";
-			}*/ 
-			$marca->update($id, $data);
-		}
-		return redirect()->to(site_url("Marca"));
+		echo json_encode('Insertada');
 
 	}
 	public function activar_eliminar(){
-		$request=\Config\Services::request();
+		/*$request=\Config\Services::request();
 		$marca=new MarcaModel;
 		$id=$request->getPostGet('id');
 		$op=$request->getPostGet('op');
@@ -96,6 +93,6 @@ class Compra extends BaseController
 		else{
 			$marca->delete($id);
 			echo json_encode('elimino');
-		}
+		}*/
 	}
 }

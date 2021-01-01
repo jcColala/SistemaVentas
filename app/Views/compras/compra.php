@@ -28,7 +28,7 @@
                           <td class="centrar"><?php echo $n;?></td>
                           <td><?php echo $linea->IdProveedor;?></td>
                           <td><?php echo $linea->Fecha;?></td>
-                          <td><?php echo $linea->Total;?></td>
+                          <td><?php echo $linea->Importe;?></td>
                           <?php  
                               if ($linea->deleted_at==Null){ $estado="Activo";}
                               else{$estado="Inactivo";}

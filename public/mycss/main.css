@@ -291,10 +291,33 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 3px 8px;
     border-radius: 4px;
     font-size: 20px;
+    cursor: pointer;
 }
 .elim_dcompra:hover{
     background:#da0f0f;
 }
-=======
->>>>>>> 1fac51c0726fe7d97c50f69064fd6d084340142b
->>>>>>> be00966d2c50287abecf0b901f56671d46dd3ce2
+.botones_modal img{
+    position: relative;
+    height: 140px;
+    width: 60%;
+    left: 1%;
+}
+.det_c_input{
+    border: 1px solid #ced4da;
+    width: 90%;
+    text-align: center;
+    border-radius: 4px;
+}
+.td_det_compra{
+    margin: 0;
+    padding: 10px 0px;
+    width: 15%;
+    text-align: center;
+}
+.det_c_input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: inset 0 0 0 transparent,none;
+}

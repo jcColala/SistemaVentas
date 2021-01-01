@@ -1,0 +1,549 @@
+CRITICAL - 2020-12-28 12:24:39 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(48): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-28 12:36:02 --> syntax error, unexpected '$session' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregarV...')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregarV...')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:36:11 --> syntax error, unexpected '$session' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregarV...')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregarV...')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:51:21 --> syntax error, unexpected 'var' (T_VAR)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:51:40 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:52:20 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:52:28 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:52:38 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:53:53 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:54:23 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:54:35 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:54:53 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:55:06 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:55:40 --> syntax error, unexpected '$id_dc' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:55:53 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:59:19 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:59:34 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 12:59:43 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:01:02 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:01:22 --> Trying to get property 'id_dc' of non-object
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:01:52 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:02:09 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:02:22 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:02:28 --> syntax error, unexpected ']', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:03:43 --> syntax error, unexpected ']', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:03:50 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:03:56 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:04:05 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:04:38 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:04:50 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:05:22 --> syntax error, unexpected ']', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:13:25 --> syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:13:48 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:15:00 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:16:50 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 63, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:17:42 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:18:42 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:20:44 --> syntax error, unexpected ']', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:20:51 --> syntax error, unexpected ']', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:21:06 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:21:28 --> syntax error, unexpected ']', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:23:03 --> syntax error, unexpected ']', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:23:59 --> syntax error, unexpected 'lista' (T_STRING), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:24:32 --> syntax error, unexpected ']', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:25:30 --> syntax error, unexpected ']', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:26:42 --> syntax error, unexpected ']', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:26:57 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:29:26 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:29:37 --> syntax error, unexpected ']', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:35:12 --> syntax error, unexpected '1' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:35:22 --> Undefined offset: 0
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:35:31 --> Undefined offset: 0
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:35:46 --> syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:36:02 --> Undefined offset: 0
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:36:11 --> Trying to get property 'uno' of non-object
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:36:18 --> syntax error, unexpected ']', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:36:29 --> Undefined offset: 0
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:37:11 --> Undefined offset: 0
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:37:30 --> syntax error, unexpected '$array' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:41:37 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:41:54 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:42:19 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:42:31 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:43:11 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:43:26 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:43:38 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:43:50 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:44:08 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:45:30 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:46:53 --> syntax error, unexpected 'json_encode' (T_STRING), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:47:07 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:48:13 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:49:08 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:49:24 --> Array to string conversion
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:52:05 --> Undefined variable: dato
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:52:57 --> syntax error, unexpected 'var' (T_VAR)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:53:04 --> syntax error, unexpected '$dato' (T_VARIABLE)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-28 13:53:43 --> syntax error, unexpected '$dato' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
