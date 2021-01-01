@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2020-12-28 12:24:39 --> Undefined index: nombre
 #0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
 #1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
@@ -547,3 +548,52 @@ CRITICAL - 2020-12-28 13:53:43 --> syntax error, unexpected '$dato' (T_VARIABLE)
 #3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
 #5 {main}
+=======
+CRITICAL - 2020-12-28 18:19:51 --> Call to undefined method CodeIgniter\Router\RouteCollection::resourse()
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(780): require()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-28 22:34:42 --> Invalid argument supplied for foreach()
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\cliente\cliente_add.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'D:\\xampp\\htdocs...', 37, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('cliente/cliente...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(58): view('cliente/cliente...', Array)
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->agregarViews()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-28 22:56:28 --> Unknown column 'Id' in 'where clause'
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT * FROM c...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Models\ClienteModel.php(39): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(37): App\Models\ClienteModel->getClienteU('1')
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->agregarViews()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-28 23:04:10 --> Undefined variable: dni_ruc
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\cliente\cliente_add.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 45, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('cliente/cliente...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(52): view('cliente/cliente...', Array)
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->agregarViews()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-28 23:04:45 --> Undefined variable: dni_ruc
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\cliente\cliente_add.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 45, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('cliente/cliente...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(53): view('cliente/cliente...', Array)
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->agregarViews()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+>>>>>>> 6a7d06bb5208eed73ed097293e31f9090eab0a42

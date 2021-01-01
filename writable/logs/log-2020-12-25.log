@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2020-12-25 18:50:49 --> Undefined index: nombre
 #0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
 #1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
@@ -38,3 +39,17 @@ CRITICAL - 2020-12-25 18:50:58 --> Undefined index: nombre
 #6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+=======
+CRITICAL - 2020-12-25 00:47:58 --> Cannot add or update a child row: a foreign key constraint fails (`ventas_database`.`cajas`, CONSTRAINT `cajas_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`Id`))
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `cajas` ...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cajas` ...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cajas` ...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `cajas` ...', Array, false)
+#4 D:\xampp\htdocs\SistemaVentas\system\Model.php(889): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\Caja.php(26): CodeIgniter\Model->update(Array, Array)
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Caja->add()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+>>>>>>> 6a7d06bb5208eed73ed097293e31f9090eab0a42

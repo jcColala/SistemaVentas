@@ -96,7 +96,7 @@
               <input type="text" class="form-control"  onkeypress="return Letras_numeros(event);" placeholder="Serie" id="serie_config">
             </div>
             <div class="col-md-3 mb-2">
-              <input type="text" class="form-control" onkeypress="return Letras_numeros(event);" placeholder="Correlativo" id="correlativo_config">
+              <input type="text"  class="form-control" onkeypress="return Numeros(event);" placeholder="Correlativo" id="correlativo_config">
             </div>
             <div class="col-md-1 ">
               <button type="button" onclick="mostrarp()"  class="btn btn-success"><i class="fas fa-plus" ></i></button>
