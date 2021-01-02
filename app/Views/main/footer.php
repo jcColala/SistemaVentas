@@ -55,6 +55,7 @@
 
 <script src="<?php echo base_url();?>/public/alerta/notify.js"></script>
 <script src="<?php echo base_url();?>/public/alerta/alerta.js"></script>
+<script src="<?php echo base_url();?>/public/plugins/jquery-ui/jquery-ui.js"></script>
 <!-- page script -->
 <script>
   $(function () {

@@ -9,9 +9,9 @@ class DetalleVentaModel extends Model{
     protected $returnType     = 'objet';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['id_venta','id_producto','cantidad','subtotal','precio_venta'];
+    protected $allowedFields = ['id_venta','id_producto','cantidad','importe','precio_venta'];
 
-    protected $useTimestamps = true;
+    protected $useTimestamps = false;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';

@@ -9,7 +9,7 @@ class VentaModel extends Model{
     protected $returnType     = 'objet';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['id_cliente','id_usuario','id_comprobante','correlativo','serie','igv','descuento'];
+    protected $allowedFields = ['id_cliente','id_usuario','id_comprobante','correlativo','serie','igv','descuento','totalventa'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -20,6 +20,11 @@ class VentaModel extends Model{
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
+    public function recogerid(){
+      $db=db_connect();
+      $id=$db->insertID();
+      return $id;
+    }
    //  function mostrar(){
    //    $db=db_connect();
    //    $mostrar=$db->query("

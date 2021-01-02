@@ -4,12 +4,12 @@ use CodeIgniter\Model;
 
 class DetalleCajaModel extends Model{ 
     protected $table      = 'detalle_caja_comprobante';
-    protected $primaryKey = 'iddetalle_comprobante';
+    protected $primaryKey = 'iddetalle_ccomprobante';
 
     protected $returnType     = 'objet';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['iddetalle_comprobante','idcaja','idcomprobante','serie','correlativo'];
+    protected $allowedFields = ['iddetalle_ccomprobante','idcaja','idcomprobante','serie','correlativo','igv'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';
@@ -29,5 +29,10 @@ class DetalleCajaModel extends Model{
       $db=db_connect();
       $mostrar=$db->query("SELECT * FROM detalle_caja_comprobante INNER JOIN comprobantes ON comprobantes.id_comprobante=detalle_caja_comprobante.idcomprobante where detalle_caja_comprobante.idcaja=1");
       return $mostrar->getResult();
+    }
+    function getcomprobante($id){
+      $db=db_connect();
+       $mostrar= $db->query('SELECT * FROM detalle_caja_comprobante where iddetalle_ccomprobante='.$id.'');
+      return $mostrar->getRow();
     }
 }

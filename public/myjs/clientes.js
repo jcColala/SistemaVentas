@@ -6,7 +6,7 @@ function valdni(){
 	if(dni==""){
 		alertify.error('DNI requerido');
 			return false;	
-	}else if(tam<8){
+	}else if(tam != 8){
 		alertify.error('Tamaño requerido');
 			return false;	
 	}else{
@@ -19,7 +19,7 @@ function valsunat(){
 	if(dni==""){
 		alertify.error('RUC requerido');
 			return false;	
-	}else if(tam<11){
+	}else if(tam != 11){
 		alertify.error('Tamaño requerido');
 			return false;	
 	}else{

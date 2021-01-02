@@ -47,7 +47,8 @@
   <script  src="<?php echo base_url()?>/public/alertifyJS/alertify.min.js"></script>
 
   <link rel="stylesheet" href="<?php echo base_url();?>/public/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
-
+  
+<link rel="stylesheet" href="<?php echo base_url();?>/public/plugins/jquery-ui/jquery-ui.css">
 
  
 </head>
