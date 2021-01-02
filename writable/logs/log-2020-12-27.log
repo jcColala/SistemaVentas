@@ -1,0 +1,20 @@
+CRITICAL - 2020-12-27 13:42:57 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(48): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-27 18:37:15 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(48): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

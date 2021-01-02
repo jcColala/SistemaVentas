@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2021-01-01 18:27:45 --> Object of class stdClass could not be converted to string
 #0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
 #1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
@@ -100,3 +101,468 @@ CRITICAL - 2021-01-01 23:10:53 --> Unknown column 'created_at' in 'field list'
 #9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
 #11 {main}
+=======
+CRITICAL - 2021-01-01 13:38:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1,1,"B",4,4,"2021-01-01","10.00")' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO com...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO com...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO com...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO com...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '4', '4', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:38:42 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:41:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1,1,"B",4,4,"2021-01-01","10.00")' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO com...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO com...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO com...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO com...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '4', '4', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:41:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1,1,"B",4,4,"2021-01-01","10.00")' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO com...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO com...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO com...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO com...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '4', '4', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:41:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1,1,"B",4,4,"2021-01-01","10.00")' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO com...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO com...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO com...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO com...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '4', '4', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:41:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1,1,"B",4,4,"2021-01-01","10.00")' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO com...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO com...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO com...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO com...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '4', '4', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:41:46 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:42:47 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:43:19 --> Undefined variable: session
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 66, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:43:25 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:43:57 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:44:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1,1,"F",5,5,"2021-01-01","10.00")' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO com...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO com...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO com...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO com...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'F', '5', '5', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:44:17 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:44:37 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:44:37 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:45:18 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:45:19 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:45:20 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:45:20 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:46:45 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:48:08 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 13:48:18 --> Column count doesn't match value count at row 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO com...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO com...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO com...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO com...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '5', '5', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:48:43 --> Column count doesn't match value count at row 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO com...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO com...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO com...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO com...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '5', '5', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:49:25 --> Column count doesn't match value count at row 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO com...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO com...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO com...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO com...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '5', '5', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:52:45 --> Column count doesn't match value count at row 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO com...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO com...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO com...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO com...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '5', '5', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:52:57 --> Column count doesn't match value count at row 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO com...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO com...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO com...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO com...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '5', '5', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:54:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'null,null,null' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO com...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO com...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO com...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO com...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '5', '5', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:54:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'null,null,null' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO com...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO com...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO com...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO com...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '5', '5', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:54:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 * FROM compra order by Id desc' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT top 1 * ...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT top 1 * ...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT top 1 * ...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT top 1 * ...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '5', '5', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:55:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 * FROM compra order by Id desc' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT top 1 * ...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT top 1 * ...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT top 1 * ...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT top 1 * ...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '5', '5', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 13:56:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 * FROM compra order by Id desc' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT top 1 * ...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT top 1 * ...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT top 1 * ...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT top 1 * ...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(66): App\Models\CompraModel->insertc('1', '1', 'B', '5', '5', '10.00')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 14:13:25 --> Undefined variable: session
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 61, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 14:13:57 --> Undefined variable: session
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 61, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 14:14:42 --> Undefined variable: session
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 61, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 14:16:30 --> Undefined variable: session
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 61, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 14:16:36 --> Undefined variable: session
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 61, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 14:16:41 --> Undefined index: data_detalle
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 57, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 14:18:35 --> Undefined variable: session
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 61, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 14:23:44 --> Call to undefined function App\Controllers\mysql_insert_id()
+#0 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-01 14:25:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 * FROM compra order by Id desc' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT top 1 * ...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT top 1 * ...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT top 1 * ...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('SELECT top 1 * ...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(70): App\Models\CompraModel->idcompra()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 14:26:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 * FROM compra order by Id desc' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT top 1 * ...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT top 1 * ...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT top 1 * ...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('SELECT top 1 * ...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(70): App\Models\CompraModel->idcompra()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 14:26:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 * FROM compra order by Id desc' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT top 1 * ...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT top 1 * ...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT top 1 * ...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\CompraModel.php(46): CodeIgniter\Database\BaseConnection->query('SELECT top 1 * ...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(70): App\Models\CompraModel->idcompra()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 14:44:33 --> Undefined variable: cant
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 75, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 14:44:53 --> syntax error, unexpected '$cantidad' (T_VARIABLE)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 14:45:16 --> Undefined variable: cant
+#0 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 75, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 14:45:52 --> syntax error, unexpected '$cantidad' (T_VARIABLE)
+#0 C:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Compra/agregar')
+#1 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Compra/agregar')
+#2 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-01 15:12:45 --> Undefined property: stdClass::$Total
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\compras\compra.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('compras/compra....', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(16): view('compras/compra....', Array)
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->index()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-01 16:17:24 --> Table 'ventas_database.clientes' doesn't exist
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\ClienteModel.php(25): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(12): App\Models\ClienteModel->getCliente()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->index()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 16:17:33 --> Table 'ventas_database.clientes' doesn't exist
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\ClienteModel.php(25): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(17): App\Models\ClienteModel->getCliente()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->index()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 16:17:53 --> Cannot add or update a child row: a foreign key constraint fails (`ventas_database`.`cajas`, CONSTRAINT `cajas_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`Id`))
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `cajas` ...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cajas` ...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cajas` ...')
+#3 C:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `cajas` ...', Array, false)
+#4 C:\xampp\htdocs\SistemaVentas\system\Model.php(889): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\SistemaVentas\app\Controllers\Caja.php(26): CodeIgniter\Model->update(Array, Array)
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Caja->add()
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+#8 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-01 16:18:06 --> Table 'ventas_database.clientes' doesn't exist
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\ClienteModel.php(25): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(12): App\Models\ClienteModel->getCliente()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->index()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-01 16:19:07 --> Table 'ventas_database.clientes' doesn't exist
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\ClienteModel.php(25): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(17): App\Models\ClienteModel->getCliente()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->index()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+>>>>>>> a7ffefa88ca8696235fc22dc2396885ac1c4f050

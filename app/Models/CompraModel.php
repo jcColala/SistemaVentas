@@ -9,7 +9,7 @@ class CompraModel extends Model{
     protected $returnType     = 'objet';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['Id','IdProveedor','IdUsuario','TipoComprobante','SerieComprobante','Fecha','Importe','Total','deleted_at'];
+    protected $allowedFields = ['Id','IdProveedor','IdUsuario','Comprobante','SerieComprobante','NumComprobante','Fecha','Importe','deleted_at'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -28,12 +28,6 @@ class CompraModel extends Model{
                           ");
       return $mostrar->getResult();
   	}
-    public function comprobante(){
-      $db=db_connect();
-      $mostrar= $db->query("SELECT * FROM comprobantes WHERE deleted_at is Null");
-
-     return $mostrar->getResult();
-    }
     public function producto(){
       $db=db_connect();
       $mostrar= $db->query("SELECT * FROM producto WHERE deleted_at is Null");
@@ -47,27 +41,20 @@ class CompraModel extends Model{
      return $mostrar->getResult();
     }
 
-
-
-
-    public function compro_d($des){
+    public function idcompra(){
       $db=db_connect();
-      $mostrar= $db->query('SELECT * FROM marca where Descripcion="'.$des.'"');
-
-      $row = $mostrar->getRow();
-      if (isset($row)){ return false;}
-      else{ return true;}
+      $mostrar=$db->query("SELECT * FROM compra order by Id desc LIMIT 1");
+      return $mostrar->getRow();
     }
-    public function compro_d2($des,$id){
+    public function insertar_detalle($idcompra,$idpro,$cant,$precioc,$subtotal){
       $db=db_connect();
-      $mostrar= $db->query('SELECT * FROM marca where Descripcion="'.$des.'"');
-
-      if(count($mostrar->getResult()) <=1){ return true;}
-      else{ return false;}
+      $mostrar=$db->query('INSERT INTO detalle_compra VALUES(null,'.$idcompra.','.$idpro.','.$cant.','.$precioc.','.$subtotal.',"'.date("Y-m-d").'","'.date("Y-m-d").'",null)');
+      return true;
     }
-    public function taer($id){
+    public function cambio_stock($id,$cant){
       $db=db_connect();
-      $query= $db->query('SELECT * FROM marca where Id='.$id.'');
-      return $query->getRow();
+      $mostrar=$db->query('UPDATE producto SET  Stock=(Stock +'.$cant.') WHERE Id='.$id.'');
+      return true;
     }
+
 }
