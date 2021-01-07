@@ -156,7 +156,15 @@
             <li class="nav-item">
               <a href="<?php echo base_url();?>/VentasController" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Facturación</p>
+                <p>PEDIDOS</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?php echo base_url();?>/ListadoVentasController" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>FACTURACIÓN</p>
               </a>
             </li>
           </ul>

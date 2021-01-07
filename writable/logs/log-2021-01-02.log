@@ -1,0 +1,337 @@
+CRITICAL - 2021-01-02 11:18:49 --> mysqli::__construct(): (HY000/1049): Unknown database 'comisiones'
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::__const...', 'D:\\xampp\\htdocs...', 3, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\imprimir_datos_comision.php(3): mysqli->__construct('localhost', 'root', '', 'comisiones')
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/imprim...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(38): view('Imprimir/imprim...')
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-02 11:20:25 --> require(fpublic/imprimir/fpdf/fpdf.php): failed to open stream: No such file or directory
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(fpublic...', 'D:\\xampp\\htdocs...', 2, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): require()
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(38): view('Imprimir/ejempl...')
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-02 11:21:48 --> Function get_magic_quotes_runtime() is deprecated
+#0 D:\xampp\htdocs\SistemaVentas\public\imprimir\fpdf\fpdf.php(1043): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Function get_ma...', 'D:\\xampp\\htdocs...', 1043, Array)
+#1 D:\xampp\htdocs\SistemaVentas\public\imprimir\fpdf\fpdf.php(77): FPDF->_dochecks()
+#2 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(3): FPDF->__construct()
+#3 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(38): view('Imprimir/ejempl...')
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-02 11:22:06 --> Function get_magic_quotes_runtime() is deprecated
+#0 D:\xampp\htdocs\SistemaVentas\public\imprimir\fpdf\fpdf.php(1043): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Function get_ma...', 'D:\\xampp\\htdocs...', 1043, Array)
+#1 D:\xampp\htdocs\SistemaVentas\public\imprimir\fpdf\fpdf.php(77): FPDF->_dochecks()
+#2 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(3): FPDF->__construct()
+#3 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(38): view('Imprimir/ejempl...')
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-02 11:31:21 --> FPDF error: Some data has already been output, can't send PDF file
+#0 D:\xampp\htdocs\SistemaVentas\public\imprimir\fpdf\fpdf.php(1060): FPDF->Error('Some data has a...')
+#1 D:\xampp\htdocs\SistemaVentas\public\imprimir\fpdf\fpdf.php(999): FPDF->_checkoutput()
+#2 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(15): FPDF->Output()
+#3 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(133): view('Imprimir/ejempl...')
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->h()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-02 11:31:46 --> FPDF error: Some data has already been output, can't send PDF file
+#0 D:\xampp\htdocs\SistemaVentas\public\imprimir\fpdf\fpdf.php(1060): FPDF->Error('Some data has a...')
+#1 D:\xampp\htdocs\SistemaVentas\public\imprimir\fpdf\fpdf.php(999): FPDF->_checkoutput()
+#2 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(15): FPDF->Output()
+#3 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(133): view('Imprimir/ejempl...')
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->h()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-02 11:33:05 --> FPDF error: Some data has already been output, can't send PDF file
+#0 D:\xampp\htdocs\SistemaVentas\public\imprimir\fpdf\fpdf.php(1060): FPDF->Error('Some data has a...')
+#1 D:\xampp\htdocs\SistemaVentas\public\imprimir\fpdf\fpdf.php(999): FPDF->_checkoutput()
+#2 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(15): FPDF->Output()
+#3 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(133): view('Imprimir/ejempl...')
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->h()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-02 11:35:24 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+#0 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(133): view('Imprimir/ejempl...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->h()
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-02 11:35:47 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+#0 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(133): view('Imprimir/ejempl...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->h()
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-02 11:39:29 --> CodeIgniter\View\View::main(): Failed opening required 'D:\xampp\htdocs\SistemaVentas\app\public/imprimir/fpdf/fpdf.php' (include_path='D:\xampp\php\PEAR')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-01-02 11:40:13 --> CodeIgniter\View\View::main(): Failed opening required 'D:\xampp\htdocs\SistemaVentas\app\public/imprimir/fpdf/fpdf.php' (include_path='D:\xampp\php\PEAR')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-01-02 11:40:19 --> CodeIgniter\View\View::main(): Failed opening required 'D:\xampp\htdocs\SistemaVentas\app\public/imprimir/fpdf/fpdf.php' (include_path='D:\xampp\php\PEAR')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-01-02 11:41:13 --> CodeIgniter\View\View::main(): Failed opening required 'D:\xampp\htdocs\SistemaVentas\app\third_party/fpdf/fpdf.php' (include_path='D:\xampp\php\PEAR')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-01-02 11:41:31 --> require(third_party/fpdf/fpdf.php): failed to open stream: No such file or directory
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(third_p...', 'D:\\xampp\\htdocs...', 4, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(4): require()
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(133): view('Imprimir/ejempl...')
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->h()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-02 11:41:43 --> require(app/third_party/fpdf/fpdf.php): failed to open stream: No such file or directory
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(app/thi...', 'D:\\xampp\\htdocs...', 4, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(4): require()
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(133): view('Imprimir/ejempl...')
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->h()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-02 11:43:36 --> Undefined variable: mpdf
+#0 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 135, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->h()
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-02 12:50:32 --> Column 'id_comprobante' cannot be null
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ve...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 D:\xampp\htdocs\SistemaVentas\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(95): CodeIgniter\Model->insert(Array)
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-02 13:55:17 --> Undefined variable: view
+#0 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 122, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-02 15:17:15 --> require(fpdf.php): failed to open stream: No such file or directory
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(fpdf.ph...', 'D:\\xampp\\htdocs...', 2, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): require()
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(121): view('Imprimir/ejempl...', Array)
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-02 15:20:26 --> require(fpdf.php): failed to open stream: No such file or directory
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(fpdf.ph...', 'D:\\xampp\\htdocs...', 2, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): require()
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(121): view('Imprimir/ejempl...', Array)
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-02 15:22:01 --> require(fpdf.php): failed to open stream: No such file or directory
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(fpdf.ph...', 'D:\\xampp\\htdocs...', 2, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): require()
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(121): view('Imprimir/ejempl...', Array)
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-02 15:22:15 --> Column 'id_comprobante' cannot be null
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ve...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 D:\xampp\htdocs\SistemaVentas\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(99): CodeIgniter\Model->insert(Array)
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-02 15:22:28 --> require(fpdf.php): failed to open stream: No such file or directory
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(fpdf.ph...', 'D:\\xampp\\htdocs...', 2, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): require()
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(121): view('Imprimir/ejempl...', Array)
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-02 15:22:48 --> require(fpdf.php): failed to open stream: No such file or directory
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(fpdf.ph...', 'D:\\xampp\\htdocs...', 2, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): require()
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(121): view('Imprimir/ejempl...', Array)
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-02 16:16:56 --> syntax error, unexpected 'use' (T_USE)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-02 16:17:41 --> syntax error, unexpected 'use' (T_USE)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-02 16:18:18 --> Class 'App\Controllers\FPDF' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-02 16:18:45 --> Class 'App\Controllers\FPDF' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-02 16:22:20 --> Undefined variable: dataVentaCompleta
+#0 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 45, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-02 16:24:57 --> Class 'App\Controllers\FPDF' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-02 16:25:43 --> Undefined variable: dataVentaCompleta
+#0 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 128, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-02 16:27:01 --> Constant FPDF_VERSION already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant FPDF_V...', 'D:\\xampp\\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\SistemaVentas\public\imprimir\fpdf\fpdf.php(10): define('FPDF_VERSION', '1.82')
+#2 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): require('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(127): view('Imprimir/ejempl...')
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-02 16:27:25 --> Constant FPDF_VERSION already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant FPDF_V...', 'D:\\xampp\\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\SistemaVentas\public\imprimir\fpdf\fpdf.php(10): define('FPDF_VERSION', '1.82')
+#2 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(2): require('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(128): view('Imprimir/ejempl...')
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-02 16:34:32 --> Undefined property: CodeIgniter\View\View::$response
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 3, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(155): view('Imprimir/ejempl...')
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(121): App\Controllers\VentasController->fpdf()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-02 16:35:21 --> Undefined variable: response
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 3, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(155): view('Imprimir/ejempl...')
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(121): App\Controllers\VentasController->fpdf()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->procesarVenta()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-02 16:57:31 --> Call to undefined function eader()
+#0 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include()
+#1 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#2 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(155): view('Imprimir/ejempl...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-02 16:57:39 --> readfile(original.pdf): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(origin...', 'D:\\xampp\\htdocs...', 9, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\ejemplo.php(9): readfile('original.pdf')
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(155): view('Imprimir/ejempl...')
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

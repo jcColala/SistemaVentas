@@ -1,0 +1,24 @@
+CRITICAL - 2021-01-04 14:15:05 --> syntax error, unexpected '$ventaU' (T_VARIABLE)
+#0 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('ventas/modelven...', Array, true)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\ListadoVentasController.php(26): view('ventas/modelven...', Array)
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ListadoVentasController->getventaU()
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListadoVentasController))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-04 14:15:17 --> syntax error, unexpected ','
+#0 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('ventas/modelven...', Array, true)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\ListadoVentasController.php(26): view('ventas/modelven...', Array)
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ListadoVentasController->getventaU()
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListadoVentasController))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-04 23:39:02 --> syntax error, unexpected ''fff'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/ejempl...', Array, true)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(143): view('Imprimir/ejempl...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

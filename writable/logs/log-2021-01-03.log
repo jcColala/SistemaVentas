@@ -1,0 +1,8 @@
+CRITICAL - 2021-01-03 23:27:06 --> syntax error, unexpected ')'
+#0 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('ventas/listado....', Array, true)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\ListadoVentasController.php(18): view('ventas/listado....', Array)
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ListadoVentasController->index()
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListadoVentasController))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

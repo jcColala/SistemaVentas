@@ -4,7 +4,7 @@
   <div class="content-header">
           <div class="card" id="card" > 
               <div class="card-body">
-                <form action="<?php echo base_url();?>/VentasController/procesarVenta" method="POST"  id="form_venta" >
+                <form action="<?php echo base_url();?>/VentasController/fpdf" method="POST"  id="form_venta" >
                   <div class="form-row">
                     <div class="form-group col-md-3">
                       <label for="comprobante_venta">COMPROBANTE:</label>
@@ -123,7 +123,7 @@
                   </div>
                   <div class="form-row">
                     <div class="col-md-3">
-                       <button type="submit" class="btn btn-success btn-flat" >Procesar</button>
+                       <button type="button" class="btn btn-success btn-flat" onclick="ProcesarVenta();"  >Procesar</button>
                     </div>
                   </div>
                 </form>

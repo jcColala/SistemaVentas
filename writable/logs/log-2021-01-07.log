@@ -1,0 +1,6 @@
+CRITICAL - 2021-01-07 16:12:07 --> Class 'Dompdf\Dompdf' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}

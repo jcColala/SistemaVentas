@@ -51,7 +51,7 @@ $( "#comprobante_venta" ).change(function() {
 		nombre=ui.item.Descripcion;
 		stock=ui.item.Stock;
 		html="<tr>";
-		html +="<td><input type='hidden' name='id_prod[]' value='"+data+"'>"+producto+"</td>";
+		html +="<td><input type='hidden' name='producto_nombre[]' value='"+producto+"'><input type='hidden' name='id_prod[]' value='"+data+"'>"+producto+"</td>";
 		html +="<td>"+preciocompra+"</td>";
 		html +="<td><input type='text' id='precioVenta[]' name='precioVenta[]' value='"+precioVenta +"'onkeypress='return Numeros_otro(event);' onpaste='return false' class='precio_venta'></td>";
 		html +="<td><input type='hidden' name='stock[]' id='stock' value=''>"+stock+"</td>";
@@ -231,10 +231,48 @@ function ProcesarVenta(){
 			      url: "VentasController/procesarVenta",
 			      data:$("#form_venta").serialize(),
 			      success: function(e){
-			      		
+			      	window.setInterval('reFresh()',1000);
                     }
 			      });
 
               }
       });
+}
+function verVentaCompleta(id,N){
+	 $.ajax({ 
+  			   type:'POST',
+  			   url: "ListadoVentasController/getventaU",
+  			   data:{id:id},
+  			    success: function(data){
+  			    	$("#"+N+" "+".modal-body").html(data);
+  			    }
+  				});
+}
+
+function eliminar_pedido(id){
+	swal({
+              title: "Confirmar",
+              text: "¿ Desea eliminar el pedido ?",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+          })
+          .then((willDelete) => {
+              if (willDelete) {
+                 $.ajax({ 
+			      type:'POST',
+			      url: "VentasController/procesarVenta",
+			      data:$("#form_venta").serialize(),
+			      success: function(e){
+			      	window.setInterval('reFresh()',1000);
+                    }
+			      });
+
+              }
+      });
+}
+function listProcesarVenta(){
+	id=$("#idventaProcesar").val();
+	window.open('VentasController/fpdf?id='+id, '_blank');
+	window.setInterval('reFresh()',1000);
 }

@@ -5,7 +5,8 @@ use App\Models\ClienteModel;
 use App\Models\ProductoModel;
 use App\Models\VentaModel;
 use App\Models\DetalleVentaModel;
-
+require_once("app/ThirdParty/vendor/autoload.php");
+use Dompdf\Dompdf ;
 class VentasController extends BaseController
 { 
 	public function index(){
@@ -55,6 +56,8 @@ class VentasController extends BaseController
 		$importe=$request->getPostGet("sub_total");
 		$precioventa=$request->getPostGet("precioVenta");
 		$totalVenta=$request->getPostGet("total_venta");
+		$nombre_venta=$request->getPostGet("nombre_venta");
+		$producto_nombre=$request->getPostGet("producto_nombre");
 		$iddetalle_comprobante=$request->getPostGet("iddetalle_comprobante");
 		$estadoCliente=$ClienteModel->getclienteDni($docCliente);
 		if(strlen($docCliente)>8){
@@ -91,11 +94,19 @@ class VentasController extends BaseController
 					 'descuento'=>$descuento,
 					 'totalventa'=>$totalVenta,);	
 		
+
+
 		if($VentaModel->insert($dataVenta)){
 			$idVenta=$VentaModel->recogerid($idcomprobante,);
 			$this->actualizar_comprobante($iddetalle_comprobante);
 			$this->detalleventa($idVenta,$id_producto,$cantidad,$importe,$precioventa);
 		}
+		
+	
+		// $sessionidventa = [
+		// 			'idVenta'=>$idVenta,
+		// 		 ];
+		// 	$session->set($sessionidventa);
 	}
 	protected function detalleventa($idVenta,$id_producto,$cantidad,$importe,$precioventa){
 		$DetalleVentaModel=new DetalleVentaModel;
@@ -128,5 +139,34 @@ class VentasController extends BaseController
 
 
 	}
+	public function fpdf() {
+		$VentaModel=new VentaModel;
+		$request=\Config\Services::request();
+		$id=$request->getPostGet("id");
+		
+		$data= array('ventaU' =>$VentaModel->GetVentaU($id),
+					 'detalleVentaU' =>$VentaModel->getdetalleVenta($id),
+					 'baseurl'=>base_url(),
+					 );
+         
+
+// instantiate and use the dompdf class
+	 // echo view('Imprimir/comprobante.php',$data);
+		$baseurl=base_url();		
+		$dompdf = new Dompdf(array('enable_remote' => true));
+		$dompdf->set_base_path($baseurl); 
+ 		$dompdf->loadHtml(view('Imprimir/comprobante.php',$data));
+        $dompdf->setPaper('A4', 'portrait');
+        $dompdf->render();
+        $dompdf->stream("dompdf_out.pdf", array("Attachment" => false)); 
+    }
+    public function FacturarVenta(){
+    	$VentaModel=new VentaModel;
+
+		$request=\Config\Services::request();
+		if (!base64_decode($request->getPostGet("id"))){
+
+		}
+    }
 	
 }
