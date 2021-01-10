@@ -55,6 +55,8 @@
 
 <script src="<?php echo base_url();?>/public/alerta/notify.js"></script>
 <script src="<?php echo base_url();?>/public/alerta/alerta.js"></script>
+
+<script  src="<?php echo base_url()?>/public/toastr/toastr.min.js"></script>
 <!-- page script -->
 <script>
   $(function () {

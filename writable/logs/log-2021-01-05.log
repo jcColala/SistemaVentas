@@ -1,0 +1,20 @@
+CRITICAL - 2021-01-05 11:30:36 --> Undefined variable: proveedor
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\almacen\producto.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('almacen/product...', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Producto.php(16): view('almacen/product...', Array)
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Producto->index()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-05 11:32:29 --> Undefined variable: numero
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\almacen\producto.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 81, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('almacen/product...', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Producto.php(16): view('almacen/product...', Array)
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Producto->index()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

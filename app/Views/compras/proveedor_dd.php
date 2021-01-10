@@ -21,8 +21,8 @@
                     <input type="number" class="form-control" id="dni_ruc" name="dni_ruc" value="<?php echo $dni_ruc?>" placeholder="DNI/RUC"  maxlength="11" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" Required/>
                   </div>
                   <div class="form-group col-md-9">
-                    <label>Nombre Completo</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $nombre?>" placeholder="Nombre..." Required />
+                    <label>Nombre/Empresa</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $nombre?>" placeholder="Nombre/Empresa..." Required />
                   </div>
                 </div> 
                 <div class="form-row">

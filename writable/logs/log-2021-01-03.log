@@ -1,0 +1,20 @@
+CRITICAL - 2021-01-03 09:12:01 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Proveedor.php(49): view('main/header.php')
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Proveedor->agregarViews()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-03 14:16:56 --> Undefined property: stdClass::$CodigoBarras
+#0 C:\xampp\htdocs\SistemaVentas\app\Views\almacen\producto.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('almacen/product...', Array, true)
+#3 C:\xampp\htdocs\SistemaVentas\app\Controllers\Producto.php(16): view('almacen/product...', Array)
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Producto->index()
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,6 +1,6 @@
 <?php namespace App\Controllers;
 use App\Models\CategoriaModel;
-class Categoria extends BaseController
+class Categoria extends BaseController 
 { 
 	public function index(){
 		$session = \Config\Services::session();
@@ -55,18 +55,18 @@ class Categoria extends BaseController
 		}
 		if ($id=='') {
 			if($categoria->compro_d($request->getPostGet("descripcion")) == false){
-				$alert="¡ La categoria ya existe !";
+				$alert="¡ La categoría ya existe !";
 				$this->session->setFlashdata('alert', $alert);
 				return " <script type='text/javascript'>window.history.back();</script>";
 			}
 			$categoria->insert($data);
 		}
 		else{
-			/*if($categoria->compro_d2($request->getPostGet("descripcion"),$request->getPostGet("id")) == false){
-				$alert="¡ La descripción ya existe !";
+			if($categoria->compro_d2($request->getPostGet("descripcion"),$id) == false){
+				$alert="¡ La categoría ya existe !";
 				$this->session->setFlashdata('alert', $alert);
 				return " <script type='text/javascript'>window.history.back();</script>";
-			}*/ 
+			}
 			$categoria->update($id, $data);
 		}
 		return redirect()->to(site_url("Categoria"));

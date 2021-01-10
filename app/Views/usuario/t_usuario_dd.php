@@ -3,7 +3,7 @@
   <!-- Content Header (Page header) -->
   <div class="content-header">
       <div class="card" id="card" > 
-        <h4>Registrar Tipo Usuario</h4>
+        <h4>Registrar Tipo Usuario</h4> 
  
         <section class="padr_menu_datos">
           <span  onclick="seleccionar('div_1_modal','span_selec_1',1);" id="span_selec_1" class="span_selec_1">Datos B&aacute;sicos</span>

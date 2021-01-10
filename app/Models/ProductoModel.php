@@ -16,7 +16,7 @@ class ProductoModel extends Model{
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
-    protected $validationRules    = [];
+    protected $validationRules    = []; 
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
@@ -25,6 +25,7 @@ class ProductoModel extends Model{
       $mostrar=$db->query("
                             SELECT 
                             p.Id,
+                            p.CodigoBarras,
                             p.Descripcion,
                             p.Stock,
                             p.PrecioVenta,
@@ -35,6 +36,14 @@ class ProductoModel extends Model{
                           ");
       return $mostrar->getResult();
   	}
+
+    public function traer_codigo(){
+      $db=db_connect();
+      $mostrar= $db->query("SELECT * FROM producto order by Id desc LIMIT 1");
+
+      return $mostrar->getRow();
+    }
+
     public function compro_pro($cob,$des){
       $db=db_connect();
       $mostrar= $db->query('SELECT * FROM producto where CodigoBarras="'.$cob.'" or Descripcion="'.$des.'"');
