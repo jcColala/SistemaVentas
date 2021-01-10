@@ -25,7 +25,7 @@ class ClientesController extends BaseController
 				"id_cliente"=>'',
 				"dni_ruc"=>'',
 				"nombre"=>'',
-				"apellido"=>'',
+				
 				"telefono"=>'',
 				"correo"=>'',
 				"direccion"=>'',
@@ -41,7 +41,7 @@ class ClientesController extends BaseController
 				"id_cliente"=>$traer->id_cliente,
 				"dni_ruc"=>$traer->dni_ruc,
 				"nombre"=>$traer->nombre,
-				"apellido"=>$traer->apellido,
+				
 				"telefono"=>$traer->telefono,
 				"correo"=>$traer->correo,
 				"direccion"=>$traer->direccion,
@@ -63,7 +63,7 @@ class ClientesController extends BaseController
 		$data=[
 				"dni_ruc"=>$request->getPostGet("dni_cliente"),
 				"nombre"=>$request->getPostGet("nombre_cliente"),
-				"apellido"=>$request->getPostGet("apellidos_cliente"),
+				
 				"telefono"=>$request->getPostGet("celular_cliente"),
 				"correo"=>$request->getPostGet("correo_cliente"),
 				"direccion"=>$request->getPostGet("direccion_cliente"),
@@ -107,6 +107,7 @@ class ClientesController extends BaseController
 
 		 return redirect()->to(site_url("ClientesController"));
 
+
 	}
 	public function activar_eliminar(){
 		$request=\Config\Services::request();
@@ -124,5 +125,39 @@ class ClientesController extends BaseController
 			$cliente->delete($id);
 			echo json_encode('eliminado');
 		}
+	}
+	public function agregar2(){
+		$cliente=new ClienteModel;
+		$request=\Config\Services::request();
+		$id=$request->getPostGet("id_cliente");
+		$data=[
+				"dni_ruc"=>$request->getPostGet("dni_cliente"),
+				"nombre"=>$request->getPostGet("nombre_cliente"),
+				"apellido"=>$request->getPostGet("apellidos_cliente"),
+				"telefono"=>$request->getPostGet("celular_cliente"),
+				"correo"=>$request->getPostGet("correo_cliente"),
+				"direccion"=>$request->getPostGet("direccion_cliente"),
+				"sexo"=>$request->getPostGet("sexo_cliente"),
+				"idtipo_cliente"=>$request->getPostGet("tipo_cliente"),
+		];
+		
+		
+		if ($id=='') {
+			if($cliente->compro_dni($request->getPostGet("dni_cliente")) == false){
+				$alert="¡ El DNI ya existe !";
+				$this->session->setFlashdata('alert', $alert);
+				echo("A");
+			}
+			$cliente->insert($data);
+			$alert_ingreso_cliente="<div class='card-body'><div class='alert alert-success' role='alert'>
+        				El Registro se ingresó con ÉXITO
+        				</div></div>";
+        	$this->session->setFlashdata('alert_ingreso_cliente', $alert_ingreso_cliente);
+		}
+		
+
+		echo("B");
+		 
+
 	}
 }

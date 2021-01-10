@@ -2,11 +2,13 @@ function mostrarp(){
 		comprobante=$("#comprobante_config").val();
 		serie=$("#serie_config").val();
 		correlativo=$("#correlativo_config").val();
+		igv=$("#IGV_config").val();
 		info=comprobante.split("*");
 		html="<tr>";
 		html+="<td><input type='hidden' name='id_comprobante[]' value='"+info[0]+"' readonly>"+info[1]+"</td>";
 		html+="<td><input type='text' name='serie[]' id='serie[]' onkeypress='return Letras_numeros(event);'  value='"+serie+"' ></td>";
 		html+="<td><input type='text' name='correlativo[]' onkeypress='return Letras_numeros(event);' value='"+correlativo+"' ></td>";
+		html+="<td><input type='text' name='igv[]' onkeypress='return Letras_numeros(event);' value='"+igv+"' ></td>";
 		html+="<td><button type='button' class='btn btn-danger btn-remove-comprobante' ><span class='fas fa-trash-alt'></span></button></td>";
 		html+="</tr>";
 		
@@ -14,7 +16,7 @@ function mostrarp(){
 		$("#comprobante_config").val(" ");
 		$("#serie_config").val(" ");
 		$("#correlativo_config").val(" ");
-		
+		$("#IGV_config").val(" ");
 		// $.ajax({
   //     			type: "POST",
   //     			data:'id='+option,
@@ -83,12 +85,17 @@ function procesar_caja_cofig(){
 	for (var i=0 ; i<tam; i++){
 		serie=document.getElementsByName("serie[]")[i].value;
 		correlativo=document.getElementsByName("correlativo[]")[i].value;
+		igv=document.getElementsByName("igv[]")[i].value;
 		if(serie ==false ){
-			alertify.error('Campo requerido');
+			alertify.error('serie requerido');
 			return false;	
 		}
 		if(correlativo ==false ){
-			alertify.error('Campo requerido');
+			alertify.error('correlativo requerido');
+			return false;	
+		}
+		if(igv ==false ){
+			alertify.error('igv requerido');
 			return false;	
 		}
 	}

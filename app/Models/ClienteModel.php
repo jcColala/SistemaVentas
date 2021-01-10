@@ -9,7 +9,7 @@ class ClienteModel extends Model{
     protected $returnType     = 'objet';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['id_cliente','idtipo_cliente','dni_ruc','nombre','apellido','telefono','correo','direccion','sexo','deleted_at'];
+    protected $allowedFields = ['id_cliente','idtipo_cliente','dni_ruc','nombre','telefono','correo','direccion','sexo','deleted_at'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

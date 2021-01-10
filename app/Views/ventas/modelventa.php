@@ -3,7 +3,7 @@
 	<input type="hidden" name="idventaProcesar" id="idventaProcesar" value="<?php echo($ventaU->id_venta)?>">
 	<div class="col-sm-6">	
 		<b>CLIENTE</b><br>
-		<b>NOMBRE/RAZ.SOC:</b><?php echo($ventaU->nombre)?> <?php echo($ventaU->apellido)?>   <br>
+		<b>NOMBRE/RAZ.SOC:</b><?php echo($ventaU->nombre)?>   <br>
 		<b>NRO DOCUMENTO:</b><?php echo($ventaU->dni_ruc)?><br>
 		<b>TELÉFONO:</b> <?php echo($ventaU->telefono)?> <br>
 		<b>DIRECCIÓN:</b>  <?php echo($ventaU->direccion)?><br>

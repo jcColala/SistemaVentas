@@ -49,7 +49,7 @@
                     </div>
                     <div class="form-group col-md-1">
                       <label for="">&nbsp;</label>
-                        <button id="btn-agregar" type="button" class="btn btn-success btn-flat btn-block" onclick="agregarC()" ><span class="fa fa-plus"></span> <i class="fas fa-user"></i></button>
+                        <button id="btn-agregar" type="button" class="btn btn-success btn-flat btn-block" data-toggle="modal" data-target="#modalclientepedido"><span class="fa fa-plus"></span> <i class="fas fa-user"></i></button>
                     </div>
                   </div>
                   <div class="form-row">
@@ -66,7 +66,7 @@
                     </div>
                     <div class="form-group col-md-1">
                       <label for="">&nbsp;</label>
-                        <button id="btn-agregar" type="button" class="btn btn-success btn-flat btn-block"  ><span class="fa fa-plus"></span> <i class="fas fa-box-open"></i></button>
+                        <button id="btn-agregar" type="button" class="btn btn-success btn-flat btn-block" onclick="agregarproductoventa();"  ><span class="fa fa-plus" ></span> <i class="fas fa-box-open" ></i></button>
                     </div>
                   </div>
                   <table id="tbventas" class="table table-bordered table-striped table-hover">
@@ -131,4 +131,89 @@
           </div>
   </div>
 </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalclientepedido" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">REGISTRAR CLIENTE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+               <button type="button" class="btn btn-secondary " onclick="valdni();"><i class="fas fa-search"></i>RENIEC</button>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-secondary" onclick="valsunat();"><i class="fas fa-search"></i>SUNAT</button>
+            </div>
+          </div>
+          <div class="row">
+            <form  id="formmodelcliente"  >
+            <br>
+            <input type="hidden" name="id_cliente" id="id_cliente" value="">
+            <section id="div_1_modal" class="div_1_modal">
+               <div class="form-row">
+                  <div class="form-group col-md-2">
+                    <label for="inputState">TIPO</label>
+                    <select id="tipo_cliente" name="tipo_cliente" class="form-control" required>
+                      <option value="">SELECCIONE</option>
+                      <?php foreach ($idtipo_cliente as $row):?>
+                          <option value="<?php echo $row->idtipo_cliente?>" ><?php echo ($row->tipo_descripcion)?></option>
+                      <?php endforeach ?>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label>DNI/RUC</label>
+                    <input type="number" class="form-control" id="dni_cliente" name="dni_cliente" value="" placeholder="DNI/RUC"  maxlength="8" Required/>
+                  </div>
+                  <div class="form-group col-md-8">
+                    <label>NOMBRE/EMPRESA</label>
+                    <input type="text" class="form-control" id="nombre_cliente" name="nombre_cliente" value="" placeholder="NOMBRE" Required />
+                  </div>
+                  
+                </div> 
+                <div class="form-row">
+                  <div class="form-group col-md-2">
+                    <label>CELULAR</label>
+                    <input type="text" class="form-control" id="celular_cliente" name="celular_cliente" value="" placeholder="CELULAR" />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>CORREO</label>
+                    <input type="text" class="form-control" id="correo_cliente" name="correo_cliente" value="" placeholder="CORREO" />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>DIRECCIÓN</label>
+                    <input type="text" class="form-control" id="direccion_cliente" name="direccion_cliente" value="" placeholder="DIRECCIÓN" />
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label>SEXO</label>
+                    <select id="sexo_cliente" name="sexo_cliente" class="form-control">
+                      <option value="">SELECCIONE</option>
+                       <option value="M">MUJER</option>
+                      <option value="H">HOMBRE</option>
+                    </select>
+                  </div>
+                </div>  
+            </section>
+            <br>
+            
+           
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
+        <button type="button" class="btn btn-primary" onclick="guardarclienteventa();">GUARDAR</button>
+      </div>
+     </form> 
+    </div>
+  </div>
 </div>

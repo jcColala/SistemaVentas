@@ -48,14 +48,11 @@
                     <label>DNI/RUC</label>
                     <input type="number" class="form-control" id="dni_cliente" name="dni_cliente" value="<?php echo $dni_ruc?>" placeholder="DNI/RUC"  maxlength="8" Required/>
                   </div>
-                  <div class="form-group col-md-5">
+                  <div class="form-group col-md-8">
                     <label>NOMBRE/EMPRESA</label>
                     <input type="text" class="form-control" id="nombre_cliente" name="nombre_cliente" value="<?php echo $nombre?>" placeholder="NOMBRE" Required />
                   </div>
-                  <div class="form-group col-md-3">
-                    <label>APELLIDOS</label>
-                    <input type="text" class="form-control" id="apellidos_cliente" name="apellidos_cliente" value="<?php echo $apellido?>" placeholder="APELLIDOS" />
-                  </div>
+                  
                 </div> 
                 <div class="form-row">
                   <div class="form-group col-md-2">

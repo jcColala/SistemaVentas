@@ -35,4 +35,9 @@ class DetalleCajaModel extends Model{
        $mostrar= $db->query('SELECT * FROM detalle_caja_comprobante where iddetalle_ccomprobante='.$id.'');
       return $mostrar->getRow();
     }
+    function getcomprobante2($id){
+      $db=db_connect();
+       $mostrar= $db->query('SELECT * FROM detalle_caja_comprobante where idcomprobante='.$id.'');
+      return $mostrar->getRow();
+    }
 }

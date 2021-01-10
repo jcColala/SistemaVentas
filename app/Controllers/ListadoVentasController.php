@@ -25,5 +25,15 @@ class ListadoVentasController extends BaseController
 					 'detalleVentaU' =>$VentaModel->getdetalleVenta($id));
 		echo view('ventas/modelventa.php',$data);
 	}
+	public function VentasProcesadas(){
+			$VentaModel=new VentaModel;
+			$data= array('ventas' =>$VentaModel->GetVenta());
+			echo view('main/header.php');
+	        echo view('main/menu.php');
+	        echo view('ventas/procesadas.php',$data);
+	        echo view('main/footer.php'); 
+    	
+
+	}
 	
 }

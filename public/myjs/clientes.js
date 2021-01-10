@@ -49,8 +49,8 @@ async function getReniec()
   .then(response=>response.json())
   .then(data =>{
   	console.log(data)
-  	$("#nombre_cliente").val(data.nombres);
-  	$("#apellidos_cliente").val(data.apellidoPaterno+" "+data.apellidoMaterno);
+  	$("#nombre_cliente").val(data.nombres+" "+data.apellidoPaterno+" "+data.apellidoMaterno);
+  	
   })
   .catch(err=>console.log(err))
 

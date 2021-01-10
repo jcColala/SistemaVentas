@@ -1,3 +1,77 @@
+function agregarproductoventa(){
+	window.location.href = BASE_URL+"/Producto/agregarViews";
+	let estadoAgregar="V";
+	localStorage.setItem("estadoAgregar",estadoAgregar);
+}
+function guardarclienteventa(){
+	tipocliente=$("#tipo_cliente").val();
+	dni_cliente=$("#dni_cliente").val();
+	nombre_cliente=$("#nombre_cliente").val();
+	apellidos_cliente=$("#apellidos_cliente").val();
+	direccion_cliente=$('#direccion_cliente').val();
+	if(tipocliente==""){
+		$( "#tipo_cliente" ).focus();
+		id="#tipo_cliente";
+		cambiacolor(id);
+		return false;
+	}
+	else if(dni_cliente==""){
+		$( "#dni_cliente" ).focus();
+		id="#dni_cliente";
+		cambiacolor(id);
+		return false;
+	}
+	else if(nombre_cliente==""){
+		$( "#nombre_cliente" ).focus();
+		id="#nombre_cliente";
+		cambiacolor(id);
+		return false;
+	};
+	dni=$("#dni_cliente").val();
+	dni=dni.trim();
+	tam=dni.length;
+	if(dni==""){
+		alertify.error('RUC requerido');
+			return false;	
+	}
+	let clientemodel ={
+    documento:dni_cliente,
+    nombre:nombre_cliente,
+    apellido:apellidos_cliente,
+    direccion:direccion_cliente,
+  }
+  localStorage.setItem("listacliente", JSON.stringify(clientemodel));
+	 $.ajax({ 
+  			   type:'POST',
+  			   url: BASE_URL+"/ClientesController/agregar2",
+  			   data:$("#formmodelcliente").serialize(),
+  			    success: function(data){
+  			    	let listacliente=JSON.parse(localStorage.getItem("listacliente"));
+  			    	 console.log(listacliente);
+  			    	 doc=listacliente.documento;
+  			    	 nombre=listacliente.nombre + listacliente.apellido;
+  			    	 nombrev=listacliente.nombre;
+  			    	 apellidov=listacliente.apellido;
+  			    	 direccionv=listacliente.direccion,
+  			    	 $("#doc_venta").val(doc);
+  			    	 $("#nombre_venta").val(nombre);
+  			    	  $("#n_venta").val(nombrev);
+  			    	 $("#a_venta").val(apellidov);
+  			    	 $('#direccion_venta').val(direccionv);
+  			    	 $("#modalclientepedido").modal('hide');//ocultamos el modal
+  					$('body').removeClass('modal-open');//eliminamos la clase del body para poder hacer scroll
+  						$('.modal-backdrop').remove();//eliminamos el backdrop del modal
+  			    	 
+  			    	  $("#formmodelcliente")[0].reset();
+  			    }
+  				});
+	
+	
+	}
+
+function cambiacolor(id){
+	$(id).css("border", "2px solid red");
+}
 $( "#comprobante_venta" ).change(function() {
  datos_comprobante=$("#comprobante_venta").val();
  if(datos_comprobante != ""){
@@ -14,9 +88,9 @@ $( "#comprobante_venta" ).change(function() {
 	$("#serie_venta").val(serie);
 	$("#iddetalle_comprobante").val(iddetalle_comprobante);
 	$("#correlativo_venta").val(generarnumero(Number(correlativo)));
-	if(comprobante=="FACTURA"){
+	if(comprobante=="FACTURA" || comprobante=="FACTURA ELECTRÓNICA" || comprobante=="FACTURA DE VENTA ELECTRÓNICA"){
 		$("#btn-busquedad").text("SUNAT");
-	}else if(comprobante=="BOLETA"){
+	}else if(comprobante=="BOLETA" ||comprobante=="BOLETA ELECTRÓNICA" || comprobante=="BOLETA DE VENTA ELECTRÓNICA"){
 		$("#btn-busquedad").text("RENIEC");
 	}
  }else{
@@ -56,7 +130,7 @@ $( "#comprobante_venta" ).change(function() {
 		html +="<td><input type='text' id='precioVenta[]' name='precioVenta[]' value='"+precioVenta +"'onkeypress='return Numeros_otro(event);' onpaste='return false' class='precio_venta'></td>";
 		html +="<td><input type='hidden' name='stock[]' id='stock' value=''>"+stock+"</td>";
 		html +="<td><input type='text' id='cantida_pro' name='cantida_pro[]' value='1' onkeypress='return numeros_precios(event);' onpaste='return false' class='cantidades'></td>";
-		html +="<td><input type='hidden' name='sub_total[]' value='"+precioVenta+"'><p>"+precioVenta+"</p></td>";
+		html +="<td><input type='hidden' id='sub_total' name='sub_total[]' value='"+precioVenta+"'><p>"+precioVenta+"</p></td>";
 		html +="<td><button type='button' class='btn btn-danger btn-remove-producto'  ><span class='fas fa-trash-alt'></span></button></td>";
 		html +="</tr>";
 		
@@ -161,7 +235,7 @@ function valdniVenta(){
 		alertify.error('DNI requerido');
 			return false;	
 	}else if(tam != 8 ){
-		alertify.error('Tamaño requerido');
+		alertify.error('Tamaño DNI requerido');
 			return false;	
 	}else{
 		getReniecVenta();
@@ -175,7 +249,7 @@ function valsunatVenta(){
 		alertify.error('RUC requerido');
 			return false;	
 	}else if(tam != 11){
-		alertify.error('Tamaño requerido');
+		alertify.error('Tamaño RUC requerido');
 			return false;	
 	}else{
 		getSunatVenta();
@@ -216,10 +290,29 @@ async function getReniecVenta()
 }
 
 function ProcesarVenta(){
+	var nFilas = $("#tbventas tr").length;
+	total=isNaN($("#total_venta").val());
+	if($("#comprobante_venta").val()==""){
+		alertify.error('Comprobante requerido');
+		return false;
+	}else if($("#doc_venta").val()==""){
+		alertify.error('Documento requerido');
+		return false;
+	}else if($("#nombre_venta").val()==""){
+		alertify.error('Nombre/Raz.soc requerido');
+		return false;
 
-	swal({
+	}else if(nFilas<2){
+		alertify.error('Productos requerido');
+		return false;
+	}else if(total==true){
+		alertify.error('Error precios');
+		return false;
+	}
+	else{
+		swal({
               title: "Confirmar",
-              text: "¿ Desea procesar la venta ?",
+              text: "¿ Desea procesar el pedido ?",
               icon: "info",
               buttons: true,
               dangerMode: true,
@@ -237,6 +330,8 @@ function ProcesarVenta(){
 
               }
       });
+	}
+	 
 }
 function verVentaCompleta(id,N){
 	 $.ajax({ 
@@ -248,7 +343,39 @@ function verVentaCompleta(id,N){
   			    }
   				});
 }
+function verVentaCompleta2(id,N){
+	 $.ajax({ 
+  			   type:'POST',
+  			   url: "getventaU",
+  			   data:{id:id},
+  			    success: function(data){
+  			    	$("#"+N+" "+".modal-body").html(data);
+  			    }
+  				});
+}
 
+function eliminar_venta(id){
+	swal({
+              title: "Confirmar",
+              text: "¿ Desea eliminar la venta ?",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+          })
+          .then((willDelete) => {
+              if (willDelete) {
+                 $.ajax({ 
+			      type:'POST',
+			      url: BASE_URL+"/VentasController/eliminarventa",
+			     data:{id:id},
+			      success: function(e){
+			      	window.setInterval('reFresh()',1000);
+                    }
+			      });
+
+              }
+      });
+}
 function eliminar_pedido(id){
 	swal({
               title: "Confirmar",
@@ -261,8 +388,8 @@ function eliminar_pedido(id){
               if (willDelete) {
                  $.ajax({ 
 			      type:'POST',
-			      url: "VentasController/procesarVenta",
-			      data:$("#form_venta").serialize(),
+			      url: "VentasController/eliminarpedido",
+			     data:{id:id},
 			      success: function(e){
 			      	window.setInterval('reFresh()',1000);
                     }

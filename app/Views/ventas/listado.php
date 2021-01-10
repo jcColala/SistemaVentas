@@ -2,12 +2,8 @@
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="content-header">
-
-          <div class="card" id="card" >  
-
-            
-            
-              <div class="card-body">
+        <div class="card" id="card" >  
+              <div class="card-body" id="card-body-atencion">
                 <table id="example1" class="table table-bordered table-striped">
                   <thead class="thead_tabla">
                     <tr> 
@@ -20,21 +16,22 @@
                     </tr>
                   </thead>
                   <tbody>
-                   <?php  if (!empty($ventas)):?>
-                    <?php  foreach($ventas as $linea):?>
+                    <?php  if (!empty($ventas)):?>
+                      <?php  foreach($ventas as $linea):?>
                         <tr>
                           <td ><?php echo $linea->id_venta?></td>
-                          <td ><?php echo $linea->nombre?> <?php echo $linea->apellido?> </td>
+                          <td ><?php echo $linea->nombre?> </td>
                           <td ><?php echo $linea->Nombre?> <?php echo $linea->Apellidos?></td>
                           <td ><?php echo $linea->descripcion?></td>
+
                           <?php if($linea->estadoventa==null):?>
                            <td ><span class="badge badge-warning">
                            Pendiente</span></td>
                           <?php elseif($linea->estadoventa==1): ?>
-                           <td ><span class="badge badge-success">Cancelado</span></td>
-                          <?php elseif($linea->estadoventa==2): ?>
-                            <td ><span class="badge badge-danger">Eliminado</span>
-                          <?php endif ?></td>
+                           <td ><span class="badge badge-success">Procesado</span></td>
+                          <?php elseif($linea->estadoventa==2 OR $linea->estadoventa==3): ?>
+                            <td ><span class="badge badge-danger">Eliminado</span></td>
+                          <?php endif ?>
                           <td>
                             <div class="e2_comision">
                                 <button class="fas fa-eye editar"   data-toggle="modal" data-target="#modelDettalleVenta"  onclick="verVentaCompleta(<?php echo($linea->id_venta);?>,'modelDettalleVenta' )"  title="Ver"></button>
@@ -42,20 +39,16 @@
                                     
                                    <button class="icon-mode_edit  activar" data-toggle="modal" data-target="#modelprocesarVenta"title="Procesar" onclick="verVentaCompleta(<?php echo($linea->id_venta);?>,'modelprocesarVenta')" ></button>
 
-                                    <button class="icon-delete_forever eliminar" id="btn_eliminar_cliente" onclick="eliminar_pedido(<?php echo $linea->estadoventa ?>)" title="Eliminar"></button>
-                                 <?php elseif($linea->estadoventa==1): ?>
-                                  
-                                    <button class="icon-delete_forever eliminar" id="btn_eliminar_cliente" onclick="eliminar_venta(<?php echo $linea->estadoventa ?>,'E')" title="Eliminar"></button> 
-                                  <?php elseif($linea->estadoventa==2): ?>
+                                    <button class="icon-delete_forever eliminar" id="btn_eliminar_cliente" onclick="eliminar_pedido(<?php echo $linea->id_venta ?>)" title="Eliminar"></button>
+                                 
                                          
                                 <?php endif ?> 
                                 
                             </div>
                           </td>  
                         </tr>
-                        
-                  <?php endforeach; ?>
-                  <?php endif; ?>
+                      <?php endforeach; ?>
+                    <?php endif; ?>
                   </tbody>
                 </table>
               </div>
@@ -162,6 +155,19 @@
          <div class="row">
           <div class="col-sm">
               <form>
+
+                <div class="form-row">
+                  <div class="col-sm-6">
+                    <div class="form-group clearfix">
+                      <div class="icheck-primary d-inline">
+                        <input type="checkbox" id="checkboxPrimary3" >
+                        <label for="checkboxPrimary3">
+                         Enviar a SUNAT
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                  <div class="form-row">
                    <div class="form-group col-md-4">
                       <label for="doc_venta">MONTO DE PAGO</label>
@@ -189,7 +195,7 @@
      
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <a class="btn btn-primary" onclick="listProcesarVenta()" role="button">PROCESAR E IMPRIMIR</a>
+        <button class="btn btn-primary" onclick="listProcesarVenta()" role="button">PROCESAR E IMPRIMIR</button>
         
       </div>
     </div>

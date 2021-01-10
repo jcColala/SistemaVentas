@@ -9,7 +9,7 @@ class VentaModel extends Model{
     protected $returnType     = 'objet';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['id_cliente','id_usuario','id_comprobante','correlativo','serie','igv','descuento','totalventa'];
+    protected $allowedFields = ['id_cliente','id_usuario','id_comprobante','correlativo','serie','subtotal','igv','descuento','totalventa','deleted_at'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

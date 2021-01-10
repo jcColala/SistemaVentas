@@ -18,7 +18,8 @@ class VentasController extends BaseController
 			 $caja=new CajaModel;
 			 $DetalleCajaModel=new DetalleCajaModel;
 			 $ClienteModel=new ClienteModel;
-			 $data= array('clientes' =>$ClienteModel->getCliente(),'cajeros'=>$caja->getCajeros(),'comprobantes'=>$DetalleCajaModel->getDetalleCaja());
+			 $data= array('clientes' =>$ClienteModel->getCliente(),'cajeros'=>$caja->getCajeros(),'comprobantes'=>$DetalleCajaModel->getDetalleCaja(),
+				"idtipo_cliente"=>$ClienteModel->getTipo());
 
 			echo view('main/header.php');
 	        echo view('main/menu.php');
@@ -42,8 +43,8 @@ class VentasController extends BaseController
 		$DetalleVentaModel=new DetalleVentaModel;
 		$fecha=$request->getPostGet("fecha_venta");
 		$docCliente=$request->getPostGet("doc_venta");
-		$nombreRazon=$request->getPostGet("n_venta");
-		$apellido=$request->getPostGet("a_venta");
+		$nombreRazon=$request->getPostGet("nombre_venta");
+		
 		$direccion=$request->getPostGet("direccion_venta");
 		$idusuario=$_SESSION['id'];
 		$idcomprobante=$request->getPostGet("id_comprobante");
@@ -59,6 +60,7 @@ class VentasController extends BaseController
 		$nombre_venta=$request->getPostGet("nombre_venta");
 		$producto_nombre=$request->getPostGet("producto_nombre");
 		$iddetalle_comprobante=$request->getPostGet("iddetalle_comprobante");
+		$subtotal=$request->getPostGet("subtotal");
 		$estadoCliente=$ClienteModel->getclienteDni($docCliente);
 		if(strlen($docCliente)>8){
 			$tipocliente=1;
@@ -68,7 +70,6 @@ class VentasController extends BaseController
 		if($estadoCliente!=false){	
 			$data=[
 				"nombre"=>$nombreRazon,
-				"apellido"=>$apellido,
 				"direccion"=>$direccion,
 				"idtipo_cliente"=>$tipocliente
 			];		 
@@ -78,7 +79,6 @@ class VentasController extends BaseController
 			$data=[
 				"dni_ruc"=>$docCliente,
 				"nombre"=>$nombreRazon,
-				"apellido"=>$apellido,
 				"direccion"=>$direccion,
 				"idtipo_cliente"=>$tipocliente
 			];
@@ -88,9 +88,9 @@ class VentasController extends BaseController
 		$dataVenta=array('id_cliente'=>$idcliente,
 					 'id_usuario'=>$idusuario,
 					 'id_comprobante'=>$idcomprobante,
-					 'correlativo'=>$correlativo,
 					 'serie'=>$serie,
 					 'igv'=>$igv,
+					 'subtotal'=>$subtotal,
 					 'descuento'=>$descuento,
 					 'totalventa'=>$totalVenta,);	
 		
@@ -98,7 +98,7 @@ class VentasController extends BaseController
 
 		if($VentaModel->insert($dataVenta)){
 			$idVenta=$VentaModel->recogerid($idcomprobante,);
-			$this->actualizar_comprobante($iddetalle_comprobante);
+			
 			$this->detalleventa($idVenta,$id_producto,$cantidad,$importe,$precioventa);
 		}
 		
@@ -140,16 +140,28 @@ class VentasController extends BaseController
 
 	}
 	public function fpdf() {
+		$DetalleCajaModel=new DetalleCajaModel;
 		$VentaModel=new VentaModel;
 		$request=\Config\Services::request();
 		$id=$request->getPostGet("id");
+		$ventadato=$VentaModel->GetVentaU($id);
+		$datocomprobante=$DetalleCajaModel->getcomprobante2($ventadato->id_comprobante);
+		$correlativo=$datocomprobante->correlativo;
+		$iddetalle_comprobante=$datocomprobante->iddetalle_ccomprobante;
+		$this->actualizar_comprobante($iddetalle_comprobante);
+		$ncorrelativo=$this->generarnumero($correlativo);
 		
+
+         $dataestado=[
+         	'correlativo'=>$ncorrelativo,
+				"deleted_at"=>1,
+			];	
+		$VentaModel->update($id, $dataestado);
 		$data= array('ventaU' =>$VentaModel->GetVentaU($id),
 					 'detalleVentaU' =>$VentaModel->getdetalleVenta($id),
+					 
 					 'baseurl'=>base_url(),
 					 );
-         
-
 // instantiate and use the dompdf class
 	 // echo view('Imprimir/comprobante.php',$data);
 		$baseurl=base_url();		
@@ -168,5 +180,79 @@ class VentasController extends BaseController
 
 		}
     }
+    public function eliminarpedido(){
+    	$ProductoModel=new ProductoModel;	
+    	$DetalleVentaModel=new DetalleVentaModel;
+    	$VentaModel=new VentaModel;
+		$request=\Config\Services::request();
+		$id=$request->getPostGet("id");
+		$ventaU =$VentaModel->GetVentaU($id);
+		$data=[
+				"deleted_at"=>2,
+			];		 
+		$VentaModel->update($id, $data);
+		
+		$detalleVentaU =$VentaModel->getdetalleVenta($id);
+		foreach ( $detalleVentaU as $row) {
+			$idproductoVenta=$row->id_producto;
+			$query=$ProductoModel->taer($idproductoVenta);
+			$cantidadactual=$query->Stock;
+			$cantidadventa=$row->cantidad;
+			$cantidadactualizada=$cantidadactual+$cantidadventa;
+			$dataproducto=[
+				"Stock"=>$cantidadactualizada,
+			];	
+			$ProductoModel->update($idproductoVenta, $dataproducto);
+		}
+
+    }
+   
+   public function eliminarventa(){
+    	$ProductoModel=new ProductoModel;	
+    	$DetalleVentaModel=new DetalleVentaModel;
+    	$VentaModel=new VentaModel;
+		$request=\Config\Services::request();
+		$id=$request->getPostGet("id");
+		$ventaU =$VentaModel->GetVentaU($id);
+		$data=[
+				"deleted_at"=>3,
+			];		 
+		$VentaModel->update($id, $data);
+		
+		$detalleVentaU =$VentaModel->getdetalleVenta($id);
+		foreach ( $detalleVentaU as $row) {
+			$idproductoVenta=$row->id_producto;
+			$query=$ProductoModel->taer($idproductoVenta);
+			$cantidadactual=$query->Stock;
+			$cantidadventa=$row->cantidad;
+			$cantidadactualizada=$cantidadactual+$cantidadventa;
+			$dataproducto=[
+				"Stock"=>$cantidadactualizada,
+			];	
+			$ProductoModel->update($idproductoVenta, $dataproducto);
+		}
+
+    }
+   
+  protected function generarnumero($numero){
+  	if ($numero>= 99999 and $numero < 999999){
+		return intval($numero)+1;
+	}
+	if ($numero>=9999 and $numero<99999){
+		return "0" . strval(intval($numero)+1);
+	}
+	if ($numero>=999 and $numero<9999){
+		return "00". strval(intval($numero)+1);
+	}
+	if ($numero>=99 and $numero<999){
+		return "000". strval(intval($numero)+1);
+	}
+	if ($numero>=9 and $numero<99){
+		return "0000". strval(intval($numero)+1);
+	}
+	if ($numero<9){
+		return "00000" . strval(intval($numero)+1);
+	}
+  }
 	
 }

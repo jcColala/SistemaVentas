@@ -30,11 +30,12 @@
 			</td>
 			<td class="info_factura">
 				<div class="round">
-					<span class="h3">Factura Electrónica</span>
-					<p>No. Factura: <strong>000001</strong></p>
+					<span class="h3"><?php echo($ventaU->descripcion)?> </span>
+					<p>No. Factura: <strong><?php echo($ventaU->correlativo)?></strong></p>
+					<p>Serie: <strong><?php echo($ventaU->serie)?></strong></p>
 					<p>Fecha: 20/01/2019</p>
 					<p>Hora: 10:30am</p>
-					<p>Vendedor: Jorge Pérez Hernández Cabrera</p>
+					
 				</div>
 			</td>
 		</tr>
@@ -56,12 +57,12 @@
 					<span class="h3">Cliente</span>
 					<table class="datos_cliente">
 						<tr>
-							<td><label>Nit:</label><p>54895468</p></td>
-							<td><label>Teléfono:</label> <p>7854526</p></td>
+							<td><label>Dni/Ruc:</label><p><?php echo($ventaU->dni_ruc)?></p></td>
+							<td><label>Teléfono:</label> <p><?php echo($ventaU->telefono)?></p></td>
 						</tr>
 						<tr>
-							<td><label>Nombre:</label> <p>Angel Arana Cabrera</p></td>
-							<td><label>Dirección:</label> <p>Calzada Buena Vista</p></td>
+							<td><label>Nombre:</label> <p><?php echo($ventaU->nombre)?> </p></td>
+							<td><label>Dirección:</label> <p> <?php echo($ventaU->direccion)?></p></td>
 						</tr>
 					</table>
 				</div>
@@ -80,55 +81,29 @@
 				</tr>
 			</thead>
 			<tbody id="detalle_productos">
-				<tr>
-					<td class="textcenter">1</td>
-					<td>Plancha</td>
-					<td class="textright">516.67</td>
-					<td class="textright">516.67</td>
-				</tr>
-				<tr>
-					<td class="textcenter">1</td>
-					<td>Plancha</td>
-					<td class="textright">516.67</td>
-					<td class="textright">516.67</td>
-				</tr>
-				<tr>
-					<td class="textcenter">1</td>
-					<td>Plancha</td>
-					<td class="textright">516.67</td>
-					<td class="textright">516.67</td>
-				</tr>
-				<tr>
-					<td class="textcenter">1</td>
-					<td>Plancha</td>
-					<td class="textright">516.67</td>
-					<td class="textright">516.67</td>
-				</tr>
-				<tr>
-					<td class="textcenter">1</td>
-					<td>Plancha</td>
-					<td class="textright">516.67</td>
-					<td class="textright">516.67</td>
-				</tr>
-				<tr>
-					<td class="textcenter">1</td>
-					<td>Plancha</td>
-					<td class="textright">516.67</td>
-					<td class="textright">516.67</td>
-				</tr>
+				  <?php  if (!empty($detalleVentaU)):?>
+                    <?php  foreach($detalleVentaU as $linea):?>
+                    	<tr>
+							<td class="textcenter"><?php echo $linea->cantidad?></td>
+							<td><?php echo $linea->Descripcion?></td>
+							<td class="textright"><?php echo $linea->importe?></td>
+							<td class="textright"><?php echo $linea->importe?></td>
+						</tr>
+                      <?php endforeach; ?>
+                  <?php endif; ?>
 			</tbody>
 			<tfoot id="detalle_totales">
 				<tr>
-					<td colspan="3" class="textright"><span>SUBTOTAL Q.</span></td>
-					<td class="textright"><span>516.67</span></td>
+					<td colspan="3" class="textright"><span>SUBTOTAL .</span></td>
+					<td class="textright"><span><?php echo($ventaU->subtotal)?></span></td>
 				</tr>
 				<tr>
-					<td colspan="3" class="textright"><span>IVA (12%)</span></td>
-					<td class="textright"><span>516.67</span></td>
+					<td colspan="3" class="textright"><span>IVA (18%)</span></td>
+					<td class="textright"><span><?php echo($ventaU->igv)?></span></td>
 				</tr>
 				<tr>
-					<td colspan="3" class="textright"><span>TOTAL Q.</span></td>
-					<td class="textright"><span>516.67</span></td>
+					<td colspan="3" class="textright"><span>TOTAL .</span></td>
+					<td class="textright"><span><?php echo($ventaU->totalventa)?></span></td>
 				</tr>
 		</tfoot>
 	</table>
