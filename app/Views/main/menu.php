@@ -156,7 +156,15 @@
             <li class="nav-item">
               <a href="<?php echo base_url();?>/VentasController" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Facturación</p>
+                <p>ATENCIÓN</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?php echo base_url();?>/ListadoVentasController" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>FACTURACIÓN</p>
               </a>
             </li>
           </ul>
@@ -170,9 +178,9 @@
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?php echo base_url();?>Usuario" class="nav-link">
+              <a href="<?php echo base_url();?>/ListadoVentasController/VentasProcesadas" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Ventas Suspendidas</p>
+                <p>PROCESADAS</p>
               </a>
             </li>
           </ul>

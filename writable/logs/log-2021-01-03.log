@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2021-01-03 09:12:01 --> Undefined index: nombre
 #0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
 #1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
@@ -18,3 +19,13 @@ CRITICAL - 2021-01-03 14:16:56 --> Undefined property: stdClass::$CodigoBarras
 #6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+=======
+CRITICAL - 2021-01-03 23:27:06 --> syntax error, unexpected ')'
+#0 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('ventas/listado....', Array, true)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\ListadoVentasController.php(18): view('ventas/listado....', Array)
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ListadoVentasController->index()
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListadoVentasController))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+>>>>>>> bd257f5bfd80d1b73d54f0ddb994493cdf113675

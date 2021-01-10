@@ -9,7 +9,7 @@ class VentaModel extends Model{
     protected $returnType     = 'objet';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['id_cliente','id_usuario','id_comprobante','correlativo','serie','igv','descuento'];
+    protected $allowedFields = ['id_cliente','id_usuario','id_comprobante','correlativo','serie','subtotal','igv','descuento','totalventa','deleted_at'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -20,6 +20,11 @@ class VentaModel extends Model{
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
+    public function recogerid(){
+      $db=db_connect();
+      $id=$db->insertID();
+      return $id;
+    }
    //  function mostrar(){
    //    $db=db_connect();
    //    $mostrar=$db->query("
@@ -58,4 +63,19 @@ class VentaModel extends Model{
    //    $mostrar= $db->query('SELECT * FROM usuario where Id='.$id.'');
    //    return $mostrar->getRow();
    //  }
+   public function  GetVenta(){
+      $db=db_connect();
+      $mostrar=$db->query('SELECT *,ventas.deleted_at as estadoventa  FROM ventas INNER JOIN clientes ON clientes.id_cliente=ventas.id_cliente INNER JOIN usuario on usuario.Id=ventas.id_usuario INNER JOIN comprobantes ON comprobantes.id_comprobante=ventas.id_comprobante ');
+      return $mostrar->getResult();
+   } 
+   public function GetVentaU($id){
+      $db=db_connect();
+      $mostrar=$db->query('SELECT *,ventas.created_at as fechaventa,ventas.deleted_at as estadoventa  FROM ventas INNER JOIN clientes ON clientes.id_cliente=ventas.id_cliente INNER JOIN usuario on usuario.Id=ventas.id_usuario INNER JOIN comprobantes ON comprobantes.id_comprobante=ventas.id_comprobante where id_venta='.$id.' ');
+      return $mostrar->getRow();
+   }
+   public function getdetalleVenta($id){
+     $db=db_connect();
+      $mostrar=$db->query('SELECT * FROM detalle_venta_producto INNER JOIN producto on producto.Id=detalle_venta_producto.id_producto where id_venta='.$id.' ');
+      return $mostrar->getResult();
+   }
 }

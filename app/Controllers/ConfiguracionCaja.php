@@ -12,7 +12,6 @@ class ConfiguracionCaja extends BaseController
 			$caja=new CajaModel;
 			$DetalleCajaModel=new DetalleCajaModel;
 			$data= array('cajas' =>$caja->getCaja(),'cajeros'=>$caja->getCajeros(),'comprobantes'=>$caja->getComprobante(),'detalle_caja'=>$DetalleCajaModel->getDetalleCaja());
-
 			echo view('main/header.php');
 	        echo view('main/menu.php');
 	        echo view('caja/configuracion.php',$data);
@@ -48,14 +47,15 @@ class ConfiguracionCaja extends BaseController
 		$id_comprobante=$request->getPost("id_comprobante");
 		$serie=$request->getPost("serie");
 		$correlativo=$request->getPost("correlativo");
+		$igv=$request->getPost("igv");
 		$data=array("descripcion"=>$caja_config,
 						"id_usuario"=>$id_cajero);
 		$CajaModel->update($idcaja,$data);
 		$DetalleCajaModel->delete_detalle_caja($idcaja);
-		$this->addDetalle_comprobante($id_comprobante,$serie,$correlativo, intval($idcaja));
+		$this->addDetalle_comprobante($id_comprobante,$serie,$correlativo,$igv, intval($idcaja));
 
 	}	
-		protected function addDetalle_comprobante($id_comprobante,$serie,$correlativo,$idcaja){
+		protected function addDetalle_comprobante($id_comprobante,$serie,$correlativo,$igv,$idcaja){
 			$DetalleCajaModel=new DetalleCajaModel;
 			for ($i=0; $i < count($id_comprobante) ; $i++) { 
 				$data =array(
@@ -63,6 +63,7 @@ class ConfiguracionCaja extends BaseController
 							'idcomprobante'=>$id_comprobante[$i],
 							'serie'=>$serie[$i],
 							'correlativo'=>$correlativo[$i],
+							'igv'=>$igv[$i],
 					);
 				
 				$DetalleCajaModel->insert($data);

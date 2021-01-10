@@ -63,4 +63,10 @@ class ProductoModel extends Model{
       $query= $db->query('SELECT * FROM producto where Id='.$id.'');
       return $query->getRow();
     }
+
+    public function getProductoVenta($valor){
+       $db=db_connect();
+       $query= $db->query("SELECT p.Id as idProducto,p.PrecioCompra AS PrecioCompra,p.PrecioVenta as precioVenta,p.Stock as Stock,   CONCAT(p.CodigoBarras,' ',c.Descripcion,' ',p.Descripcion) AS label from producto as p inner join categoria as c on p.IdCategoria=c.Id where CONCAT(p.CodigoBarras,' ',c.Descripcion,' ',p.Descripcion) like '$valor%' ");
+       return $query->getResult();
+    }
 }

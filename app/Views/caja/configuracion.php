@@ -91,12 +91,15 @@
                      <?php endforeach ?>
               </select>
             </div>
-            <div class="col-md-3 mb-2 ">
+            <div class="col-md-2 mb-2 ">
 
               <input type="text" class="form-control"  onkeypress="return Letras_numeros(event);" placeholder="Serie" id="serie_config">
             </div>
-            <div class="col-md-3 mb-2">
+            <div class="col-md-2 mb-2">
               <input type="text"  class="form-control" onkeypress="return Numeros(event);" placeholder="Correlativo" id="correlativo_config">
+            </div>
+            <div class="col-md-2 mb-2">
+              <input type="text"  class="form-control" onkeypress="return Numeros(event);" placeholder="IGV" id="IGV_config">
             </div>
             <div class="col-md-1 ">
               <button type="button" onclick="mostrarp()"  class="btn btn-success"><i class="fas fa-plus" ></i></button>
@@ -111,6 +114,7 @@
                   <th scope="col">Comprobante</th>
                   <th scope="col">Serie</th>
                   <th scope="col">Correlativo</th>
+                   <th scope="col">IGV</th>
                   <th scope="col">Acción</th>
                 </tr>
               </thead>
@@ -120,8 +124,9 @@
                         <tr>
                           <td ><input type='hidden' name=id_comprobante[] id="id_comprobante[]" value=<?php echo $linea->id_comprobante?> readonly><?php echo $linea->descripcion?></td>
                           <td ><input type='text' name="serie[]"  id="serie[]" onkeypress="return Letras_numeros(event);" value=<?php echo $linea->serie?>  ></td>
+
                           <td ><input type='text' name=correlativo[] id="correlativo[]"  onkeypress="return Letras_numeros(event);"  value=<?php echo $linea->correlativo?> ></td>
-                         
+                         <td ><input type='text' name="igv[]"  id="igv[]" onkeypress="return Letras_numeros(event);" value=<?php echo $linea->igv?>  ></td>
                           <td>
 
                                 <button type='button' class='btn btn-danger btn-remove-comprobante' ><span class='fas fa-trash-alt'></span></button>

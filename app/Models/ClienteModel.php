@@ -9,7 +9,7 @@ class ClienteModel extends Model{
     protected $returnType     = 'objet';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['id_cliente','idtipo_cliente','dni_ruc','nombre','apellido','telefono','correo','direccion','sexo','deleted_at'];
+    protected $allowedFields = ['id_cliente','idtipo_cliente','dni_ruc','nombre','telefono','correo','direccion','sexo','deleted_at'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -47,6 +47,14 @@ class ClienteModel extends Model{
       if (isset($row)){ return false;}
       else{ return true;}
     }
+    public function getclienteDni($dni){
+       $db=db_connect();
+      $mostrar= $db->query('SELECT * FROM clientes where dni_ruc="'.$dni.'"');
+
+      $row = $mostrar->getRow();
+      if (isset($row)){ return $mostrar->getRow();}
+      else{ return false;}
+    }
     public function compro_dni2($id,$dni){
      $db=db_connect();
        $query2= $db->query('SELECT dni_ruc from clientes where id_cliente="'.$id.'"');
@@ -59,5 +67,9 @@ class ClienteModel extends Model{
            return $row = $query->getRow();
        }
     }
-    
+     public function recogerid(){
+      $db=db_connect();
+      $id=$db->insertID();
+      return $id;
+    }
 }

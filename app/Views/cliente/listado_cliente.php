@@ -19,7 +19,7 @@
                       <th>#</th>
                       <th>TIPO</th>
                       <th>NOMBRE</th>
-                      <th class="centrar">APELLIDOS</th>
+                    
                       <th class="centrar">DNI/RUC</th>
                       <th class="centrar">TELÉFONO</th>
                       <th class="centrar">OPCIONES</th>
@@ -31,8 +31,8 @@
                         <tr>
                           <td ><?php echo $linea->id_cliente?></td>
                           <td ><?php echo $linea->tipo_descripcion?></td>
-                          <td ><?php echo $linea->nombre?></td>
-                          <td ><?php echo $linea->apellido?></td>
+                          <td ><?php echo $linea->nombre?> </td>
+                          
                           <td ><?php echo $linea->dni_ruc?></td>
                           <td ><?php echo $linea->telefono?></td>
                           <td>
