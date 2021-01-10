@@ -2,7 +2,7 @@
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="content-header">
-      <div class="card" id="card" > 
+      <div class="card" id="card" >  
         <h4>Registrar Producto</h4>
  
         <section class="padr_menu_datos">
@@ -18,7 +18,7 @@
               <div class="form-row">
                   <div class="form-group col-md-3">
                     <label>Codigo de Barras</label>
-                    <input type="text" class="form-control" id="codigobrr" name="codigobrr" value="<?php echo $codigobrr?>" placeholder="000000" Required/>
+                    <input type="text" style="color: #495057a6;" readonly=»readonly» class="form-control" id="codigobrr" name="codigobrr" value="<?php echo $codigobrr?>"/>
                   </div>
                   <div class="form-group col-md-9">
                     <label>Descripci&oacute;n</label>
@@ -26,13 +26,13 @@
                   </div>
                 </div>  
                 <div class="form-row">
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-3">
+                    <label>Stock</label>
+                    <input type="number" style="color: #495057a6;" readonly=»readonly» class="form-control" id="stock" name="stock" value="<?php echo $stock?>" placeholder="0"/>
+                  </div>
+                  <div class="form-group col-md-5">
                     <label>Precio Venta</label>
                     <input type="number" class="form-control" id="precioventa" name="precioventa" value="<?php echo $precioventa?>" placeholder="0.00" step="any" Required/>
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label>Stock</label>
-                    <input type="number" readonly=»readonly» class="form-control" id="stock" name="stock" value="<?php echo $stock?>" placeholder="0"/>
                   </div>
                   <div class="form-group col-md-4">
                     <label for="inputState">Categor&iacute;a</label>

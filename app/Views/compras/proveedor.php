@@ -31,13 +31,13 @@
                           <td class="centrar"><?php echo $linea->DNI_RUC;?></td>
                           <td class="centrar"><?php echo $linea->Celular;?>/<?php echo $linea->Telefono;?></td>
                           <?php  
-                              if ($linea->deleted_at==Null){ $estado="Activo";}
-                              else{$estado="Inactivo";}
-                          ?>                  
+                              if ($linea->deleted_at==Null){ $estado="<span style='position: relative;left: -8px;' class='badge bg-success'>Activo</span>";}
+                              else{$estado="<span style='position: relative;left: -9px;' class='badge bg-danger'>Inactivo</span>";}
+                          ?>                 
                           <td class="centrar"><?php echo $estado;?></td>
                           <td>
                             <div class="e2_comision">
-                                <button onclick="window.location='<?php echo base_url();?>/ClientesController/agregarViews?id=<?php echo base64_encode($linea->Id);?>'" class="icon-mode_edit editar" title="Editar" ></button>
+                                <button onclick="window.location='<?php echo base_url();?>/Proveedor/agregarViews?id=<?php echo base64_encode($linea->Id);?>'" class="icon-mode_edit editar" title="Editar" ></button>
                                 <?php if ($linea->deleted_at==Null){?>    
                                 <button  onclick="e2_proveedor('eliminar',<?php echo $linea->Id; ?>);" class="icon-delete_forever eliminar" title="Eliminar"></button>
                                 <?php }else{?>

@@ -151,12 +151,6 @@ function edd_precioC(id){
 
 }
 
-//*--------------------------------CONSTANTES----------------------------------*//
-
-const formularioUI= document.querySelector('#formulario_d_compras');
-//*--------------------------------CONSTANTES----------------------------------*//
-
-
 function guardr_det_compra(event){
   event.preventDefault();
 
@@ -202,7 +196,8 @@ function guardr_det_compra(event){
   form_data.append('idprovedor',idprovedor);
   form_data.append('totalC',totalC);
 
-  $('#botones_modal').html('<img src="../public/gif/carga.gif" alt="loading" />');
+  /*$('#botones_modal').html('<img src="../public/gif/carga.gif" alt="loading" />');*/
+  $("#contenedor").slideDown(0);
   $("#m_error").html("");
   $("#m_error_2").html("");
   $.ajax({

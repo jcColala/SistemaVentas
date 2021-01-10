@@ -61,7 +61,13 @@ class TipoUsuario extends BaseController
 			}
 			$t_usuario->insert($data);
 		}
-		else{ $t_usuario->update($id, $data);}
+		else{
+			if($t_usuario->compro_d_update($request->getPostGet("descripcion"),$id) == false){
+				$alert="¡ El Tipo usuario ya existe !";
+				$this->session->setFlashdata('alert', $alert);
+				return " <script type='text/javascript'>window.history.back();</script>";
+			}
+			$t_usuario->update($id, $data);}
 		return redirect()->to(site_url("TipoUsuario"));
 
 	}

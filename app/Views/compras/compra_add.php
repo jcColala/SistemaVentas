@@ -127,6 +127,9 @@
       </div>
   </div>
 </div>
+<div id="contenedor" class="contenedor">
+      <div class="loader" id="loader">Loading...</div>
+</div>
 <script type="text/javascript">
   var lista=[];
   var loc_st=localStorage.getItem("lista");

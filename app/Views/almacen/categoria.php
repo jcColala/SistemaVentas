@@ -26,9 +26,9 @@
                           <td class="centrar"><?php echo $n;?></td>
                           <td><?php echo $linea->Descripcion;?></td>
                           <?php  
-                              if ($linea->deleted_at==Null){ $estado="Activo";}
-                              else{$estado="Inactivo";}
-                          ?>                  
+                              if ($linea->deleted_at==Null){ $estado="<span style='position: relative;left: -8px;' class='badge bg-success'>Activo</span>";}
+                              else{$estado="<span style='position: relative;left: -9px;' class='badge bg-danger'>Inactivo</span>";}
+                          ?>                 
                           <td class="centrar"><?php echo $estado;?></td>
                           <td>
                             <div class="e2_comision">

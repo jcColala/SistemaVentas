@@ -41,6 +41,8 @@
 
   <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/themes/semantic.min.css">
   <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/alertify.min.css">
+
+  <link rel="stylesheet" href="<?php echo base_url()?>/public/toastr/toastr.min.css">
   <!-- Select2 -->
   <link rel="stylesheet" href="<?php echo base_url();?>/public/plugins/select2/css/select2.min.css">
   <link rel="stylesheet" href="<?php echo base_url();?>/public/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">

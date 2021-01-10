@@ -20,7 +20,7 @@
                       <th class="centrar">Nick</th>
                       <th class="centrar">Estado</th>
                       <th class="centrar">Opciones</th>
-                    </tr>
+                    </tr> 
                   </thead>
                   <tbody>
                     <?php  if (!empty($usuario)):?>
@@ -33,8 +33,8 @@
                           <td class="centrar"><?php echo $linea->DNI;?></td>
                           <td class="centrar"><?php echo $linea->Login;?></td>
                           <?php  
-                              if ($linea->deleted_at==Null){ $estado="Activo";}
-                              else{$estado="Inactivo";}
+                              if ($linea->deleted_at==Null){ $estado="<span style='position: relative;left: -8px;' class='badge bg-success'>Activo</span>";}
+                              else{$estado="<span style='position: relative;left: -9px;' class='badge bg-danger'>Inactivo</span>";}
                           ?>                  
                           <td class="centrar"><?php echo $estado;?></td>
                           <td>

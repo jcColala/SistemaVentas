@@ -42,7 +42,7 @@
                                 <button class="icon-delete_forever eliminar" id="btn_eliminar_cliente" onclick="eliminar_cliente(<?php echo $linea->id_cliente ?>,'E')" title="Eliminar"></button>
                                 <?php }else{?>
                                 <button class=" icon-radio_button_checked activar"  id="btn_activar_cliente" onclick="activar_cliente(<?php echo $linea->id_cliente ?>,'A')" title="Activar"></button>
-                                <?php }?>
+                                <?php }?>  
                             </div>
                           </td>  
                         </tr>

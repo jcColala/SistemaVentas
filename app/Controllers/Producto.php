@@ -6,7 +6,7 @@ class Producto extends BaseController
 		$session = \Config\Services::session();
 		if($session->get('login')==NULL){
 			return redirect()->to(site_url("Login"));
-		}
+		} 
 		else{
 			$producto=new ProductoModel;
 			$data= array('producto' =>$producto->mostrar());
@@ -22,9 +22,12 @@ class Producto extends BaseController
 		$request=\Config\Services::request();
 
 		if (!base64_decode($request->getPostGet("id"))){
+			$traer_codigo=$producto->traer_codigo();
+			$codigo_barras=$traer_codigo->Id + 1;
+			$codigo_barras=str_pad($codigo_barras,8,0, STR_PAD_LEFT); 
 			$data=array(
 				"id"=>'',
-				"codigobrr"=>'',
+				"codigobrr"=>$codigo_barras,
 				"descripcion"=>'',
 				"idcategoria"=>'',
 				"preciocompra"=>'',
@@ -111,5 +114,17 @@ class Producto extends BaseController
 			$producto->delete($id);
 			echo json_encode('elimino');
 		}
+	}
+	public function imprimir(){
+		$request=\Config\Services::request();
+		$producto=new ProductoModel;
+		$codbrr=$request->getPostGet('c');
+		$cant=$request->getPostGet('ct');
+
+		$data=array(
+				"codbrr"=>$codbrr,
+				"cant"=>$cant
+		);
+	    echo view('almacen/imprimirCbrr.php',$data);
 	}
 }

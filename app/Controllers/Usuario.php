@@ -16,7 +16,7 @@ class Usuario extends BaseController
 	        echo view('usuario/usuario.php',$data);
 	        echo view('main/footer.php'); 
     	}
-	}
+	} 
 	public function agregarViews(){
 		$usuario=new UsuarioModel;
 		$request=\Config\Services::request();
@@ -108,7 +108,13 @@ class Usuario extends BaseController
 			}
 			$usuario->insert($data);
 		}
-		else{ $usuario->update($id, $data);}
+		else{ 
+			if($usuario->compro_dni_update($request->getPostGet("dni"),$id) == false){
+				$alert="¡ El DNI ya existe !";
+				$this->session->setFlashdata('alert', $alert);
+				return " <script type='text/javascript'>window.history.back();</script>";
+			}
+			$usuario->update($id, $data);}
 		return redirect()->to(site_url("Usuario"));
 
 	}

@@ -84,3 +84,22 @@ function e2_producto(op,id) {
             }
     });
 }
+
+var codbrr="";
+
+function ver_mas(codb,desc,cat,stock,pv,estado){
+    jQuery.noConflict();
+    if (estado == '') { estado='Activo';}else{ estado='Inactivo';}
+    codbrr=codb;
+    $('#ModalProducto').appendTo("body").modal('show');
+    $("#sec_codbrr").html("<img src='./public/codigobrr/barcode.php?text="+codb+"&size=50&orientation=horizontal&codetype=Code128&print=true''>");
+     $("#ul_det_product").html("<li class='list-group-item'>"+codb+"</li><li class='list-group-item'>"+desc+"</li><li class='list-group-item'>"+cat+"</li><li class='list-group-item'>S/ "+pv+"</li><li class='list-group-item'>"+stock+"</li><li class='list-group-item'>"+estado+"</li>");
+}
+
+function imprimir_cobarr(event){
+    event.preventDefault();
+    jQuery.noConflict();
+    var cant = document.getElementById('cant').value;
+    if (cant<=0) { toastr["error"]("Cantidad invalida","ERROR"); return false; }
+    window.open('Producto/imprimir?c='+codbrr+'&ct='+cant , '_blank');
+} 
