@@ -31,10 +31,10 @@
 			<td class="info_factura">
 				<div class="round">
 					<span class="h3"><?php echo($ventaU->descripcion)?> </span>
-					<p>No. Factura: <strong><?php echo($ventaU->correlativo)?></strong></p>
+					<p>Correlativo: <strong><?php echo($ventaU->correlativo)?></strong></p>
 					<p>Serie: <strong><?php echo($ventaU->serie)?></strong></p>
-					<p>Fecha: 20/01/2019</p>
-					<p>Hora: 10:30am</p>
+					<p>Fecha: <?php echo($ventaU->fechafacturacion)?></p>
+					<p>Hora:<?php echo($ventaU->horafacturacion)?></p>
 					
 				</div>
 			</td>

@@ -37,16 +37,18 @@
                         <div class="input-group input-group">
                           <input type="text" class="form-control" name="doc_venta" id="doc_venta">
                           <span class="input-group-append">
-                            <button id="btn-busquedad" type="button" class="btn btn-info btn-flat">RENIEC</button>
+                            <button id="btn-busquedad" type="button" class="btn btn-info btn-flat">Buscar</button>
                           </span>
                         </div>
                     </div>
+                   
                     <div class="form-group col-md-5">
                       <label for="">NOMBRE/RAZ.SOC</label>
                         <input type="text" class="form-control" name="nombre_venta" id="nombre_venta">
                         <input type="hidden" name="n_venta" id="n_venta" value="">
                         <input type="hidden" name="a_venta" id="a_venta" value="">
                     </div>
+                    
                     <div class="form-group col-md-1">
                       <label for="">&nbsp;</label>
                         <button id="btn-agregar" type="button" class="btn btn-success btn-flat btn-block" data-toggle="modal" data-target="#modalclientepedido"><span class="fa fa-plus"></span> <i class="fas fa-user"></i></button>
