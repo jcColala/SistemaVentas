@@ -46,7 +46,7 @@
                   </div>
                   <div class="form-group col-md-2">
                     <label>DNI/RUC</label>
-                    <input type="number" class="form-control" id="dni_cliente" name="dni_cliente" value="<?php echo $dni_ruc?>" placeholder="DNI/RUC"  maxlength="8" Required/>
+                    <input type="text" class="form-control" id="dni_cliente" name="dni_cliente" value="<?php echo $dni_ruc?>" placeholder="DNI/RUC"  onkeypress='return Numeros(event);' maxlength="11" Required/>
                   </div>
                   <div class="form-group col-md-8">
                     <label>NOMBRE/EMPRESA</label>
@@ -95,4 +95,7 @@
         </div>
       </div>
   </div>
+</div>
+<div id="contenedor" class="contenedor">
+      <div class="loader" id="loader">Loading...</div>
 </div>

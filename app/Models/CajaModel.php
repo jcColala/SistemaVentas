@@ -27,6 +27,7 @@ class CajaModel extends Model{
                               ");
       return $mostrar->getResult();
   	}
+    
     function getCajeros(){
       $db=db_connect();
       $mostrar=$db->query("
