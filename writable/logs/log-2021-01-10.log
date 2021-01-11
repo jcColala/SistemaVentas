@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+CRITICAL - 2021-01-10 09:01:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0%'' at line 1
+#0 C:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT p.Id as ...')
+#1 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.Id as ...')
+#2 C:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.Id as ...')
+#3 C:\xampp\htdocs\SistemaVentas\app\Models\ProductoModel.php(69): CodeIgniter\Database\BaseConnection->query('SELECT p.Id as ...')
+#4 C:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(35): App\Models\ProductoModel->getProductoVenta(''0')
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->getProducto()
+#6 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-10 09:05:34 --> Class 'PDF' not found
+#0 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('almacen/imprimi...', Array, true)
+#2 C:\xampp\htdocs\SistemaVentas\app\Controllers\Producto.php(128): view('almacen/imprimi...', Array)
+#3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Producto->imprimir()
+#4 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#5 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+=======
 CRITICAL - 2021-01-10 01:44:10 --> file_get_contents(D:\xampp\htdocs\SistemaVentas\writable\debugbar/debugbar_1610260946.json): failed to open stream: No such file or directory
 #0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'D:\\xampp\\htdocs...', 111, Array)
 #1 D:\xampp\htdocs\SistemaVentas\system\Debug\Toolbar\Collectors\History.php(111): file_get_contents('D:\\xampp\\htdocs...')
@@ -44,6 +66,7 @@ CRITICAL - 2021-01-10 14:17:18 --> syntax error, unexpected '}', expecting ';' o
 #3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
 #5 {main}
+<<<<<<< HEAD
 CRITICAL - 2021-01-10 17:49:34 --> Unknown column 'Comprobante' in 'field list'
 #0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `co...')
 #1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
@@ -77,3 +100,6 @@ CRITICAL - 2021-01-10 18:43:06 --> Unknown column 'Comprobante' in 'field list'
 #8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
 #10 {main}
+=======
+>>>>>>> a523692faffac76ff19bf8691b80aa8553e53337
+>>>>>>> 6c350380a7e679d044c69105005486c8753ea04b
