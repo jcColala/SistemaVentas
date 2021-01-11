@@ -1,5 +1,24 @@
+function buscarlocal(){
+	dni=$("#doc_venta").val();
+	dni=dni.trim();
+	if(dni==""){
+		alertify.error('documento requerido');
+			return false;	
+	}else{
+		$.ajax({ 
+  			   type:'POST',
+  			   url: "ClientesController/getclientedni",
+  			   data:{dni:dni},
+  			    success: function(data){
+  			    	$("#"+N+" "+".modal-body").html(data);
+  			    }
+  				});
+	}
+
+}
+
 function agregarproductoventa(){
-	window.location.href = BASE_URL+"/Producto/agregarViews";
+	window.location.href = BASE_URL+"/Compra/agregarViews";
 	let estadoAgregar="V";
 	localStorage.setItem("estadoAgregar",estadoAgregar);
 }
@@ -49,14 +68,11 @@ function guardarclienteventa(){
   			    	let listacliente=JSON.parse(localStorage.getItem("listacliente"));
   			    	 console.log(listacliente);
   			    	 doc=listacliente.documento;
-  			    	 nombre=listacliente.nombre + listacliente.apellido;
-  			    	 nombrev=listacliente.nombre;
+  			    	 nombre=listacliente.nombre;
   			    	 apellidov=listacliente.apellido;
   			    	 direccionv=listacliente.direccion,
   			    	 $("#doc_venta").val(doc);
   			    	 $("#nombre_venta").val(nombre);
-  			    	  $("#n_venta").val(nombrev);
-  			    	 $("#a_venta").val(apellidov);
   			    	 $('#direccion_venta').val(direccionv);
   			    	 $("#modalclientepedido").modal('hide');//ocultamos el modal
   					$('body').removeClass('modal-open');//eliminamos la clase del body para poder hacer scroll
@@ -88,11 +104,7 @@ $( "#comprobante_venta" ).change(function() {
 	$("#serie_venta").val(serie);
 	$("#iddetalle_comprobante").val(iddetalle_comprobante);
 	$("#correlativo_venta").val(generarnumero(Number(correlativo)));
-	if(comprobante=="FACTURA" || comprobante=="FACTURA ELECTRÓNICA" || comprobante=="FACTURA DE VENTA ELECTRÓNICA"){
-		$("#btn-busquedad").text("SUNAT");
-	}else if(comprobante=="BOLETA" ||comprobante=="BOLETA ELECTRÓNICA" || comprobante=="BOLETA DE VENTA ELECTRÓNICA"){
-		$("#btn-busquedad").text("RENIEC");
-	}
+	
  }else{
  	$("#idtipo_comprobante").val(null);
 	$("#serie_venta").val(null);
@@ -124,11 +136,17 @@ $( "#comprobante_venta" ).change(function() {
 		precioVenta=ui.item.precioVenta;
 		nombre=ui.item.Descripcion;
 		stock=ui.item.Stock;
+		if(stock==0){
+			alertify.error('No hay stock del producto');
+			return false;	
+		}else{
+
+
 		html="<tr>";
 		html +="<td><input type='hidden' name='producto_nombre[]' value='"+producto+"'><input type='hidden' name='id_prod[]' value='"+data+"'>"+producto+"</td>";
 		html +="<td>"+preciocompra+"</td>";
 		html +="<td><input type='text' id='precioVenta[]' name='precioVenta[]' value='"+precioVenta +"'onkeypress='return Numeros_otro(event);' onpaste='return false' class='precio_venta'></td>";
-		html +="<td><input type='hidden' name='stock[]' id='stock' value=''>"+stock+"</td>";
+		html +="<td><input type='hidden' name='stock[]' id='stock' value='"+stock+"'>"+stock+"</td>";
 		html +="<td><input type='text' id='cantida_pro' name='cantida_pro[]' value='1' onkeypress='return numeros_precios(event);' onpaste='return false' class='cantidades'></td>";
 		html +="<td><input type='hidden' id='sub_total' name='sub_total[]' value='"+precioVenta+"'><p>"+precioVenta+"</p></td>";
 		html +="<td><button type='button' class='btn btn-danger btn-remove-producto'  ><span class='fas fa-trash-alt'></span></button></td>";
@@ -138,7 +156,7 @@ $( "#comprobante_venta" ).change(function() {
 		calcular_total();
 		 $("#producto_venta").val(""); 
     	return false;
-
+    }
 	},
 });
 $(document).on("click",".btn-remove-producto",function(){
@@ -211,21 +229,47 @@ function generarnumero(numero){
 
 }
 
+// $( "#btn-busquedad" ).click(function() {
+//   ndoc=$("#doc_venta").val();
+//   tipo_busquedad=$("#btn-busquedad").text();
+//   if(ndoc==0 && tipo_busquedad=="RENIEC"){
+//   	$("#nombre_venta").val("CLIENTE VARIOS")
+//   }else if(ndoc==0 && tipo_busquedad=="SUNAT"){
+//   	alertify.error('COMPROBANTE ERRONEO');
+//   }else if(tipo_busquedad=="SUNAT"){
+//   	valsunatVenta();
+//   }else if (tipo_busquedad="RENIEC"){
+//   	valdniVenta();
+//   }
+
+// });
+
 $( "#btn-busquedad" ).click(function() {
   ndoc=$("#doc_venta").val();
   tipo_busquedad=$("#btn-busquedad").text();
-  if(ndoc==0 && tipo_busquedad=="RENIEC"){
+  if(ndoc==""){
+  	alertify.error('DNI/RUC es requerido');
+  	return false;
+  }else if(ndoc==0){
   	$("#nombre_venta").val("CLIENTE VARIOS")
-  }else if(ndoc==0 && tipo_busquedad=="SUNAT"){
-  	alertify.error('COMPROBANTE ERRONEO');
-  }else if(tipo_busquedad=="SUNAT"){
-  	valsunatVenta();
-  }else if (tipo_busquedad="RENIEC"){
-  	valdniVenta();
+  }else{
+  	$.ajax({ 
+  			   type:'POST',
+  			   url: "ClientesController/getclientedni",
+  			   data:{dni:ndoc},
+  			    success: function(data){
+  			    	if(data=="A"){
+  			    		alertify.error('El usuario no existe en el sistema, agregar');
+  			    	}else{
+  			    		var response = JSON.parse(data);
+      					$("#nombre_venta").val(response.nombre);
+      					$("#direccion_venta").val(response.direccion);
+  			    	}
+  			    }
+  				});
   }
 
 });
-
 
 function valdniVenta(){
 	dni=$("#doc_venta").val();
@@ -290,9 +334,25 @@ async function getReniecVenta()
 }
 
 function ProcesarVenta(){
+
 	var nFilas = $("#tbventas tr").length;
 	total=isNaN($("#total_venta").val());
-	if($("#comprobante_venta").val()==""){
+	datos_comprobante=$("#comprobante_venta").val();
+	datos_comprobante=datos_comprobante.split("*");
+	comprobante=datos_comprobante[1];
+	doc=$("#doc_venta").val();
+	tamdoc=doc.length;
+
+	
+	if(comprobante=="FACTURA" || comprobante=="FACTURA ELECTRÓNICA" || comprobante=="FACTURA DE VENTA ELECTRÓNICA"){
+		
+		if(Number(tamdoc)<11){
+			
+			alertify.error('Error en el tipo de comprobante');
+			return false;
+		}
+	}
+	else if($("#comprobante_venta").val()==""){
 		alertify.error('Comprobante requerido');
 		return false;
 	}else if($("#doc_venta").val()==""){
@@ -310,6 +370,19 @@ function ProcesarVenta(){
 		return false;
 	}
 	else{
+		num=nFilas-1;
+		for (i=0; i<num; i++){
+			
+		stock=Number(document.getElementsByName("stock[]")[i].value);
+ 		cantida_pro=Number(document.getElementsByName("cantida_pro[]")[i].value);
+ 		if (cantida_pro=="" || cantida_pro<1 ){
+ 				alertify.error("Cantidad de producto Incorrecta");
+    			return false;}
+    		else if (cantida_pro>stock){
+    			alertify.error("Cantidad Supera al Stock");
+    			return false;
+    		}
+		}
 		swal({
               title: "Confirmar",
               text: "¿ Desea procesar el pedido ?",

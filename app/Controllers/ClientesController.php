@@ -16,6 +16,19 @@ class ClientesController extends BaseController
 	        echo view('main/footer.php'); 
     	}
 	}
+	public function getclientedni(){
+		$cliente=new ClienteModel;
+		$request=\Config\Services::request();
+		$dni=$request->getPostGet("dni");
+		$datoscliente=$cliente->getclienteDni($dni);
+		if($datoscliente==false){
+			echo("A");
+		}else{
+			echo json_encode($datoscliente);
+		}
+		
+
+	}
 	public function agregarViews(){
 		$cliente=new ClienteModel;
 		$request=\Config\Services::request();
@@ -133,7 +146,7 @@ class ClientesController extends BaseController
 		$data=[
 				"dni_ruc"=>$request->getPostGet("dni_cliente"),
 				"nombre"=>$request->getPostGet("nombre_cliente"),
-				"apellido"=>$request->getPostGet("apellidos_cliente"),
+				
 				"telefono"=>$request->getPostGet("celular_cliente"),
 				"correo"=>$request->getPostGet("correo_cliente"),
 				"direccion"=>$request->getPostGet("direccion_cliente"),
@@ -144,15 +157,12 @@ class ClientesController extends BaseController
 		
 		if ($id=='') {
 			if($cliente->compro_dni($request->getPostGet("dni_cliente")) == false){
-				$alert="¡ El DNI ya existe !";
-				$this->session->setFlashdata('alert', $alert);
+				$dato=$cliente->getclienteDni($request->getPostGet("dni_cliente"));
+				$id2=$dato->id_cliente;
+				$cliente->update($id2, $data);
 				echo("A");
 			}
-			$cliente->insert($data);
-			$alert_ingreso_cliente="<div class='card-body'><div class='alert alert-success' role='alert'>
-        				El Registro se ingresó con ÉXITO
-        				</div></div>";
-        	$this->session->setFlashdata('alert_ingreso_cliente', $alert_ingreso_cliente);
+			
 		}
 		
 

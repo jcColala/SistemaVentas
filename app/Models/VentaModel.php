@@ -70,7 +70,7 @@ class VentaModel extends Model{
    } 
    public function GetVentaU($id){
       $db=db_connect();
-      $mostrar=$db->query('SELECT *,ventas.created_at as fechaventa,ventas.deleted_at as estadoventa  FROM ventas INNER JOIN clientes ON clientes.id_cliente=ventas.id_cliente INNER JOIN usuario on usuario.Id=ventas.id_usuario INNER JOIN comprobantes ON comprobantes.id_comprobante=ventas.id_comprobante where id_venta='.$id.' ');
+      $mostrar=$db->query('SELECT *,ventas.created_at as fechaventa,date(ventas.updated_at) as fechafacturacion,time(ventas.updated_at) as horafacturacion ,ventas.deleted_at as estadoventa  FROM ventas INNER JOIN clientes ON clientes.id_cliente=ventas.id_cliente INNER JOIN usuario on usuario.Id=ventas.id_usuario INNER JOIN comprobantes ON comprobantes.id_comprobante=ventas.id_comprobante where id_venta='.$id.' ');
       return $mostrar->getRow();
    }
    public function getdetalleVenta($id){
