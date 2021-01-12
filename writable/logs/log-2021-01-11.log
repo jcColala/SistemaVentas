@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2021-01-11 09:54:42 --> Undefined index: nombre
 #0 C:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 75, Array)
 #1 C:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('C:\\xampp\\htdocs...')
@@ -57,3 +58,121 @@ CRITICAL - 2021-01-11 19:47:12 --> Undefined variable: compra
 #3 C:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
 #5 {main}
+=======
+CRITICAL - 2021-01-11 02:08:27 --> Unknown column 'Comprobante' in 'field list'
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `co...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 D:\xampp\htdocs\SistemaVentas\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(69): CodeIgniter\Model->insert(Array)
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-11 02:16:26 --> Unknown column 'Comprobante' in 'field list'
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `co...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 D:\xampp\htdocs\SistemaVentas\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(69): CodeIgniter\Model->insert(Array)
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-11 02:19:39 --> Unknown column 'Comprobante' in 'field list'
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `co...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 D:\xampp\htdocs\SistemaVentas\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(69): CodeIgniter\Model->insert(Array)
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-11 02:19:42 --> Unknown column 'Comprobante' in 'field list'
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `co...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 D:\xampp\htdocs\SistemaVentas\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(69): CodeIgniter\Model->insert(Array)
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-11 02:19:48 --> Unknown column 'Comprobante' in 'field list'
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `co...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 D:\xampp\htdocs\SistemaVentas\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(69): CodeIgniter\Model->insert(Array)
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-11 02:19:54 --> Unknown column 'Comprobante' in 'field list'
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `co...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 D:\xampp\htdocs\SistemaVentas\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(69): CodeIgniter\Model->insert(Array)
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-11 02:20:00 --> Unknown column 'Comprobante' in 'field list'
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `co...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 D:\xampp\htdocs\SistemaVentas\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(69): CodeIgniter\Model->insert(Array)
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-11 02:20:24 --> Unknown column 'Comprobante' in 'field list'
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `co...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 D:\xampp\htdocs\SistemaVentas\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\SistemaVentas\app\Controllers\Compra.php(69): CodeIgniter\Model->insert(Array)
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\Compra->agregar()
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-11 11:05:16 --> Undefined index: nombre
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 75, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(67): view('main/header.php')
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->agregarViews()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-11 11:05:17 --> Undefined index: nombre
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 75, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\ClientesController.php(67): view('main/header.php')
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ClientesController->agregarViews()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+>>>>>>> 342a585585715f2bdb42943945384ef1ff8c8541

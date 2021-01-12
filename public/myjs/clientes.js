@@ -28,6 +28,7 @@ function valsunat(){
 }
 async function getSunat() 
 {
+  $("#contenedor").slideDown(0);
   dni=$("#dni_cliente").val();	
   const url="https://dniruc.apisperu.com/api/v1/ruc/"+dni+"?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJleXNhbmdhbWE3QGdtYWlsLmNvbSJ9.hfobQC8FM5IyKKSaa7usUXV0aY1Y8YthAhdN8LoMlMM";
   fetch(url)
@@ -36,13 +37,19 @@ async function getSunat()
   	
   	$("#nombre_cliente").val(data.razonSocial);
   	$("#direccion_cliente").val(data.direccion);
+    $("#contenedor").slideUp();
   })
-  .catch(err=>console.log(err))
+  .catch(() => {
+   alertify.error('No se encontró razonSocial');
+    $("#contenedor").slideUp();
+})
 
 }
 
 async function getReniec() 
 {
+   
+    $("#contenedor").slideDown(0);
   dni=$("#dni_cliente").val();	
   const url="https://dniruc.apisperu.com/api/v1/dni/"+dni+"?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJleXNhbmdhbWE3QGdtYWlsLmNvbSJ9.hfobQC8FM5IyKKSaa7usUXV0aY1Y8YthAhdN8LoMlMM";
   fetch(url)
@@ -50,9 +57,12 @@ async function getReniec()
   .then(data =>{
   	console.log(data)
   	$("#nombre_cliente").val(data.nombres+" "+data.apellidoPaterno+" "+data.apellidoMaterno);
-  	
+  $("#contenedor").slideUp();
   })
-  .catch(err=>console.log(err))
+   .catch(() => {
+   alertify.error('No se encontró persona');
+    $("#contenedor").slideUp();
+})
 
 }
 

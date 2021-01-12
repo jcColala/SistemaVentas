@@ -5,6 +5,9 @@
         <div class="card" id="card" >  
               <div class="card-body" id="card-body-atencion">
                 <table id="example1" class="table table-bordered table-striped">
+                  <?php  foreach($caja as $linea):?>
+                  <input type="hidden" id="monto_caja"  value="<?php echo $linea->monto?>">
+                  <?php endforeach; ?>
                   <thead class="thead_tabla">
                     <tr> 
                       <th>#</th>
@@ -170,21 +173,21 @@
                 </div>
                  <div class="form-row">
                    <div class="form-group col-md-4">
-                      <label for="doc_venta">MONTO DE PAGO</label>
+                      <label for="monto_pago">MONTO DE PAGO</label>
                         <div class="input-group input-group">
-                          <input type="text" class="form-control" name="doc_venta" id="doc_venta">
+                          <input type="text" class="form-control" name="monto_pago" id="monto_pago"  onkeypress='return numeros_precios(event);'>
                         </div>
                     </div>
                     <div class="form-group col-md-4">
                       <label for="">TOTAL VENTA</label>
                         <div class="input-group input-group">
-                          <input type="text" class="form-control" name="doc_venta" id="doc_venta" readonly>
+                          <input type="text" class="form-control" name="total_pago" id="total_pago" readonly>
                         </div>
                     </div>
                     <div class="form-group col-md-4">
                       <label for="">VUELTO</label>
                         <div class="input-group input-group">
-                          <input type="text" class="form-control" name="doc_venta" id="doc_venta" readonly>
+                          <input type="text" class="form-control" name="vuelto_pago" id="vuelto_pago" readonly>
                         </div>
                     </div>
                  </div> 

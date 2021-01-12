@@ -1,3 +1,14 @@
+$(document).on("keyup","#monto_pago",function(){
+	$monto_caja=Number($("#monto_caja").val());
+	montopago=$(this).val();
+	totalpago=$("#total_pago").val();
+	vuelto=Number(montopago)-Number(totalpago);
+	$("#vuelto_pago").val(vuelto.toFixed(2))
+	if($monto_caja<vuelto){
+		alertify.error('monto de caja insuficiente');	
+	}
+});
+
 function buscarlocal(){
 	dni=$("#doc_venta").val();
 	dni=dni.trim();
@@ -136,33 +147,74 @@ $( "#comprobante_venta" ).change(function() {
 		precioVenta=ui.item.precioVenta;
 		nombre=ui.item.Descripcion;
 		stock=ui.item.Stock;
-		if(stock==0){
+		var nFilas = $("#tbventas tr").length;
+		if(stock<=0){
 			alertify.error('No hay stock del producto');
 			return false;	
 		}else{
+		bandera="B";
+		num=nFilas-1;
+		if(nFilas<2){
+		 agregarProductoTabla(data,producto,preciocompra,precioVenta,nombre,stock);
+		 $("#producto_venta").val(""); 
+    	
+		}else{
+		for (i=0; i<num; i++){	
+				id_prod=Number(document.getElementsByName("id_prod[]")[i].value);
+				if(data==id_prod){
+				cantidadActual=Number(document.getElementsByName("cantida_pro[]")[i].value);
+				precioca=Number(document.getElementsByName("precioVenta[]")[i].value);
+				cantidadsum=cantidadActual+1;
+				document.getElementsByName("cantida_pro[]")[i].value=cantidadsum;
+				subtotalc=cantidadsum*precioca;
+				document.getElementsByName("sub_total[]")[i].value=subtotalc;
+				// add=	$("input[name='subtotal[]']").closest("tr").find("td:eq(5)").children("p").text();
+				// console.log(add);
 
+				jQuery("input[name='cantida_pro[]'] ").each(function() {
+    				cantidad=$(this).val();
+					precio=$(this).closest("tr").find("td:eq(2)").children("input").val();
+					importe=Number(cantidad) * Number(precio);
+					$(this).closest("tr").find("td:eq(5)").children("p").text(importe.toFixed(2));
+					$(this).closest("tr").find("td:eq(5)").children("input").val(importe.toFixed(2));
+					calcular_total();
 
-		html="<tr>";
+    			});
+				bandera="C";
+				}	
+
+			}
+
+		if(bandera=="B"){
+			agregarProductoTabla(data,producto,preciocompra,precioVenta,nombre,stock);
+			$("#producto_venta").val(""); 
+			}
+
+		}
+		 $("#producto_venta").val(""); 
+		return false;
+		
+    }
+	},
+});
+function agregarProductoTabla(data,producto,preciocompra,precioVenta,nombre,stock){
+	html="<tr>";
 		html +="<td><input type='hidden' name='producto_nombre[]' value='"+producto+"'><input type='hidden' name='id_prod[]' value='"+data+"'>"+producto+"</td>";
 		html +="<td>"+preciocompra+"</td>";
 		html +="<td><input type='text' id='precioVenta[]' name='precioVenta[]' value='"+precioVenta +"'onkeypress='return Numeros_otro(event);' onpaste='return false' class='precio_venta'></td>";
 		html +="<td><input type='hidden' name='stock[]' id='stock' value='"+stock+"'>"+stock+"</td>";
-		html +="<td><input type='text' id='cantida_pro' name='cantida_pro[]' value='1' onkeypress='return numeros_precios(event);' onpaste='return false' class='cantidades'></td>";
+		html +="<td><input type='text' id='cantida_pro' name='cantida_pro[]' value='1' onkeypress='return Numeros(event);' onpaste='return false' class='cantidades'></td>";
 		html +="<td><input type='hidden' id='sub_total' name='sub_total[]' value='"+precioVenta+"'><p>"+precioVenta+"</p></td>";
 		html +="<td><button type='button' class='btn btn-danger btn-remove-producto'  ><span class='fas fa-trash-alt'></span></button></td>";
 		html +="</tr>";
-		
 		$("#tbventas tbody").append(html);
 		calcular_total();
-		 $("#producto_venta").val(""); 
-    	return false;
-    }
-	},
-});
+} 
 $(document).on("click",".btn-remove-producto",function(){
 	$(this).closest("tr").remove();
 	calcular_total();
 	});
+
 $(document).on("keyup","#tbventas input.cantidades",function(){
 							cantidad=$(this).val();
 							precio=$(this).closest("tr").find("td:eq(2)").children("input").val();
@@ -301,6 +353,7 @@ function valsunatVenta(){
 }
 async function getSunatVenta() 
 {
+ $("#contenedor").slideDown(0);	
   dni=$("#doc_venta").val();
   dni=dni.trim();	
   const url="https://dniruc.apisperu.com/api/v1/ruc/"+dni+"?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJleXNhbmdhbWE3QGdtYWlsLmNvbSJ9.hfobQC8FM5IyKKSaa7usUXV0aY1Y8YthAhdN8LoMlMM";
@@ -312,13 +365,16 @@ async function getSunatVenta()
   	$("#n_venta").val(data.razonSocial);
   	$("#direccion_venta").val(data.direccion);
   })
-  .catch(err=>alertify.error('No se encontró RUC')
-  	)
+  .catch(() => {
+   alertify.error('No se encontró razonSocial');
+    $("#contenedor").slideUp();
+})
 
 }
 
 async function getReniecVenta() 
 {
+ $("#contenedor").slideDown(0);	
   dni=$("#doc_venta").val();
   dni=dni.trim();	
   const url="https://dniruc.apisperu.com/api/v1/dni/"+dni+"?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJleXNhbmdhbWE3QGdtYWlsLmNvbSJ9.hfobQC8FM5IyKKSaa7usUXV0aY1Y8YthAhdN8LoMlMM";
@@ -328,8 +384,12 @@ async function getReniecVenta()
   	$("#nombre_venta").val(data.nombres+" "+data.apellidoPaterno+" "+data.apellidoMaterno);
   	$("#n_venta").val(data.nombres);
   	$("#a_venta").val(data.apellidoPaterno+" "+data.apellidoMaterno);
+  	 $("#contenedor").slideUp();
   })
-  .catch(err=>alertify.error('No se encontró DNI'))
+  .catch(() => {
+   alertify.error('No se encontró persona');
+    $("#contenedor").slideUp();
+})
 
 }
 
@@ -392,6 +452,7 @@ function ProcesarVenta(){
           })
           .then((willDelete) => {
               if (willDelete) {
+              	$("#contenedor").slideDown(0);	
                  $.ajax({ 
 			      type:'POST',
 			      url: "VentasController/procesarVenta",
@@ -413,6 +474,8 @@ function verVentaCompleta(id,N){
   			   data:{id:id},
   			    success: function(data){
   			    	$("#"+N+" "+".modal-body").html(data);
+  			    	a=$("#totalventamodal").val();
+  			    	$("#total_pago").val(a);
   			    }
   				});
 }
@@ -423,6 +486,7 @@ function verVentaCompleta2(id,N){
   			   data:{id:id},
   			    success: function(data){
   			    	$("#"+N+" "+".modal-body").html(data);
+
   			    }
   				});
 }
@@ -472,7 +536,21 @@ function eliminar_pedido(id){
       });
 }
 function listProcesarVenta(){
+	monto_pago=$("#monto_pago").val();
+	vuelto_pago=$('#vuelto_pago').val();
+	caja=Number($("#monto_caja").val());
+	if(monto_pago=="" ){
+		alertify.error('monto de pago incorrecto');
+		return false;
+	}else if(vuelto_pago<0){
+		alertify.error('vuelto incorrecto');
+		return false;
+	}else if(caja<1){
+		alertify.error('Monto de caja incorrecto, Abrir caja');
+		return false;
+	}else{
+
 	id=$("#idventaProcesar").val();
 	window.open('VentasController/fpdf?id='+id, '_blank');
-	window.setInterval('reFresh()',1000);
+	window.setInterval('reFresh()',1000);}
 }

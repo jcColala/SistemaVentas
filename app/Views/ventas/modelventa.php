@@ -57,7 +57,7 @@
 				</tr>
 				<tr>
 					<td colspan="4" class="text-right"><strong>Total:</strong></td>
-					<td><?php echo($ventaU->totalventa)?></td>
+					<td><input type="hidden" id="totalventamodal" value="<?php echo($ventaU->totalventa)?>"><?php echo($ventaU->totalventa)?></td>
 				</tr>
 			</tfoot>
 		</table>
