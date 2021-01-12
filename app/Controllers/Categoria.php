@@ -6,7 +6,7 @@ class Categoria extends BaseController
 		$session = \Config\Services::session();
 		if($session->get('login')==NULL){
 			return redirect()->to(site_url("Login"));
-		}
+		} 
 		else{
 			$categoria=new CategoriaModel;
 			$data= array('categoria' =>$categoria->mostrar());
@@ -21,10 +21,12 @@ class Categoria extends BaseController
 		$categoria=new CategoriaModel;
 		$request=\Config\Services::request();
 
+		if (isset($_GET['com'])) { $compra='1';}else{$compra="0";}
 		if (!base64_decode($request->getPostGet("id"))){
 			$data=array(
 				"id"=>'',
-				"descripcion"=>''
+				"descripcion"=>'',
+				"compra"=>$compra
 			);
 		}
 		else{
@@ -32,7 +34,8 @@ class Categoria extends BaseController
 			$traer=$categoria->taer($id);
 			$data=array(
 				"id"=>$traer->Id,
-				"descripcion"=>$traer->Descripcion
+				"descripcion"=>$traer->Descripcion,
+				"compra"=>$compra
 			); 
 		}
 
@@ -45,6 +48,7 @@ class Categoria extends BaseController
 		$categoria=new CategoriaModel;
 		$request=\Config\Services::request();
 		$id=$request->getPostGet("id");
+		$compra=$request->getPostGet("compra");
 		$data=[
 				'Descripcion'=> $request->getPostGet("descripcion")
 		];
@@ -60,6 +64,9 @@ class Categoria extends BaseController
 				return " <script type='text/javascript'>window.history.back();</script>";
 			}
 			$categoria->insert($data);
+			if ($compra==1) {
+				return " <script type='text/javascript'>window.history.go(-2);</script>";
+			}
 		}
 		else{
 			if($categoria->compro_d2($request->getPostGet("descripcion"),$id) == false){

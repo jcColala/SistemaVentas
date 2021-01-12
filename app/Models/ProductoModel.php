@@ -54,7 +54,7 @@ class ProductoModel extends Model{
     }
     public function taer_c(){
       $db=db_connect();
-      $mostrar= $db->query("SELECT * FROM categoria where deleted_at is Null");
+      $mostrar= $db->query("SELECT * FROM categoria where deleted_at is Null order by Id desc");
 
       return $mostrar->getResult();
     }

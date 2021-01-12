@@ -12,7 +12,7 @@ class Producto extends BaseController
 			$data= array('producto' =>$producto->mostrar());
 
 			echo view('main/header.php');
-	        echo view('main/menu.php');
+	        echo view('main/menu.php'); 
 	        echo view('almacen/producto.php',$data);
 	        echo view('main/footer.php'); 
     	}
@@ -21,6 +21,7 @@ class Producto extends BaseController
 		$producto=new ProductoModel;
 		$request=\Config\Services::request();
 
+		if (isset($_GET['com'])) { $compra='1';}else{$compra="0";}
 		if (!base64_decode($request->getPostGet("id"))){
 			$traer_codigo=$producto->traer_codigo();
 			$codigo_barras=$traer_codigo->Id + 1;
@@ -33,6 +34,7 @@ class Producto extends BaseController
 				"preciocompra"=>'',
 				"precioventa"=>'',
 				"stock"=>'',
+				"compra"=>$compra,
 				"categoria"=>$producto->taer_c()
 			);
 		}
@@ -47,6 +49,7 @@ class Producto extends BaseController
 				"preciocompra"=>$traer->PrecioCompra,
 				"precioventa"=>$traer->PrecioVenta,
 				"stock"=>$traer->Stock,
+				"compra"=>$compra,
 				"categoria"=>$producto->taer_c()
 			); 
 		}
@@ -60,17 +63,18 @@ class Producto extends BaseController
 		$producto=new ProductoModel;
 		$request=\Config\Services::request();
 		$id=$request->getPostGet("id");
+		$compra=$request->getPostGet("compra");
 
 		$data=[
 				'CodigoBarras'=> $request->getPostGet("codigobrr"),
 				'Descripcion'=> $request->getPostGet("descripcion"),
 				'IdCategoria'=> $request->getPostGet("idcategoria"),
 				'PrecioCompra'=> '',
-				'PrecioVenta'=> $request->getPostGet("precioventa")
+				'PrecioVenta'=> ''
 				
 		];
-		if ($request->getPostGet("codigobrr")=='' or $request->getPostGet("descripcion")=='' or $request->getPostGet("precioventa")=='' /*or $request->getPostGet("stock")==''*/ or $request->getPostGet("idcategoria")=='' ) {
-				$alert="Es necesario ingresar el código de barras, descripción, precio venta y la categoría, son campos obligatorios";
+		if ( $request->getPostGet("descripcion")=='' or $request->getPostGet("idcategoria")=='' ) {
+				$alert="Es necesario ingresar la Descripción y la Categoría, son campos obligatorios";
 				$this->session->setFlashdata('alert', $alert);
 				return " <script type='text/javascript'>window.history.back();</script>";
 		}
@@ -86,6 +90,9 @@ class Producto extends BaseController
 				return " <script type='text/javascript'>window.history.back();</script>";
 			}
 			$producto->insert($data);
+			if ($compra==1) {
+				return " <script type='text/javascript'>window.history.go(-2);</script>";
+			}
 		}
 		else{
 			/*if($categoria->compro_d2($request->getPostGet("descripcion"),$request->getPostGet("id")) == false){

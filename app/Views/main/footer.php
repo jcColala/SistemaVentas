@@ -55,12 +55,9 @@
 
 <script src="<?php echo base_url();?>/public/alerta/notify.js"></script>
 <script src="<?php echo base_url();?>/public/alerta/alerta.js"></script>
-<<<<<<< HEAD
 
 <script  src="<?php echo base_url()?>/public/toastr/toastr.min.js"></script>
-=======
 <script src="<?php echo base_url();?>/public/plugins/jquery-ui/jquery-ui.js"></script>
->>>>>>> bd257f5bfd80d1b73d54f0ddb994493cdf113675
 <!-- page script -->
 <script>
   $(function () {

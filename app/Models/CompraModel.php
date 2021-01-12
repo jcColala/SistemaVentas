@@ -30,13 +30,13 @@ class CompraModel extends Model{
   	}
     public function producto(){
       $db=db_connect();
-      $mostrar= $db->query("SELECT * FROM producto WHERE deleted_at is Null");
+      $mostrar= $db->query("SELECT * FROM producto WHERE deleted_at is Null order by Id desc");
 
      return $mostrar->getResult();
     }
     public function proveedor(){
       $db=db_connect();
-      $mostrar= $db->query("SELECT * FROM proveedor WHERE deleted_at is Null");
+      $mostrar= $db->query("SELECT * FROM proveedor WHERE deleted_at is Null order by Id desc");
 
      return $mostrar->getResult();
     }

@@ -3,8 +3,8 @@
   <!-- Content Header (Page header) -->
   <div class="content-header">
       <div class="card" id="card" > 
-        <h4>Registrar Compra</h4>
- 
+        <h4>Registrar Compra</h4> 
+  
         <section class="padr_menu_datos">
           <span  onclick="seleccionar('div_1_modal','span_selec_1',2);" id="span_selec_1" class="span_selec_1">Registrar</span>
           <span  onclick="seleccionar('div_2_modal','span_selec_2',2);" id="span_selec_2" class="span_selec_2">Detalle Compra</span>
@@ -31,15 +31,15 @@
                   </div>
                   <div class="form-group col-md-3">
                     <label>N&uacute;mero Comprobante</label>
-                    <input type="number" class="form-control" id="numero" name="numero" value="<?php echo $numero?>" placeholder="N&uacute;mero de comprobante"  maxlength="20" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" Required/>
+                    <input type="number" class="form-control" id="numero" name="numero" value="<?php echo $numero?>" placeholder="N&uacute;mero de comprobante"  maxlength="20" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
                   </div>
                   <div class="form-group col-md-3">
                     <label>N&uacute;mero Serie</label>
-                    <input type="number" class="form-control" id="serie" name="serie" value="<?php echo $serie?>" placeholder="N&uacute;mero de serie"  maxlength="7" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" Required/>
+                    <input type="text" class="form-control" id="serie" name="serie" value="<?php echo $serie?>" placeholder="N&uacute;mero de serie" />
                   </div>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-11">
+                <div class="form-group col-md-10">
                     <label>Proveedor</label>
                     <select id="idprovedor" name="idprovedor" class="form-control select2bs4" style="width: 100%;" name="cajero">
                        <option value="">Buscar proveedor...</option>
@@ -52,12 +52,9 @@
                         <?php endforeach ?> 
                       </select>
                 </div>
-                <div class="form-group col-md-1">
+                <div class="form-group col-md-2">
                       <label for="">&nbsp;</label>
-                        <button id="btn-agregar" type="button" class="btn btn-success btn-flat btn-block" onclick="agregarProv()"><span class="fa fa-plus"></span> <i class="fas fa-user"></i></button>
-                </div>
-                <div class="form-group col-md-12">
-                  <p class="mb-2"  ><font color="red" id="m_error"></font></p>
+                        <a href="<?php echo base_url();?>/Proveedor/agregarViews?com=v" id="btn-agregar" type="button" class="btn btn-success btn-flat btn-block"><span class="fa fa-plus"></span> <i class="fas fa-user"></i></a>
                 </div>
               </div>
             </section>
@@ -65,8 +62,9 @@
               <div class="form-row">
                 <div class="form-group col-md-7">
                   <label>Producto</label>
-                    <select id="id_producto" class="form-control select2bs4" style="width: 100%;">
-                       <option value=""></option>
+                    <select onchange="agregarProd(this)" id="id_producto" class="form-control select2bs4" style="width: 100%;" autocomplete="off">
+
+                       <option value="">Buscar Producto...</option>
                         <?php foreach ($producto as $row):?>
                             <option value="<?php echo $row->Id?>"  ><?php echo $row->CodigoBarras?> - <?php echo $row->Descripcion?></option>
                         <?php endforeach ?> 
@@ -74,7 +72,7 @@
                 </div>
                 <div class="form-group col-md-1">
                       <label for="">&nbsp;</label>
-                        <button id="btn-agregar" type="button" class="btn btn-success btn-flat btn-block" onclick="agregarProd()"><span class="fa fa-plus"></span> <i class="fas fa-box-open"></i></button>
+                        <a href="<?php echo base_url();?>/Producto/agregarViews?com=v" id="btn-agregar" type="button" class="btn btn-success btn-flat btn-block" ><span class="fa fa-plus"></span> <i class="fas fa-box-open"></i></a>
                 </div>
                 <div class="form-group col-md-1">
                       <label for="">&nbsp;</label>
@@ -104,9 +102,6 @@
                   <tbody id="tbody_dt_pro" >
                   </tbody>
                 </table>
-              <div class="form-group col-md-12">
-                  <p class="mb-2"  ><font color="red" id="m_error_2"></font></p>
-              </div>
             </section>
             <section style="display: block;" >
               <?php if(!empty($_SESSION['alert'])){?>
@@ -120,7 +115,7 @@
             <br>
             <div class="botones_modal" id="botones_modal">
                     <button type="submit" >Guardar <span class="icon-cloud_upload"></span></button>
-                    <a  href="<?php echo base_url();?>/Marca" id="bt_cancelar_modal" >Cancelar <span class=" icon-close"></span></a>
+                    <a  href="javascript:history.back()" id="bt_cancelar_modal" >Cancelar <span class=" icon-close"></span></a>
             </div>
           </form>
         </div>

@@ -1,7 +1,7 @@
 <?php namespace App\Controllers;
 use App\Models\CompraModel;
 class Compra extends BaseController
-{ 
+{  
 	public function index(){
 		$session = \Config\Services::session();
 		if($session->get('login')==NULL){

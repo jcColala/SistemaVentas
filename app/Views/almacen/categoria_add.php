@@ -14,6 +14,7 @@
           <form  action="<?php echo base_url();?>/Categoria/agregar" method="post" >
             <br>
             <input type="hidden" name="id" id="id" value="<?php echo $id?>">
+            <input type="hidden" name="compra" id="compra" value="<?php echo $compra?>">
             <section id="div_1_modal" class="div_1_modal">
                   <div class="form-group col-md-12">
                     <label>Descripci&oacute;n</label>
@@ -32,7 +33,7 @@
             <br>
             <div class="botones_modal">
                     <button type="submit">Guardar <span class="icon-cloud_upload"></span></button>
-                    <a  href="<?php echo base_url();?>/Categoria" id="bt_cancelar_modal" >Cancelar <span class=" icon-close"></span></a>
+                    <a  href="javascript:history.back()" id="bt_cancelar_modal" >Cancelar <span class=" icon-close"></span></a>
             </div>
           </form>
         </div>
