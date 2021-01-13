@@ -96,7 +96,7 @@ function crear_lista(){
   else{
     var n=1;
     lista.forEach(element => {
-      HTML=HTML+`<tr><td class='centrar'>${n}</td><td class='td_det_compra'><input class="det_c_input" type="number" id="compras_cant${element.id}" value="${element.cant}" onkeyup="edd_cantidad(${element.id});"></td><td>${element.datos}</td><td class='td_det_compra'><input type="number" class="det_c_input" id="compras_precio${element.id}" onkeyup="edd_precioC(${element.id});" value="${element.precioc}" step="any"></td><td class='centrar' id="subtotal${element.id}" >S/ ${(parseInt(element.cant)*parseFloat(element.precioc)).toFixed(2)}</td><td class='centrar'><span onclick="elim_dcompra(${element.id});" class="icon-delete_forever elim_dcompra" title="Eliminar"></span></td></tr>`;
+      HTML=HTML+`<tr><td class='centrar'>${n}</td><td class='td_det_compra'><input class="det_c_input" type="number" id="compras_cant${element.id}" value="${element.cant}" onkeyup="edd_cantidad(${element.id});"></td><td>${element.datos}</td><td class='td_det_compra'><input type="number" class="det_c_input" id="compras_precio${element.id}" onkeyup="edd_precioC(${element.id});" value="${element.precioc}" step="any"></td><td class='centrar' id="subtotal${element.id}" >S/ ${(parseInt(element.cant)*parseFloat(element.precioc)).toFixed(2)}</td><td class='centrar'><samp onclick="elim_dcompra(${element.id});" class="btn btn-danger elim_dcompra"><span class="fas fa-trash-alt" title="Eliminar" ></span></samp></td></tr>`;
       $("#tbody_dt_pro").html(HTML);
       n=n+1;
     });
