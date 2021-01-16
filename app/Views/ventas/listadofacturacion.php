@@ -18,36 +18,36 @@
                   <tbody>
                    <?php  if (!empty($ventas)):?>
                     <?php  foreach($ventas as $linea):?>
-                     
+                      <?php if($linea->estadoventa==1 or $linea->estadoventa==3 ): ?>
                         <tr>
                           <td ><?php echo $linea->id_venta?></td>
                           <td ><?php echo $linea->nombre?> </td>
                           <td ><?php echo $linea->Nombre?> <?php echo $linea->Apellidos?></td>
                           <td ><?php echo $linea->descripcion?></td>
                           <?php if($linea->estadoventa==null):?>
-                            <td ><span class="badge badge-success">Procesado</span></td>
+                           <td ><span class="badge badge-warning">
+                           Pendiente</span></td>
                           <?php elseif($linea->estadoventa==1): ?>
                            <td ><span class="badge badge-success">Procesado</span></td>
-                          <?php elseif($linea->estadoventa==2): ?>
+                          <?php elseif($linea->estadoventa==3): ?>
                             <td ><span class="badge badge-danger">Eliminado</span>
                           <?php endif ?></td>
                           <td>
                             <div class="e2_comision">
                                 <button class="fas fa-eye editar"   data-toggle="modal" data-target="#modelDettalleVenta"  onclick="verVentaCompleta2(<?php echo($linea->id_venta);?>,'modelDettalleVenta' )"  title="Ver"></button>
-                                
-                                    
-                                <?php if($linea->estadoventa==null): ?>
-                                   <button class="icon-mode_edit  activar" title="Facturar" onclick="facturarVenta(<?php echo($linea->id_venta);?> )" ></button>
-
+                                <button class="fas fa-money-check-alt"     onclick="facturar(<?php echo($linea->id_venta);?> )" title="Ver"></button>
+                                  
+                                 <?php if($linea->estadoventa==1): ?>
                                   <button class="icon-delete_forever eliminar" id="btn_eliminar_cliente" onclick="eliminar_venta(<?php echo $linea->id_venta ?>)" title="Eliminar"></button>
-
+                                  
                                  
+                                         
                                 <?php endif ?> 
                                 
                             </div>
                           </td>  
                         </tr>
-                     
+                     <?php endif;?>   
                   <?php endforeach; ?>
                   <?php endif; ?>
                   </tbody>

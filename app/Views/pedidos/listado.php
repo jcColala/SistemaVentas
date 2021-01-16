@@ -2,9 +2,12 @@
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="content-header">
-          <div class="card" id="card" >  
-              <div class="card-body">
+        <div class="card" id="card" >  
+              <div class="card-body" id="card-body-atencion">
                 <table id="example1" class="table table-bordered table-striped">
+                  <?php  foreach($caja as $linea):?>
+                  <input type="hidden" id="monto_caja"  value="<?php echo $linea->monto?>">
+                  <?php endforeach; ?>
                   <thead class="thead_tabla">
                     <tr> 
                       <th>#</th>
@@ -16,40 +19,39 @@
                     </tr>
                   </thead>
                   <tbody>
-                   <?php  if (!empty($ventas)):?>
-                    <?php  foreach($ventas as $linea):?>
-                     
+                    <?php  if (!empty($pedidos)):?>
+                      <?php  foreach($pedidos as $linea):?>
                         <tr>
-                          <td ><?php echo $linea->id_venta?></td>
+                          <td ><?php echo $linea->id_pedido?></td>
                           <td ><?php echo $linea->nombre?> </td>
                           <td ><?php echo $linea->Nombre?> <?php echo $linea->Apellidos?></td>
                           <td ><?php echo $linea->descripcion?></td>
-                          <?php if($linea->estadoventa==null):?>
-                            <td ><span class="badge badge-success">Procesado</span></td>
-                          <?php elseif($linea->estadoventa==1): ?>
+
+                          <?php if($linea->estadopedido==null):?>
+                           <td ><span class="badge badge-warning">
+                           Pendiente</span></td>
+                          <?php elseif($linea->estadopedido==1): ?>
                            <td ><span class="badge badge-success">Procesado</span></td>
-                          <?php elseif($linea->estadoventa==2): ?>
-                            <td ><span class="badge badge-danger">Eliminado</span>
-                          <?php endif ?></td>
+                          <?php elseif($linea->estadopedido==2 OR $linea->estadopedido==3): ?>
+                            <td ><span class="badge badge-danger">Eliminado</span></td>
+                          <?php endif ?>
                           <td>
                             <div class="e2_comision">
-                                <button class="fas fa-eye editar"   data-toggle="modal" data-target="#modelDettalleVenta"  onclick="verVentaCompleta2(<?php echo($linea->id_venta);?>,'modelDettalleVenta' )"  title="Ver"></button>
-                                
+                                <button class="fas fa-eye editar"   data-toggle="modal" data-target="#modelDettalleVenta"  onclick="verPedidoCompleto(<?php echo($linea->id_pedido);?>,'modelDettalleVenta' )"  title="Ver"></button>
+                                <?php if($linea->estadopedido==null):?>
                                     
-                                <?php if($linea->estadoventa==null): ?>
-                                   <button class="icon-mode_edit  activar" title="Facturar" onclick="facturarVenta(<?php echo($linea->id_venta);?> )" ></button>
+                                   <button class="icon-mode_edit  activar" data-toggle="modal" data-target="#modelprocesarVenta"title="Procesar" onclick="verPedidoCompleto(<?php echo($linea->id_pedido);?>,'modelprocesarVenta')" ></button>
 
-                                  <button class="icon-delete_forever eliminar" id="btn_eliminar_cliente" onclick="eliminar_venta(<?php echo $linea->id_venta ?>)" title="Eliminar"></button>
-
+                                    <button class="icon-delete_forever eliminar" id="btn_eliminar_cliente" onclick="eliminar_pedido(<?php echo $linea->id_pedido ?>)" title="Eliminar"></button>
                                  
+                                         
                                 <?php endif ?> 
                                 
                             </div>
                           </td>  
                         </tr>
-                     
-                  <?php endforeach; ?>
-                  <?php endif; ?>
+                      <?php endforeach; ?>
+                    <?php endif; ?>
                   </tbody>
                 </table>
               </div>
@@ -171,21 +173,21 @@
                 </div>
                  <div class="form-row">
                    <div class="form-group col-md-4">
-                      <label for="doc_venta">MONTO DE PAGO</label>
+                      <label for="monto_pago">MONTO DE PAGO</label>
                         <div class="input-group input-group">
-                          <input type="text" class="form-control" name="doc_venta" id="doc_venta">
+                          <input type="text" class="form-control" name="monto_pago" id="monto_pago"  onkeypress='return numeros_precios(event);'>
                         </div>
                     </div>
                     <div class="form-group col-md-4">
                       <label for="">TOTAL VENTA</label>
                         <div class="input-group input-group">
-                          <input type="text" class="form-control" name="doc_venta" id="doc_venta" readonly>
+                          <input type="text" class="form-control" name="total_pago" id="total_pago" readonly>
                         </div>
                     </div>
                     <div class="form-group col-md-4">
                       <label for="">VUELTO</label>
                         <div class="input-group input-group">
-                          <input type="text" class="form-control" name="doc_venta" id="doc_venta" readonly>
+                          <input type="text" class="form-control" name="vuelto_pago" id="vuelto_pago" readonly>
                         </div>
                     </div>
                  </div> 
@@ -196,7 +198,7 @@
      
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <a class="btn btn-primary" onclick="listProcesarVenta()" role="button">PROCESAR E IMPRIMIR</a>
+        <button class="btn btn-primary" onclick="listProcesarVenta()" role="button">PROCESAR E IMPRIMIR</button>
         
       </div>
     </div>

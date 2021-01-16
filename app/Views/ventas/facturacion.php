@@ -125,7 +125,7 @@
                   </div>
                   <div class="form-row">
                     <div class="col-md-3">
-                       <button type="button" class="btn btn-success btn-flat" onclick="ProcesarVenta();"  >Procesar</button>
+                       <button type="button" class="btn btn-success btn-flat" onclick="procesarpedido();"  >Procesar</button>
                     </div>
                   </div>
                 </form>

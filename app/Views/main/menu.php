@@ -162,9 +162,9 @@
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?php echo base_url();?>/ListadoVentasController" class="nav-link">
+              <a href="<?php echo base_url();?>/ListadoPedidosController" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>FACTURACIÓN</p>
+                <p>PEDIDOS</p>
               </a>
             </li>
           </ul>
@@ -181,6 +181,14 @@
               <a href="<?php echo base_url();?>/ListadoVentasController/VentasProcesadas" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>PROCESADAS</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?php echo base_url();?>/FacturadorController" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>FACTURADOR</p>
               </a>
             </li>
           </ul>

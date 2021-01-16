@@ -5,6 +5,8 @@ use App\Models\ClienteModel;
 use App\Models\ProductoModel;
 use App\Models\VentaModel;
 use App\Models\DetalleVentaModel;
+use App\Models\PedidosModel;
+use App\Models\DetallePedidoModel;
 require_once("app/ThirdParty/vendor/autoload.php");
 use Dompdf\Dompdf ;
 class VentasController extends BaseController
@@ -140,11 +142,43 @@ class VentasController extends BaseController
 
 	}
 	public function fpdf() {
+		$DetalleVentaModel=new DetalleVentaModel;
+		$PedidosModel=new PedidosModel;
 		$DetalleCajaModel=new DetalleCajaModel;
 		$VentaModel=new VentaModel;
 		$request=\Config\Services::request();
 		$id=$request->getPostGet("id");
-		$ventadato=$VentaModel->GetVentaU($id);
+		$idusuario=$_SESSION['id'];
+		$pedidoU=$PedidosModel->getPedidoU($id);
+		$detallepedidoU=$PedidosModel->getdetallePedido($id);
+		$dataventa=["id_cliente"=>$pedidoU->id_cliente,
+					"id_usuario"=>$pedidoU->id_usuario,
+					"id_comprobante"=>$pedidoU->id_comprobante,
+					"serie"=>$pedidoU->serie,
+					"igv"=>$pedidoU->igv,
+					"descuento"=>$pedidoU->descuento,
+					"subtotal"=>$pedidoU->subtotal,
+					"totalventa"=>$pedidoU->totalventa];
+		$VentaModel->insert($dataventa);
+		$idVenta=$VentaModel->recogerid();
+
+		foreach ($detallepedidoU  as  $row) {
+				$data =array(
+							'id_venta'=>$idVenta,
+							'id_producto'=>$row->id_producto,
+							'cantidad'=>$row->cantidad,
+							'importe'=>$row->importe,
+							'precio_venta'=>$row->precio_venta,
+					);
+				$DetalleVentaModel->insert($data);
+		}
+		$dataestadopedido = [
+   			 'deleted_at' => 1];
+
+		$PedidosModel->update($id, $dataestadopedido);
+		
+
+		$ventadato=$VentaModel->GetVentaU($idVenta);
 		$datocomprobante=$DetalleCajaModel->getcomprobante2($ventadato->id_comprobante);
 		$correlativo=$datocomprobante->correlativo;
 		$iddetalle_comprobante=$datocomprobante->iddetalle_ccomprobante;
@@ -154,11 +188,11 @@ class VentasController extends BaseController
 
          $dataestado=[
          	'correlativo'=>$ncorrelativo,
-				"deleted_at"=>1,
+				
 			];	
-		$VentaModel->update($id, $dataestado);
-		$data= array('ventaU' =>$VentaModel->GetVentaU($id),
-					 'detalleVentaU' =>$VentaModel->getdetalleVenta($id),
+		$VentaModel->update($idVenta, $dataestado);
+		$data= array('ventaU' =>$VentaModel->GetVentaU($idVenta),
+					 'detalleVentaU' =>$VentaModel->getdetalleVenta($idVenta),
 					 
 					 'baseurl'=>base_url(),
 					 );
@@ -180,32 +214,7 @@ class VentasController extends BaseController
 
 		}
     }
-    public function eliminarpedido(){
-    	$ProductoModel=new ProductoModel;	
-    	$DetalleVentaModel=new DetalleVentaModel;
-    	$VentaModel=new VentaModel;
-		$request=\Config\Services::request();
-		$id=$request->getPostGet("id");
-		$ventaU =$VentaModel->GetVentaU($id);
-		$data=[
-				"deleted_at"=>2,
-			];		 
-		$VentaModel->update($id, $data);
-		
-		$detalleVentaU =$VentaModel->getdetalleVenta($id);
-		foreach ( $detalleVentaU as $row) {
-			$idproductoVenta=$row->id_producto;
-			$query=$ProductoModel->taer($idproductoVenta);
-			$cantidadactual=$query->Stock;
-			$cantidadventa=$row->cantidad;
-			$cantidadactualizada=$cantidadactual+$cantidadventa;
-			$dataproducto=[
-				"Stock"=>$cantidadactualizada,
-			];	
-			$ProductoModel->update($idproductoVenta, $dataproducto);
-		}
-
-    }
+    
    
    public function eliminarventa(){
     	$ProductoModel=new ProductoModel;	
@@ -215,7 +224,7 @@ class VentasController extends BaseController
 		$id=$request->getPostGet("id");
 		$ventaU =$VentaModel->GetVentaU($id);
 		$data=[
-				"deleted_at"=>3,
+				"deleted_at"=>2,
 			];		 
 		$VentaModel->update($id, $data);
 		
