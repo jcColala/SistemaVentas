@@ -10,7 +10,7 @@ function e2_categoria(op,id) {
             if (willDelete) {
                $.ajax({ 
             type:'POST',
-            url: "Categoria/activar_eliminar",
+            url: "Categoria/activar_eliminar", 
             data:{id:id,op:op},
             success: function(e){
                 data=eval(e);

@@ -6,7 +6,7 @@ class Proveedor extends BaseController
 		$session = \Config\Services::session();
 		if($session->get('login')==NULL){
 			return redirect()->to(site_url("Login"));
-		}
+		} 
 		else{
 			$proveedor=new ProveedorModel;
 			$data= array('proveedor' =>$proveedor->mostrar());
@@ -21,6 +21,8 @@ class Proveedor extends BaseController
 		$proveedor=new ProveedorModel;
 		$request=\Config\Services::request();
 
+		if (isset($_GET['com'])) { $compra='1';}else{$compra="0";}
+
 		if (!base64_decode($request->getPostGet("id"))){
 			$data=array(
 				"id"=>'',
@@ -29,7 +31,8 @@ class Proveedor extends BaseController
 				"celular"=>'',
 				"telefono"=>'',
 				"correo"=>'',
-				"direccion"=>''
+				"direccion"=>'',
+				"compra"=>$compra
 			);
 		}
 		else{
@@ -42,7 +45,8 @@ class Proveedor extends BaseController
 				"celular"=>$traer->Celular,
 				"telefono"=>$traer->Telefono,
 				"correo"=>$traer->Correo,
-				"direccion"=>$traer->Direccion
+				"direccion"=>$traer->Direccion,
+				"compra"=>$compra
 			); 
 		}
 
@@ -55,6 +59,7 @@ class Proveedor extends BaseController
 		$proveedor=new ProveedorModel;
 		$request=\Config\Services::request();
 		$id=$request->getPostGet("id");
+		$compra=$request->getPostGet("compra");
 		$data=[
 				'Nombre'=> $request->getPostGet("nombre"),
 				'DNI_RUC' => $request->getPostGet("dni_ruc"),
@@ -90,6 +95,9 @@ class Proveedor extends BaseController
 				return " <script type='text/javascript'>window.history.back();</script>";
 			}
 			$proveedor->insert($data);
+			if ($compra==1) {
+				return " <script type='text/javascript'>window.history.go(-2);</script>";
+			}
 		}
 		else{ $proveedor->update($id, $data);}
 		return redirect()->to(site_url("Proveedor"));

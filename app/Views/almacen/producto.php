@@ -12,7 +12,7 @@
                 <table id="example1" class="table table-bordered table-striped">
                   <thead class="thead_tabla">
                     <tr>
-                      <th>Codigo Barr.</th>
+                      <th>Codigo Barr.</th> 
                       <th>Descripci&oacute;n</th>
                       <th class="centrar">Categor&iacute;a</th>
                       <th class="centrar">Stock</th>

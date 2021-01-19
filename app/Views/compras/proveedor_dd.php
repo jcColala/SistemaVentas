@@ -7,13 +7,14 @@
 
         <section class="padr_menu_datos">
           <span  onclick="seleccionar('div_1_modal','span_selec_1',1);" id="span_selec_1" class="span_selec_1">Datos B&aacute;sicos</span>
-        </section>
+        </section> 
  
         <div class="padre_cont_datos" id="padre_cont_datos">
           <br>
           <form  action="<?php echo base_url();?>/Proveedor/agregar" method="post" >
             <br>
             <input type="hidden" name="id" id="id" value="<?php echo $id?>">
+            <input type="hidden" name="compra" id="compra" value="<?php echo $compra?>">
             <section id="div_1_modal" class="div_1_modal">
                <div class="form-row">
                   <div class="form-group col-md-3">
@@ -59,7 +60,7 @@
             <br>
             <div class="botones_modal">
                     <button type="submit">Guardar <span class="icon-cloud_upload"></span></button>
-                    <a  href="<?php echo base_url();?>/Proveedor" id="bt_cancelar_modal" >Cancelar <span class=" icon-close"></span></a>
+                    <a  href="javascript:history.back()" id="bt_cancelar_modal" >Cancelar <span class=" icon-close"></span></a>
             </div>
           </form>
         </div>

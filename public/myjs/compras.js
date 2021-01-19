@@ -6,7 +6,7 @@ function e2_proveedor(op,id) {
             buttons: true,
             dangerMode: true,
           })
-          .then((willDelete) => {
+          .then((willDelete) => { 
               if (willDelete) {
                  $.ajax({ 
   			      type:'POST',
@@ -28,7 +28,7 @@ function e2_proveedor(op,id) {
 }
 /*----------------------------------------------------COMPRAS ------------------------------------------------------*/
 
-var totalC="0";
+var totalC=0;
 var subtotalC=0;
 
 const crear_array = (id,texto,cant,precioc)=>{
@@ -45,22 +45,23 @@ const guardar_store = ()=>{
 }
 
 const modificar_subtotal= (indexarray)=>{
-   $("#subtotal"+lista[indexarray].id).html("S/. "+(parseInt(lista[indexarray].cant)*parseFloat(lista[indexarray].precioc)).toFixed(2));
+   $("#subtotal"+lista[indexarray].id).html("S/ "+(parseInt(lista[indexarray].cant)*parseFloat(lista[indexarray].precioc)).toFixed(2));
 }
 const obtener_total= ()=>{
   var total=0;
   lista.forEach(element => {
     total=total+(parseInt(element.cant)*parseFloat(element.precioc));
     /*total=Math.round(total);*/
-    if ( parseFloat(element.precioc)<=0 ){subtotalC=1;}else{subtotalC=0;}
+    if ( parseFloat(element.precioc)<=0 | parseInt(element.cant)<=0 ){subtotalC=1;}else{subtotalC=0;}
   });
   total=total.toFixed(2);
   document.getElementById('total_compra').value="S/ "+total;
   totalC=total;
 }
 
-function agregarProd(){
+function agregarProd(opcion){
   var id = $('#id_producto').val();
+
   if (id=="") {
     return false;
   }
@@ -73,6 +74,7 @@ function agregarProd(){
      modificar_subtotal(indexarray);
      obtener_total();
      guardar_store();
+     $("#id_producto").val('').trigger('change');
      return true;
   }
   var id_t = document.getElementById("id_producto");
@@ -84,6 +86,7 @@ function agregarProd(){
 
   lista=JSON.parse(localStorage.getItem("lista"));
   crear_lista();
+  $("#id_producto").val('').trigger('change');
 }
 
 function crear_lista(){
@@ -93,7 +96,7 @@ function crear_lista(){
   else{
     var n=1;
     lista.forEach(element => {
-      HTML=HTML+`<tr><td class='centrar'>${n}</td><td class='td_det_compra'><input class="det_c_input" type="number" id="compras_cant${element.id}" value="${element.cant}" onkeyup="edd_cantidad(${element.id});"></td><td>${element.datos}</td><td class='td_det_compra'><input type="number" class="det_c_input" id="compras_precio${element.id}" onkeyup="edd_precioC(${element.id});" value="${element.precioc}" step="any"></td><td class='centrar' id="subtotal${element.id}" >S/ ${(parseInt(element.cant)*parseFloat(element.precioc)).toFixed(2)}</td><td class='centrar'><span onclick="elim_dcompra(${element.id});" class="icon-delete_forever elim_dcompra" title="Eliminar"></span></td></tr>`;
+      HTML=HTML+`<tr><td class='centrar'>${n}</td><td class='td_det_compra'><input class="det_c_input" type="number" id="compras_cant${element.id}" value="${element.cant}" onkeyup="edd_cantidad(${element.id});"></td><td>${element.datos}</td><td class='td_det_compra'><input type="number" class="det_c_input" id="compras_precio${element.id}" onkeyup="edd_precioC(${element.id});" value="${element.precioc}" step="any"></td><td class='centrar' id="subtotal${element.id}" >S/ ${(parseInt(element.cant)*parseFloat(element.precioc)).toFixed(2)}</td><td class='centrar'><samp onclick="elim_dcompra(${element.id});" class="btn btn-danger elim_dcompra"><span class="fas fa-trash-alt" title="Eliminar" ></span></samp></td></tr>`;
       $("#tbody_dt_pro").html(HTML);
       n=n+1;
     });
@@ -132,7 +135,7 @@ function elim_dcompra(id){
 
 function edd_cantidad(id){
   var cantidad = document.getElementById('compras_cant'+id).value;
-  if (cantidad<=0 | cantidad=="" | cantidad==" ") { return false}
+  if (cantidad<0 | cantidad=="" | cantidad==" ") { return false}
   let indexarray= lista.findIndex((elemento)=>elemento.id == id);
   lista[indexarray].cant=cantidad;
   modificar_subtotal(indexarray);
@@ -142,7 +145,7 @@ function edd_cantidad(id){
 }
 function edd_precioC(id){
   var precio = document.getElementById('compras_precio'+id).value;
-  if (precio<=0 | precio=="" | precio==" ") { return false}
+  if (precio<0 | precio=="" | precio==" ") { return false}
   let indexarray= lista.findIndex((elemento)=>elemento.id == id);
   lista[indexarray].precioc=precio;
   modificar_subtotal(indexarray);
@@ -160,13 +163,17 @@ function guardr_det_compra(event){
   var idprovedor= document.getElementById("idprovedor").value;
 
   if (numero=="" | serie=="" | compro=="" | compro==" ") {
+    var m ="";
+    if (serie=="") { m="Número Serie"; }
+    if (numero=="") { m="Número Comprobante"; }
+    if (compro=="" | compro==" ") { m="Tipo Comprobante"; }
     seleccionar('div_1_modal','span_selec_1',2);
-    $("#m_error").html("Tipo Comprobante, Número Comprobante y Número Serie son campos obligatorios");
+    toastr["error"]("Campo requerido",m);
     return false;
   }
   if ( idprovedor=="" | idprovedor==" ") {
     seleccionar('div_1_modal','span_selec_1',2);
-    $("#m_error").html("Seleccione un Proveedor");
+    toastr["error"]("Seleccione un Proveedor","PROVEEDOR");
     return false;
   }
   var lista=[];
@@ -176,17 +183,17 @@ function guardr_det_compra(event){
 
   if (lista==null | lista=='[]') {
     seleccionar('div_2_modal','span_selec_2',2);
-    $("#m_error_2").html("Ningún producto seleccionado es necesario ingresar por lo menos un producto");
+    toastr["error"]("Ningún producto seleccionado, es necesario ingresar por lo menos un producto","Compra vacía");
     return false;
   }
-  if (totalC=='0') {
+  if (totalC==0) {
     seleccionar('div_2_modal','span_selec_2',2);
-    $("#m_error_2").html("El TOTAL no puede ser igual a cero");
+    toastr["error"]("El TOTAL no puede ser igual a cero","Error");
     return false;
   }
   if (subtotalC==1) {
     seleccionar('div_2_modal','span_selec_2',2);
-    $("#m_error_2").html("Producto(s) con Precio Unitario inválido");
+    toastr["error"]("Precio unitario ó Cantidad incorrecta ","Datos incorrecto");
     return false;
   }
   form_data.append('data_detalle',lista);
