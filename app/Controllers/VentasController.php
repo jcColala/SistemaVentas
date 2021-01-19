@@ -7,8 +7,12 @@ use App\Models\VentaModel;
 use App\Models\DetalleVentaModel;
 use App\Models\PedidosModel;
 use App\Models\DetallePedidoModel;
+require 'app/thirdParty/phpqrcode/qrlib.php';
+use QRcode\qrstr ;
+
 require_once("app/ThirdParty/vendor/autoload.php");
 use Dompdf\Dompdf ;
+
 class VentasController extends BaseController
 { 
 	public function index(){
@@ -172,10 +176,10 @@ class VentasController extends BaseController
 					);
 				$DetalleVentaModel->insert($data);
 		}
-		$dataestadopedido = [
-   			 'deleted_at' => 1];
+		// $dataestadopedido = [
+  //  			 'deleted_at' => 1];
 
-		$PedidosModel->update($id, $dataestadopedido);
+		// $PedidosModel->update($id, $dataestadopedido);
 		
 
 		$ventadato=$VentaModel->GetVentaU($idVenta);
@@ -190,15 +194,27 @@ class VentasController extends BaseController
          	'correlativo'=>$ncorrelativo,
 				
 			];	
+		$baseurl=base_url();		
+		$qrcode = new \QRcode;
+		$dir=$baseurl."/public/temp/";
+		if(!file_exists($dir)){
+			mkdir($dir);
+		};
+		$filename='test3.png';
+		$tamanio=10;
+		$level='M';
+		$frameSize=3;
+		$contenido="hola mundo";
+		$qrcode->png($contenido,$filename,$level,$tamanio,$frameSize);
 		$VentaModel->update($idVenta, $dataestado);
 		$data= array('ventaU' =>$VentaModel->GetVentaU($idVenta),
 					 'detalleVentaU' =>$VentaModel->getdetalleVenta($idVenta),
 					 
-					 'baseurl'=>base_url(),
+					 'baseurl'=>base_url(),'filename'=>$filename
 					 );
 // instantiate and use the dompdf class
 	 // echo view('Imprimir/comprobante.php',$data);
-		$baseurl=base_url();		
+			
 		$dompdf = new Dompdf(array('enable_remote' => true));
 		$dompdf->set_base_path($baseurl); 
  		$dompdf->loadHtml(view('Imprimir/comprobante.php',$data));

@@ -108,6 +108,7 @@
 		</tfoot>
 	</table>
 	<div>
+		<img src="<?php echo($baseurl.'/temp/'.$filename)?>" alt="">
 		<p class="nota">Si usted tiene preguntas sobre esta factura, <br>pongase en contacto con nombre, teléfono y Email</p>
 		<h4 class="label_gracias">¡Gracias por su compra!</h4>
 	</div>

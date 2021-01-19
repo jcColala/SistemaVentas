@@ -37,9 +37,8 @@
                                 
                                     
                                 <?php if($linea->estadoventa==null): ?>
-                                   <button class="icon-mode_edit  activar" title="Facturar" onclick="facturarVenta(<?php echo($linea->id_venta);?> )" ></button>
-
-                                  <button class="icon-delete_forever eliminar" id="btn_eliminar_cliente" onclick="eliminar_venta(<?php echo $linea->id_venta ?>)" title="Eliminar"></button>
+                                  <a class="btn btn-primary" href="<?php echo base_url();?>/FacturadorController/enviarsunat?id=<?php echo $linea->id_venta?>" role="button">Link</a>  
+                                 <!--  <button class="icon-delete_forever eliminar" id="btn_eliminar_cliente" onclick="eliminar_venta(<?php  $linea->id_venta ?>)" title="Eliminar"></button> -->
 
                                  
                                 <?php endif ?> 

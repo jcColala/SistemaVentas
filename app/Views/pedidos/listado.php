@@ -38,6 +38,7 @@
                           <td>
                             <div class="e2_comision">
                                 <button class="fas fa-eye editar"   data-toggle="modal" data-target="#modelDettalleVenta"  onclick="verPedidoCompleto(<?php echo($linea->id_pedido);?>,'modelDettalleVenta' )"  title="Ver"></button>
+                                
                                 <?php if($linea->estadopedido==null):?>
                                     
                                    <button class="icon-mode_edit  activar" data-toggle="modal" data-target="#modelprocesarVenta"title="Procesar" onclick="verPedidoCompleto(<?php echo($linea->id_pedido);?>,'modelprocesarVenta')" ></button>

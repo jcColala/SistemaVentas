@@ -1,0 +1,1 @@
+2021-01-16 14:42:18: imagepng(http://localhost/SistemaVentas/public/temptest3.png): failed to open stream: HTTP wrapper does not support writeable connections2021-01-16 14:43:31: imagepng(http://localhost/SistemaVentas/public/temptest3.png): failed to open stream: HTTP wrapper does not support writeable connections

@@ -1,0 +1,642 @@
+CRITICAL - 2021-01-16 00:03:53 --> Class 'App\Controllers\QRcode' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 00:24:23 --> Class 'App\Controllers\QRcode' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 00:30:17 --> Class 'barcode_genera' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 00:30:26 --> Class 'App\Controllers\barcode_genera' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 00:31:04 --> Class 'barcode_genera\barcode_genera' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 00:34:11 --> Class 'App\Controllers\barcode_genera' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 00:34:29 --> Class 'App\Controllers\barcode_genera' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 00:37:37 --> syntax error, unexpected '$QR_BASEDIR' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:40:20 --> Class 'App\Controllers\barcode_genera' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 00:40:35 --> syntax error, unexpected '(', expecting '{'
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:40:40 --> syntax error, unexpected '$QR_BASEDIR' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:43:32 --> syntax error, unexpected '$QR_BASEDIR' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:44:21 --> syntax error, unexpected '$QR_BASEDIR' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:44:28 --> syntax error, unexpected 'include' (T_INCLUDE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:45:05 --> syntax error, unexpected 'include' (T_INCLUDE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:45:57 --> syntax error, unexpected 'include' (T_INCLUDE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:46:17 --> syntax error, unexpected '$QR_BASEDIR' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:47:22 --> syntax error, unexpected 'include' (T_INCLUDE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:51:50 --> Class 'App\Controllers\barcode_genera' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 00:52:15 --> Class 'barcode_genera' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 00:52:39 --> Class 'barcode_genera' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 00:53:03 --> syntax error, unexpected '$QR_BASEDIR' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:55:23 --> syntax error, unexpected 'require_once' (T_REQUIRE_ONCE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:55:39 --> syntax error, unexpected 'require_once' (T_REQUIRE_ONCE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:56:08 --> syntax error, unexpected '$QR_BASEDIR' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:56:51 --> syntax error, unexpected 'include' (T_INCLUDE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:58:30 --> syntax error, unexpected 'include' (T_INCLUDE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:58:36 --> syntax error, unexpected 'include' (T_INCLUDE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 00:58:44 --> syntax error, unexpected 'include' (T_INCLUDE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 01:01:00 --> Class 'App\Controllers\barcode_genera' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 01:04:50 --> Class 'App\Controllers\barcode_genera' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 01:09:40 --> require(app/third/fpdf/fpdf.php): failed to open stream: No such file or directory
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(app/thi...', 'D:\\xampp\\htdocs...', 2, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require()
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(207): view('Imprimir/compro...', Array)
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-16 01:10:16 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrlib.php(32): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#6 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(207): view('Imprimir/compro...', Array)
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-16 01:13:54 --> syntax error, unexpected '}'
+#0 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(207): view('Imprimir/compro...', Array)
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 01:14:07 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrlib.php(32): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#6 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(207): view('Imprimir/compro...', Array)
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-16 14:00:46 --> Class 'App\Controllers\QRcode' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 14:02:53 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrlib.php(32): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#6 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(207): view('Imprimir/compro...', Array)
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-16 14:03:24 --> Undefined variable: dir
+#0 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 11, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-16 14:03:46 --> Undefined variable: dir
+#0 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 11, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-16 14:04:07 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrlib.php(32): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#6 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(216): view('Imprimir/compro...', Array)
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-16 14:04:38 --> Class 'App\Controllers\QRcode' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(583): include_once()
+#1 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 14:06:14 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrlib.php(32): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#6 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(218): view('Imprimir/compro...', Array)
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-16 14:07:23 --> Class 'QRcode\QRcode' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 14:10:55 --> Class 'App\Controllers\QRcode' not found
+#0 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-16 14:11:08 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrlib.php(32): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#6 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(219): view('Imprimir/compro...', Array)
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-16 14:18:46 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrlib.php(32): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#6 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(219): view('Imprimir/compro...', Array)
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-16 14:22:16 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrlib.php(32): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#6 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(221): view('Imprimir/compro...', Array)
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-16 14:22:19 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrlib.php(32): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#6 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(221): view('Imprimir/compro...', Array)
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-16 14:22:45 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrlib.php(32): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#6 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(221): view('Imprimir/compro...', Array)
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-16 14:23:38 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrlib.php(32): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#6 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(221): view('Imprimir/compro...', Array)
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-16 14:23:41 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrlib.php(32): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#6 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(221): view('Imprimir/compro...', Array)
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-16 14:25:13 --> Use of undefined constant O - assumed 'O' (this will throw an Error in a future version of PHP)
+#0 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'D:\\xampp\\htdocs...', 216, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-16 14:25:24 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 D:\xampp\htdocs\SistemaVentas\app\ThirdParty\phpqrcode\qrlib.php(32): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(2): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#6 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(221): view('Imprimir/compro...', Array)
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#8 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#9 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-16 14:26:13 --> Undefined variable: filename
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(113): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 113, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(221): view('Imprimir/compro...', Array)
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-16 14:26:25 --> Undefined variable: filename
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\Imprimir\comprobante.php(113): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 113, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('Imprimir/compro...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\VentasController.php(221): view('Imprimir/compro...', Array)
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\VentasController->fpdf()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-16 14:29:38 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-16 14:46:34 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-16 14:46:43 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-16 14:46:45 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 D:\xampp\htdocs\SistemaVentas\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('VentasControlle...')
+#1 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('VentasControlle...')
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-16 21:20:53 --> Undefined index: nombre
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\main\header.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 75, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('main/header.php', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\ListadoVentasController.php(31): view('main/header.php')
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\ListadoVentasController->VentasProcesadas()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListadoVentasController))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-16 22:36:14 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-01-16 22:39:56 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-01-16 22:40:17 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-01-16 22:40:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *,ventas...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *,ventas...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *,ventas...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Models\VentaModel.php(73): CodeIgniter\Database\BaseConnection->query('SELECT *,ventas...')
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\FacturadorController.php(27): App\Models\VentaModel->GetVentaU(NULL)
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\FacturadorController->enviarsunat()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FacturadorController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-16 22:44:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>8' at line 1
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *,ventas...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *,ventas...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *,ventas...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Models\VentaModel.php(73): CodeIgniter\Database\BaseConnection->query('SELECT *,ventas...')
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\FacturadorController.php(27): App\Models\VentaModel->GetVentaU('>8')
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\FacturadorController->enviarsunat()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FacturadorController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-16 22:44:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>8' at line 1
+#0 D:\xampp\htdocs\SistemaVentas\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *,ventas...')
+#1 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *,ventas...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *,ventas...')
+#3 D:\xampp\htdocs\SistemaVentas\app\Models\VentaModel.php(73): CodeIgniter\Database\BaseConnection->query('SELECT *,ventas...')
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\FacturadorController.php(27): App\Models\VentaModel->GetVentaU('>8')
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\FacturadorController->enviarsunat()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FacturadorController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-16 22:45:25 --> DOMDocument::save(http://localhost/SistemaVentas/public/myjs/fhf.xml): failed to open stream: HTTP wrapper does not support writeable connections
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::sa...', 'D:\\xampp\\htdocs...', 23, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\facturacion\create_xml.php(23): DOMDocument->save('http://localhos...')
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('facturacion/cre...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\FacturadorController.php(32): view('facturacion/cre...', Array)
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\FacturadorController->enviarsunat()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FacturadorController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-16 22:46:11 --> DOMDocument::save(http://localhost/SistemaVentas/public/myjs/fhf.xml): failed to open stream: HTTP wrapper does not support writeable connections
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::sa...', 'D:\\xampp\\htdocs...', 18, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\facturacion\create_xml.php(18): DOMDocument->save('http://localhos...')
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('facturacion/cre...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\FacturadorController.php(32): view('facturacion/cre...', Array)
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\FacturadorController->enviarsunat()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FacturadorController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-16 22:51:36 --> CodeIgniter\View\View::main(): Failed opening required 'include/variables.php' (include_path='D:\xampp\php\PEAR')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-01-16 22:51:56 --> CodeIgniter\View\View::main(): Failed opening required 'include/variables.php' (include_path='D:\xampp\php\PEAR')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-01-16 23:54:27 --> A non-numeric value encountered
+#0 D:\xampp\htdocs\SistemaVentas\app\Views\facturacion\create_xml.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'D:\\xampp\\htdocs...', 32, Array)
+#1 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('facturacion/cre...', Array, true)
+#3 D:\xampp\htdocs\SistemaVentas\app\Controllers\FacturadorController.php(32): view('facturacion/cre...', Array)
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\FacturadorController->enviarsunat()
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FacturadorController))
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-16 23:54:40 --> DOMDocument::save(http://localhost/SistemaVentaspublic/myjs/usuarios.xml): failed to open stream: HTTP wrapper does not support writeable connections
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::sa...', 'D:\\xampp\\htdocs...', 32, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\facturacion\create_xml.php(32): DOMDocument->save('http://localhos...')
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('facturacion/cre...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\FacturadorController.php(32): view('facturacion/cre...', Array)
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\FacturadorController->enviarsunat()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FacturadorController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-16 23:54:56 --> DOMDocument::save(http://localhost/SistemaVentas/public/myjs/usuarios.xml): failed to open stream: HTTP wrapper does not support writeable connections
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::sa...', 'D:\\xampp\\htdocs...', 32, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\facturacion\create_xml.php(32): DOMDocument->save('http://localhos...')
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('facturacion/cre...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\FacturadorController.php(32): view('facturacion/cre...', Array)
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\FacturadorController->enviarsunat()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FacturadorController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-16 23:58:43 --> syntax error, unexpected '}', expecting end of file
+#0 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('facturacion/cre...', Array, true)
+#1 D:\xampp\htdocs\SistemaVentas\app\Controllers\FacturadorController.php(32): view('facturacion/cre...', Array)
+#2 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\FacturadorController->enviarsunat()
+#3 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FacturadorController))
+#4 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-16 23:58:55 --> DOMDocument::save(http://localhost/SistemaVentas/public/myjs/usuarios.xml): failed to open stream: HTTP wrapper does not support writeable connections
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::sa...', 'D:\\xampp\\htdocs...', 32, Array)
+#1 D:\xampp\htdocs\SistemaVentas\app\Views\facturacion\create_xml.php(32): DOMDocument->save('http://localhos...')
+#2 D:\xampp\htdocs\SistemaVentas\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SistemaVentas\system\Common.php(1119): CodeIgniter\View\View->render('facturacion/cre...', Array, true)
+#4 D:\xampp\htdocs\SistemaVentas\app\Controllers\FacturadorController.php(32): view('facturacion/cre...', Array)
+#5 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(918): App\Controllers\FacturadorController->enviarsunat()
+#6 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FacturadorController))
+#7 D:\xampp\htdocs\SistemaVentas\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SistemaVentas\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
