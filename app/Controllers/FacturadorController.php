@@ -1,6 +1,10 @@
 <?php namespace App\Controllers;
 use App\Models\VentaModel;
 use App\Models\CajaModel;
+require_once("app/ThirdParty/vendor/autoload.php");
+use Greenter\XMLSecLibs\Certificate\X509Certificate;
+use Greenter\XMLSecLibs\Certificate\X509ContentType;
+use  Greenter\XMLSecLibs\Sunat\SignedXml;
 class FacturadorController extends BaseController
 { 
 	public function index(){
@@ -101,7 +105,19 @@ class FacturadorController extends BaseController
 		$Certificatexml = $keyX509Data->appendChild($Certificatexml);
 
 		$doc->save($_SERVER['DOCUMENT_ROOT'] . "/SistemaVentas/public/archivos/xml/usuarios.xml");
-	   chmod($_SERVER['DOCUMENT_ROOT'] . '/SistemaVentas/public/archivos/xml/usuarios.xml', 0777); 	
+	   chmod($_SERVER['DOCUMENT_ROOT'] . '/SistemaVentas/public/archivos/xml/usuarios.xml', 0777); 
+	   $this->firmarxml();	
+	}
+	protected function firmarxml(){
+	$baseurl=base_url();
+	$xmlPath = $_SERVER['DOCUMENT_ROOT']."/SistemaVentas/public/archivos/xml/usuarios.xml";
+	$certPath =$_SERVER['DOCUMENT_ROOT'].'/SistemaVentas/public/cerificado/LLAMA-PE-CERTIFICADO-DEMO-10719804905.pem';  	
+
+	
+	 $signer = new SignedXml();
+	 $signer->setCertificateFromFile($certPath);
+	 $xmlSigned = $signer->signFromFile($xmlPath);
+	 file_put_contents($xmlPath, $xmlSigned);
 	}
 	
 }

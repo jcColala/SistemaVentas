@@ -11,6 +11,10 @@ class ComposerStaticInitf76bdc61af1703437fe277dc5e92b467
         array (
             'Svg\\' => 4,
         ),
+        'G' => 
+        array (
+            'Greenter\\XMLSecLibs\\' => 20,
+        ),
         'F' => 
         array (
             'FontLib\\' => 8,
@@ -25,6 +29,10 @@ class ComposerStaticInitf76bdc61af1703437fe277dc5e92b467
         'Svg\\' => 
         array (
             0 => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg',
+        ),
+        'Greenter\\XMLSecLibs\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/greenter/xmldsig/src',
         ),
         'FontLib\\' => 
         array (
